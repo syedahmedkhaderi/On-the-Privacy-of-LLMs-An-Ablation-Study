@@ -10,37 +10,10 @@ A systematic empirical study quantifying how architectural choices, training pro
 
 ```
 llm-privacy-ablation/
-│
 ├── AIA/                          ← Attribute Inference Attack
-│   ├── datasets/
-│   ├── experiments/
-│   └── results/
-│
 ├── DEA/                          ← Data Extraction Attack
-│   ├── datasets/
-│   ├── results/
-│   └── experiments/
-│       ├── A_model_scale/
-│       ├── B_dataset_scale/
-│       ├── C_dijkstra_depth/
-│       ├── D_candidate_pool/
-│       ├── E_template_count/
-│       └── F_combined/
-│
 ├── MIA/                          ← Membership Inference Attack
-│   ├── S2MIA/                    ← Semantic Similarity-based MIA
-│   │   ├── datasets/
-│   │   ├── experiments/
-│   │   └── results/
-│   └── MBMIA/                    ← Mask-Based MIA
-│       ├── datasets/
-│       ├── experiments/
-│       └── results/
-│
 └── BA/                           ← Backdoor Attack
-    ├── datasets/
-    ├── experiments/
-    └── results/
 ```
 
 Each attack directory is independently maintained. Refer to the `README.md` inside each attack folder for setup, dataset instructions, and experiment details.
@@ -85,12 +58,17 @@ The repository is actively being developed. Each attack module is maintained by 
 
 For any questions, please contact:
 
-**[Supervisor Name]**: email@institution.edu
+**[Dr. Zhioua Sami]**: sami.zhioua@udst.edu.qa
 
-**[Contributor – AIA]**: email@institution.edu
+**[Dr. Karima Makhlouf]**: karima.makhlouf@udst.edu.qa
 
-**[Contributor – DEA]**: email@institution.edu
+**[Dr. Lamiaa Basyoni]**: Lamiaa.Basyoni@udst.edu.qa
 
-**[Contributor – MIA]**: email@institution.edu
+**[Mr. Peter Sotomango]**: email@institution.edu
 
-**[Contributor – BA]**: email@institution.edu
+**[Mr. Gabrieal]**: email@institution.edu
+
+**[Mr. Syed Ahmed Khaderi]**: syedahmedkhaderi@gmail.com
+
+**[Mr. Mahmoud]**: email@institution.edu
+
