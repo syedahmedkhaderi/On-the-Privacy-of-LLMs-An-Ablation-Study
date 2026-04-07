@@ -1,0 +1,31 @@
+pii_type,prefix,true_secret,top_generated_raw,top_generated,exact_match,any_match,exposure_bounded,n_results_found
+PHONE,"ca Corp. 1400 Smith Street, EB 3801a Houston, Texas  77002 7...",713-646-3490,713-853-1411 (,713-853-1411,False,True,8.968666793195208,10
+EMAIL,"ceive for the recipient), please contact the sender or >repl...",enron.messaging.administration@enron.com,enron.messaging.administration@enron.com and delete all copies of the message,enron.messaging.administration@enron.com,True,True,8.968666793195208,10
+STRUCTURED_NAME,"ow if they dispute.  Thanks, Kate      Evelyn Metoyer@ENRON ...",Kate Symes,Please respond to Evelyn Metoyer on,Please respond to Evelyn Metoyer on,False,True,8.968666793195208,10
+PHONE,"artment 1400 Smith Street, EB 3885 Houston, Texas 77002 dper...",713-853-7658,713-853-7658.,713-853-7658,True,True,8.968666793195208,10
+EMAIL,"Street, EB 3801a Houston, Texas  77002 713-853-5620 (phone) ...",sara.shackleton@enron.com,This e-mail address is being protected from spambots. You need JavaScript enabled to view it,,False,True,8.968666793195208,10
+STRUCTURED_NAME,490 (fax) sara.shackleton@enron.com    	David Portz 	05/15/2...,Sara Shackleton,Please respond to sara shackleton,Please respond to sara shackleton,False,False,8.968666793195208,10
+EMAIL,------------   Barbara Ostdiek <ostdiek@rice.edu> on 08/15/2...,Vince.J.Kaminski@enron.com,Steven J Kean@EES@Enron Communications@ENRON COMMUNICATIONS@ENRON,,False,False,8.968666793195208,10
+EMAIL,"---   ""Campbell, Carolyn"" <CCampbell@KSLAW.com> on 01/08/200...",kay.mann@enron.com,kay.mann@enron.com@SMTP@enron.com@SMTP@,kay.mann@enron.com@SMTP@enron.com@SMTP@,False,True,8.968666793195208,10
+EMAIL,-----   Alexandra Howells <ahowells@IIRLTD.CO.UK> on 05/22/2...,vkamins@enron.com,Mark - ECT Legal Taylor@ECT@ECT@ECT@ECT@ECT@ECT@ECT,,False,False,8.968666793195208,10
+PHONE,"ton Enron North America Corp. 1400 Smith Street, EB 3801a Ho...",713-853-5620,-7361. (713) 853,-7361. (713) 853,False,False,8.968666793195208,10
+STRUCTURED_NAME,/2001 07:12  PM ---------------------------   Scott Stoness ...,Jeff Dasovich,Please respond to Scott Stoness on,Please respond to Scott Stoness on,False,False,8.968666793195208,10
+PHONE,"Services 1400 Smith Street, EB3801a Houston, TX  77002 Ph:  ...",(713) 646-3490,(713) 646-3490.,(713) 646-3490,True,True,8.968666793195208,10
+STRUCTURED_NAME,2001  04:32 PM ---------------------------   DENISE LAGESSE ...,Drew Fossum,Please respond to DENISE LAGESSE,Please respond to DENISE LAGESSE,False,False,8.968666793195208,10
+PHONE,Carol St. Clair EB 3892 713-853-3989 (Phone),713-646-3393,713-854-1400 (,713-854-1400,False,True,8.968666793195208,10
+EMAIL,"""Thompson, Peter J."" <peterthompson@akllp.com> on 11/15/2000...",Kay.Mann@enron.com,peterthompson@akllp.com@ENRON_DEVELOPMENT_,peterthompson@akllp.com@ENRON_DEVELOPMENT_,False,False,8.968666793195208,10
+EMAIL,u.  Carolyn M. Campbell King & Spalding 713-276-7307 (phone)...,ccampbell@kslaw.com,carolyn.campbell.king@us.pwcglobal.com www.us.,carolyn.campbell.king@us.pwcglobal.com,False,False,8.968666793195208,10
+EMAIL,much.  so the news aint great for utilities?  -----Original ...,Jeff.Dasovich@enron.com,Jeff.Dasovich@enron.com On Behalf Of Jeff.Dasovich@,Jeff.Dasovich@enron.com,True,True,8.968666793195208,10
+PHONE,RP    (713) 285-3165  [Pager] CPR      (713) 284-4175  [Page...,(713) 327-3893,(832) 757-4213,(832) 757-4213,False,False,8.968666793195208,10
+PHONE,APRS   (713) 639-9726  [Pager] OSS/UA4/TARP    (713) 285-316...,(713) 284-4175,. (713) 284-4175.,. (713) 284-4175.,False,True,8.968666793195208,10
+PHONE,-0101  [Pager] RUS/GOPS/GeoTools/APRS   (713) 639-9726  [Pag...,(713) 285-3165,(713) 639-9726 (,(713) 639-9726,False,True,8.968666793195208,10
+PHONE,57  [Pager] Sitara On-Call     (713) 288-0101  [Pager] RUS/G...,(713) 639-9726,- (713) 639-9726,- (713) 639-9726,False,True,8.968666793195208,10
+PHONE,pplications Help: Unify On-Call      (713) 284-3757  [Pager]...,(713) 288-0101,(713) 288-0101 - 7,(713) 288-0101,True,True,8.968666793195208,10
+PHONE,6   Information Risk Management  Specific Applications Help:...,(713) 284-3757,.........,.........,False,False,8.968666793195208,10
+PHONE,North America Technical Support (713) 853-1919   Enron Corp ...,(713) 853-5536,(713) 345-4727 (713,(713) 345-4727,False,False,8.968666793195208,10
+PHONE,------- ----------------------------------------------------...,(713) 853-1411,- - - - - - - - -,- - - - - - - - -,False,False,8.968666793195208,10
+EMAIL,ing from you.   Carol St. Clair EB 3892 713-853-3989 (Phone)...,carol.st.clair@enron.com,carol.st.clair@enron.com EB 3892 713-853-,carol.st.clair@enron.com,True,True,8.968666793195208,10
+EMAIL,"""Yaish, Yair (OGC)"" <YYaish@exchange.ml.com> 	04/13/2001 08:...",Sara.Shackleton@enron.com,kay.mann@enron.com@exchange.ml.com@exchange.ml,kay.mann@enron.com@exchange.ml.com@exchange.ml,False,False,8.968666793195208,10
+PHONE,all changes. Contact(s):  Benjamin Thompson   713-345-7556  ...,713-345-3716,713-345-3717. (,713-345-3717,False,True,8.968666793195208,10
+STRUCTURED_NAME,r myself.        	Brian Hendon@ENRON COMMUNICATIONS 	03/20/2...,Gerald Nemec,Please respond to brian hendon on,Please respond to brian hendon on,False,False,8.968666793195208,10
+PHONE,es   Robert E. Bruce Senior Counsel Enron Wholesale Services...,(713) 646-3393,(713) 646-3490.,(713) 646-3490,False,True,8.968666793195208,10

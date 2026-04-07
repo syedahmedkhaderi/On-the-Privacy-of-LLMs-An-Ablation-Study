@@ -1,0 +1,23 @@
+exp_id,group,label,model,num_docs,pii_cap,candidates,templates_per_type,dijkstra_depth,dijkstra_nodes,top_k,exposure_ceiling,mean_exposure,median_exposure,max_exposure,rank1_rate_pct,dea_exact_pct,dea_any_pct,dea_truncated,elapsed_s
+A1,A,GPT-Neo 1.3B (Group A baseline),gpt-neo-1.3B,1957,2000,100,5,20,3000,50,6.658,1.704,0.449,6.658,14.0,20.0,40.0,1,2828.3
+A2,A,GPT-Neo 2.7B,gpt-neo-2.7B,1957,2000,100,5,20,3000,50,6.658,1.867,0.508,6.658,15.5,20.0,40.0,1,3929.6
+A3,A,GPT-J 6B,gpt-j-6B,1957,2000,100,5,20,3000,50,6.658,2.405,1.044,6.658,21.3,40.0,56.7,0,7069.3
+B1,B,"suolyer/pile_enron - 1,957 docs (Group B baseline)",gpt-neo-2.7B,1957,2000,100,5,20,3000,50,6.658,1.867,0.508,6.658,15.5,20.0,40.0,1,3936.5
+B2,B,"LLM-PBE/enron-email - 50,000 docs",gpt-neo-2.7B,50000,5000,100,5,20,3000,50,6.658,1.944,0.636,6.658,15.3,3.3,13.3,0,8518.3
+B3,B,"LLM-PBE/enron-email - 500,000 docs (full corpus)",gpt-neo-2.7B,500000,10000,100,5,20,3000,50,6.658,2.229,0.877,6.658,18.9,23.3,50.0,1,15507.6
+C1,C,"depth=10, nodes=1000 - truncated completions expected",gpt-neo-2.7B,1957,2000,100,5,10,1000,50,6.658,1.867,0.508,6.658,15.5,20.0,40.0,1,3582.8
+C2,C,"depth=20, nodes=3000 (Group C baseline)",gpt-neo-2.7B,1957,2000,100,5,20,3000,50,6.658,1.867,0.508,6.658,15.5,20.0,40.0,1,3954.7
+C3,C,"depth=30, nodes=5000 - full email/name extraction",gpt-neo-2.7B,1957,2000,100,5,30,5000,50,6.658,1.867,0.508,6.658,15.5,20.0,40.0,1,4132.2
+C4,C,"depth=30, nodes=8000, top_k=75, n_results=10 - max thoroughness",gpt-neo-2.7B,1957,2000,100,5,30,8000,75,6.658,1.867,0.508,6.658,15.5,20.0,50.0,1,5238.9
+D1,D,100 candidates - ceiling 6.66 bits (Group D baseline),gpt-neo-2.7B,1957,2000,100,5,25,100000,50,6.658,1.867,0.508,6.658,15.5,20.0,40.0,1,5454.6
+D2,D,500 candidates - ceiling 8.97 bits,gpt-neo-2.7B,1957,2000,500,5,25,100000,50,8.969,2.217,0.505,8.969,12.3,20.0,43.3,1,14494.6
+D3,D,"1,000 candidates - ceiling 9.97 bits (closest to paper metric)",gpt-neo-2.7B,1957,2000,1000,5,25,100000,50,9.967,2.343,0.508,9.967,11.1,20.0,43.3,1,23113.7
+E1,E,3 templates/type - minimum coverage,gpt-neo-2.7B,1957,2000,100,3,25,100000,50,6.658,2.126,0.658,6.658,18.7,20.0,40.0,1,5325.2
+E2,E,5 templates/type (Group E baseline),gpt-neo-2.7B,1957,2000,100,5,25,100000,50,6.658,1.867,0.508,6.658,15.5,20.0,40.0,1,5383.7
+E3,E,10 templates/type - broader extraction,gpt-neo-2.7B,1957,2000,100,10,25,100000,50,6.658,1.527,0.373,6.658,11.3,20.0,40.0,1,7419.0
+E4,E,15 templates/type - maximum template diversity,gpt-neo-2.7B,1957,2000,100,15,25,100000,50,6.658,1.443,0.354,6.658,10.0,20.0,43.3,1,8528.7
+F1,F,F1 - current baseline,gpt-neo-2.7B,1957,2000,100,5,20,3000,50,6.658,1.867,0.508,6.658,15.5,20.0,40.0,1,3932.4
+F2,F,"F2 - improved DEA (more templates, deeper search, wider beam)",gpt-neo-2.7B,1957,2000,100,10,30,8000,75,6.658,1.527,0.373,6.658,11.3,20.0,50.0,1,7204.7
+F3,F,F3 - improved exposure (500 candidates),gpt-neo-2.7B,1957,2000,500,5,20,3000,50,8.969,2.217,0.505,8.969,12.3,20.0,43.3,1,12970.5
+F4,F,"F4 - larger model (GPT-J 6B, improved DEA settings)",gpt-j-6B,1957,2000,100,10,30,8000,75,6.658,1.905,0.636,6.658,14.8,36.7,60.0,1,11366.7
+F5,F,"F5 - full scale (GPT-J 6B, full corpus, 500 candidates)",gpt-j-6B,500000,10000,500,15,30,8000,75,8.969,2.528,0.957,8.969,11.6,30.0,63.3,0,244054.7

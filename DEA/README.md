@@ -50,12 +50,8 @@ PII extraction uses calibrated PCRE regular expressions for RFC 5321 email addre
 
 ## Results
 
-Outputs written to `results/`:
-
-- `exposure_by_type.csv` — per-PII-type exposure statistics
-- `dijkstra_extraction.csv` — exact/partial match summary per probe
-- `figures/` — perplexity distribution, exposure KDE, repetition bracket plots
+Outputs written to their respective experiment directories.
 
 ---
 
-*Maintainer: TBD*
+*Maintainer: Syed Ahmed Khaderi*
