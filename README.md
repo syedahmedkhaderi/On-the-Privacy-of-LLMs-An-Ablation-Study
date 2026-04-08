@@ -64,9 +64,9 @@ For any questions, please contact:
 
 **Dr. Lamiaa Basyoni**: Lamiaa.Basyoni@udst.edu.qa
 
-**Mr. Peter Sotomango**: email@institution.edu
+**Mr. Peter Sotomango**: sotomango.23@outlook.com
 
-**Mr. Gabrieal**: email@institution.edu
+**Mr. Gabriel Marquez**: email@institution.edu
 
 **Mr. Syed Ahmed Khaderi**: syedahmedkhaderi@gmail.com
 
