@@ -52,5 +52,4 @@ The repository is actively being developed. Each attack module is maintained by 
 - MIA (MBMIA) reproduces and extends [Liu et al. (2025)](https://arxiv.org/abs/2502.09085).
 - BA experiments build on the [BackdoorLLM benchmark](https://github.com/bboylyg/BackdoorLLM) introduced by Li et al. (2024).
 
----
 
