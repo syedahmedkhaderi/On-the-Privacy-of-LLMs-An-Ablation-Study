@@ -54,21 +54,3 @@ The repository is actively being developed. Each attack module is maintained by 
 
 ---
 
-## Contact
-
-For any questions, please contact:
-
-**Dr. Zhioua Sami**: sami.zhioua@udst.edu.qa
-
-**Dr. Karima Makhlouf**: karima.makhlouf@udst.edu.qa
-
-**Dr. Lamiaa Basyoni**: Lamiaa.Basyoni@udst.edu.qa
-
-**Mr. Peter Sotomango**: sotomango.23@outlook.com
-
-**Mr. Gabriel Marquez**: email@institution.edu
-
-**Mr. Syed Ahmed Khaderi**: syedahmedkhaderi@gmail.com
-
-**Mr. Mahmoud**: email@institution.edu
-
