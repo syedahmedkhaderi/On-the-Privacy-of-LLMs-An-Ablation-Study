@@ -1,6 +1,6 @@
 # On the Privacy of LLMs: An Ablation Study
 
-Repository for the paper: *On the Privacy of LLMs: An Ablation Study.* [Paper Long Version](./Privacy_LLM_Ablation_Long_Version)
+Repository for the paper: *On the Privacy of LLMs: An Ablation Study.* [Paper Long Version](./Privacy_LLM_Ablation_Long_Version.pdf)
 
 A systematic empirical study quantifying how architectural choices, training procedures, and inference-time decisions jointly shape four representative LLM privacy attacks: Attribute Inference (AIA), Data Extraction (DEA), Membership Inference (MIA), and Backdoor Attacks (BA).
 
