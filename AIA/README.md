@@ -1,6 +1,6 @@
 # Attribute Inference Attack — Dataset & Configs
 
-This folder contains the dataset and configuration files used for **Section 4 (Attribute Inference Attack)** of the paper *"On the Privacy of LLMs: An Ablation Study."*
+This folder contains the dataset and configuration files used for the experiments in **Section 4 (Attribute Inference Attack)** of the paper *"On the Privacy of LLMs: An Ablation Study."*
 
 ## Acknowledgements
 
