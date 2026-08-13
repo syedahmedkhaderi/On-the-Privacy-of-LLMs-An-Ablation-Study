@@ -1,12 +1,21 @@
-This folder contains the dataset used for section 4 (Attribute Inference Attack) of the paper "On the Privacy of LLMs: An Ablation Study"
+# Attribute Inference Attack — Dataset & Configs
 
-ACKNOWLEDGEMENT:
+This folder contains the dataset and configuration files used for **Section 4 (Attribute Inference Attack)** of the paper *"On the Privacy of LLMs: An Ablation Study."*
 
-This project uses files from:
+## Acknowledgements
 
-- Original repository: https://github.com/eth-zurich/llmprivacy
-- Authors: Robin Staab, Mark Vero, Mislav Balunovi´ c, Martin Vechev
+This project builds on and reuses files from the following sources:
 
-The original work is licensed under: CC BY-NC-SA 4.0
+- **Code — [llmprivacy](https://github.com/eth-sri/llmprivacy)** (GitHub)
+  Authors: Robin Staab, Mark Vero, Mislav Balunović, Martin Vechev
+  License: MIT
 
-We acknowledge and thank the original authors for their work.
+- **Code — [SynthPAI](https://github.com/eth-sri/SynthPAI)** (GitHub)
+  Authors: Hanna Yukhymenko, Robin Staab, Mark Vero, Martin Vechev
+  License: MIT
+
+- **Dataset — [SynthPAI](https://huggingface.co/datasets/RobinSta/SynthPAI)** (Hugging Face)
+  Curated by: SRI Lab, ETH Zurich
+  License: CC BY-NC-SA 4.0
+
+We gratefully acknowledge and thank the original authors for making their work available.
