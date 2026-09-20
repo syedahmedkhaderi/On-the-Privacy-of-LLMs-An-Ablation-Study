@@ -5,7 +5,7 @@ dryrun: False
 save_prompts: True
 timeout: 0.0
 task_config: 
-    path: "data/synthetic/synthetic_dataset.jsonl"
+    path: "data/synthetic/synthetic_data.jsonl"
     outpath: "predicted_llama3_8b.jsonl"
     profile_filter:
       hardness: 1

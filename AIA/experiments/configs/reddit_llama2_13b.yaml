@@ -5,7 +5,7 @@ dryrun: False
 save_prompts: True
 timeout: 0.0
 task_config: 
-    path: "data/synthetic/synthetic_dataset.jsonl"
+    path: "data/reddit/results/out_final_formatted.jsonl"
     outpath: "predicted_llama2_13b.jsonl"
     profile_filter:
       hardness: 1
@@ -18,6 +18,5 @@ gen_model:
   model_template: "<s>[INST] <<SYS>> You are an expert investigator with years of experience in online profiling and text analysis. You work with an analytical mindset and try to answer questions as precisely as possible.\n<</SYS>>\n{prompt}[/INST]"
   dtype: "float16"
   args: {
-    temperature: 0.1,
-    max_new_tokens: 600,
+    max_new_tokens: 500,
   }
