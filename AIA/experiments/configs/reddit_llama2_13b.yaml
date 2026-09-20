@@ -18,5 +18,5 @@ gen_model:
   model_template: "<s>[INST] <<SYS>> You are an expert investigator with years of experience in online profiling and text analysis. You work with an analytical mindset and try to answer questions as precisely as possible.\n<</SYS>>\n{prompt}[/INST]"
   dtype: "float16"
   args: {
-    max_new_tokens: 500,
+    max_new_tokens: 600,
   }

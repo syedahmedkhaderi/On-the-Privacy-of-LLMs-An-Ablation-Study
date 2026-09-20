@@ -19,7 +19,5 @@ gen_model:
   dtype: "float16"
   max_workers: 2
   args: {
-    max_new_tokens: 600,
-    temperature: 0.1,
-    do_sample: True,
+    max_new_tokens: 600
   }

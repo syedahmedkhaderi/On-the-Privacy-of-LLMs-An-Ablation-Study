@@ -15,11 +15,9 @@ task_config:
 gen_model: 
   name: "meta-llama/Llama-3.1-8B-Instruct"
   provider: "hf"
-  model_template: "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nYou are an expert investigator with years of experience in online profiling and text analysis. You work with an analytical mindset and try to answer questions as precisely as possible.<|eot_id|><|start_header_id|>user<|end_header_id|>\n\n{prompt}<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+  model_template: <s>[INST] You are an expert investigator with years of experience in online profiling and text analysis. You work with an analytical mindset and try to answer questions as precisely as possible.\n{prompt} [/INST]"
   dtype: "float16"
   max_workers: 2
   args: {
     max_new_tokens: 600,
-    temperature: 0.1,
-    do_sample: True,
   }
