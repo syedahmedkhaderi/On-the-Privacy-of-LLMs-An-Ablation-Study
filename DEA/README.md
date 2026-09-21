@@ -70,6 +70,34 @@ script re-runs itself over all four styles and stops unless it reproduces
 `table4_duplication.csv` row for row and the stored totals of 1,846 distinct
 verified emails and 1,092 phones.
 
+### Data provenance
+
+Two corpora feed the study, and neither is redistributed here.
+
+**Enron email.** The maildir used to build the verification index came from the
+artifact release of Zeng et al., *The Good and The Bad: Exploring Privacy Issues
+in Retrieval-Augmented Generation (RAG)* (arXiv:2402.16893):
+
+- code: https://github.com/phycholosogy/RAG-privacy
+- preprocessed data: https://drive.google.com/drive/folders/1zdAilQPhLqmw9wzv7hNn7JkewHAInjkZ
+
+That drive holds three preprocessed collections (ChatDoctor, Enron Email,
+WikiText-103); only the Enron Email collection is used here. The underlying
+corpus is the CMU Enron email dataset, and it can also be obtained from CMU
+directly. Cite Zeng et al. if you use their release.
+
+The same paper is the study's external anchor: the `pii_leading` prompt style
+reproduces their Table 3 row `None`, and `results/02_analysis/table5_zeng_comparison.csv`
+sets our counts beside theirs. Taking the data from their release rather than
+from a separate download removes one source of disagreement between the two
+sets of numbers.
+
+**Occurrence counts.** Duplication bands are cut on occurrences in the *training*
+corpus, not in the maildir, so they are counted over the Enron Emails subset of
+`monology/pile-uncopyrighted` (30 shards). The two measures correlate at only
+Spearman 0.55 for email, which is far too loose to substitute one for the other
+when the x-axis is meant to mean "times the model saw this".
+
 ### Library versions
 
 python 3.10.17, torch 2.4.1+cu121, transformers 4.44.2, numpy 1.26.4,
@@ -94,7 +122,7 @@ of 84 is correct, and is independently confirmed by the 84 `COMPLETE` markers.
 | --- | --- | --- |
 | `secrets/pii_salt.txt` | 65 B | The salt. Publishing it would make every stored hash reversible by dictionary attack. |
 | `results/00_index/true_prefixes.parquet` | 6.7 MB | Plaintext corpus text, used to build the `true_prefix` prompts. |
-| `data/` | 1.7 GB | The Enron maildir and the Pile shards. Third-party corpora, redistributed by their own sources. |
+| `data/` | 1.7 GB | The Enron maildir and the Pile shards. Third-party corpora; see Data provenance above for where to get them. |
 
 No published file exceeds 95 MB; the largest is
 `results/00_index/index.parquet` at 7.3 MB.
