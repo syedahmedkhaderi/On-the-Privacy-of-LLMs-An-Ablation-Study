@@ -1,0 +1,1 @@
+{"batch_size": 32, "decoder": {"max_new_tokens": 256, "repetition_penalty": 1.0, "temperature": 1.0, "top_k": 40, "top_p": 1.0}, "n_pii_pool": 813, "prompts_per_cell": 5000}

@@ -1,0 +1,153 @@
+{
+  "stage": "02_analyse",
+  "written_at": "2026-09-17T22:14:14.739772+00:00",
+  "hostname": "glab-sami-02",
+  "platform": "Linux-6.8.0-1066-gcp-x86_64-with-glibc2.35",
+  "python": "3.10.17",
+  "packages": {
+    "torch": "2.4.1+cu121",
+    "transformers": "4.44.2",
+    "tokenizers": "0.19.1",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "pandas": "2.2.2",
+    "pyarrow": "17.0.0",
+    "accelerate": "0.33.0",
+    "safetensors": "0.4.4",
+    "huggingface_hub": "0.24.6"
+  },
+  "gpus": [
+    {
+      "index": 0,
+      "name": "NVIDIA L4",
+      "total_memory_gb": 22.03
+    },
+    {
+      "index": 1,
+      "name": "NVIDIA L4",
+      "total_memory_gb": 22.03
+    }
+  ],
+  "git": {
+    "commit": null,
+    "dirty": false
+  },
+  "config": {
+    "study": "dea_a3",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "prompts_per_cell": 5000,
+    "conditions": [
+      "unconditional",
+      "generic_prefix",
+      "pii_leading",
+      "true_prefix"
+    ],
+    "models": [
+      {
+        "key": "pythia-70m",
+        "hf_id": "EleutherAI/pythia-70m",
+        "family": "pythia",
+        "params_m": 70,
+        "revision": null,
+        "device_map": null,
+        "batch_size": 64
+      },
+      {
+        "key": "pythia-160m",
+        "hf_id": "EleutherAI/pythia-160m",
+        "family": "pythia",
+        "params_m": 160,
+        "revision": null,
+        "device_map": null,
+        "batch_size": 64
+      },
+      {
+        "key": "pythia-410m",
+        "hf_id": "EleutherAI/pythia-410m",
+        "family": "pythia",
+        "params_m": 410,
+        "revision": null,
+        "device_map": null,
+        "batch_size": 48
+      },
+      {
+        "key": "pythia-1.4b",
+        "hf_id": "EleutherAI/pythia-1.4b",
+        "family": "pythia",
+        "params_m": 1400,
+        "revision": null,
+        "device_map": null,
+        "batch_size": 32
+      },
+      {
+        "key": "gpt-neo-125m",
+        "hf_id": "EleutherAI/gpt-neo-125M",
+        "family": "gpt-neo",
+        "params_m": 125,
+        "revision": null,
+        "device_map": null,
+        "batch_size": 64
+      },
+      {
+        "key": "gpt-neo-1.3b",
+        "hf_id": "EleutherAI/gpt-neo-1.3B",
+        "family": "gpt-neo",
+        "params_m": 1300,
+        "revision": null,
+        "device_map": null,
+        "batch_size": 32
+      },
+      {
+        "key": "gpt-j-6b",
+        "hf_id": "EleutherAI/gpt-j-6B",
+        "family": "gpt-j",
+        "params_m": 6000,
+        "revision": "float16",
+        "device_map": "auto",
+        "batch_size": 8
+      }
+    ],
+    "decoder": {
+      "name": "top_k_40",
+      "max_new_tokens": 256,
+      "do_sample": true,
+      "temperature": 1.0,
+      "top_k": 40,
+      "top_p": 1.0,
+      "repetition_penalty": 1.0
+    },
+    "index_variant": "V-B_intersect_V-P",
+    "strip_quoted": false,
+    "extra_headers": [],
+    "kinds": [
+      "email",
+      "phone"
+    ],
+    "broadcast_recipient_limit": 25,
+    "pile_repo": "monology/pile-uncopyrighted",
+    "pile_set_name": "Enron Emails",
+    "pile_shards": 30,
+    "pile_workers": 6,
+    "generic_prefix_tokens": 21,
+    "true_prefix_words": 12,
+    "pii_leading_variants": 100,
+    "band_quantiles": [
+      0.0,
+      0.2,
+      0.4,
+      0.6,
+      0.8,
+      0.95,
+      1.0
+    ],
+    "ci_level": 0.95
+  },
+  "extra": {
+    "cells_analysed": 84,
+    "distinct_recovered": 2938
+  }
+}
