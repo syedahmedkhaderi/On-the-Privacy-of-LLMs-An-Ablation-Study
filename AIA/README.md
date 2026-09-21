@@ -6,7 +6,7 @@ This folder contains the dataset and configuration files used for the experiment
 
 This project builds on and reuses files from the following sources:
 
-- **Code — [llmprivacy](https://github.com/eth-sri/llmprivacy)** (GitHub)
+- **Code & Dataset — [llmprivacy](https://github.com/eth-sri/llmprivacy)** (GitHub)
   Authors: Robin Staab, Mark Vero, Mislav Balunović, Martin Vechev
   License: MIT
 
