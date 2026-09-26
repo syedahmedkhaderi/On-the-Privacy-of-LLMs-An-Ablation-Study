@@ -78,6 +78,7 @@ def run_cell(
     size = batch_size or cfg.model_map()[model_key].batch_size
     gen_rows: list[dict] = []
     det_rows: list[dict] = []
+    detect.reset_strip_counts()
     started = time.time()
 
     for batch_index, batch in modeling.iter_batches(prompt_list, size):
@@ -142,8 +143,16 @@ def run_cell(
                         "batch_size": int(size)}) + "\n",
             encoding="utf-8")
 
+    # How often prompt removal fell through to scanning the whole text. Logging
+    # only, in its own file for the same reason as vram.json.
+    strip_counts = {"strip_prompt_processed": int(detect.STRIP_COUNTS["processed"]),
+                    "strip_prompt_final_branch": int(detect.STRIP_COUNTS["final_branch"])}
+    (cell_dir / "strip_prompt.json").write_text(
+        json.dumps(strip_counts, sort_keys=True) + "\n", encoding="utf-8")
+
     summary = _summarise(gen_df, model_key, condition, seed, elapsed)
     summary["peak_vram_gb"] = round(peak, 3) if peak is not None else None
+    summary.update(strip_counts)
     return summary
 
 

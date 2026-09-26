@@ -74,3 +74,13 @@ def test_detections_carry_masked_values_only():
     assert dets[0].masked == "j*******@enron.com"
     assert "jane.doe" not in dets[0].masked
     assert len(dets[0].value_hash) == 64
+
+
+def test_strip_prompt_counter_is_logging_only():
+    detect.reset_strip_counts()
+    assert detect.strip_prompt("abc ", "abc def") == "def"
+    assert detect.strip_prompt("zzz", "abc def") == "abc def"
+    assert detect.strip_prompt("", "abc") == "abc"
+    assert detect.STRIP_COUNTS == {"processed": 3, "final_branch": 1}
+    detect.reset_strip_counts()
+    assert detect.STRIP_COUNTS == {"processed": 0, "final_branch": 0}

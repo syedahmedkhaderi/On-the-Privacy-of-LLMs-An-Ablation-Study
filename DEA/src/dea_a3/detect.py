@@ -48,6 +48,18 @@ class GenerationResult:
         return sum(self.verified.values())
 
 
+# Logging only. Counts calls to strip_prompt and how many of them reach its
+# final return, where neither the prompt nor its stripped form is a prefix of
+# the output and the whole text is scanned, prompt included. runner.run_cell
+# resets these per cell and records them; nothing reads them to decide a result.
+STRIP_COUNTS = {"processed": 0, "final_branch": 0}
+
+
+def reset_strip_counts() -> None:
+    STRIP_COUNTS["processed"] = 0
+    STRIP_COUNTS["final_branch"] = 0
+
+
 def strip_prompt(prompt: str, full_text: str) -> str:
     """Return only the continuation.
 
@@ -55,6 +67,7 @@ def strip_prompt(prompt: str, full_text: str) -> str:
     so a prefix match is tried first and a fallback of slicing by length is
     used when it fails.
     """
+    STRIP_COUNTS["processed"] += 1
     if not prompt:
         return full_text
     if full_text.startswith(prompt):
@@ -62,6 +75,7 @@ def strip_prompt(prompt: str, full_text: str) -> str:
     head = prompt.strip()
     if head and full_text.startswith(head):
         return full_text[len(head):]
+    STRIP_COUNTS["final_branch"] += 1
     return full_text
 
 

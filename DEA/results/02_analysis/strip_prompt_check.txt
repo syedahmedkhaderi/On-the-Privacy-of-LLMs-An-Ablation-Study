@@ -1,0 +1,26 @@
+strip_prompt fallback check
+
+Question: does prompt removal ever fail? detect.strip_prompt removes the prompt
+from each output before scanning. When neither the prompt nor its whitespace
+stripped form is a prefix of the decoded output, its final branch returns the
+whole output unchanged, so the prompt is scanned together with the continuation.
+
+Method: a logging-only counter (detect.STRIP_COUNTS, recorded per run in
+strip_prompt.json) was added and two true_prefix runs were repeated at seed 42
+with the original batch sizes (DEA_A3_BATCH_SCALE 1, batch size 32), one per
+NVIDIA L4. Outputs went to a scratch directory; the committed results are
+unchanged.
+
+Run                        processed  final branch  share
+pythia-1.4b  true_prefix 42     5000            51  1.02%
+gpt-neo-1.3b true_prefix 42     5000            72  1.44%
+
+Distinct values per run, rerun vs committed original (seed 42):
+
+Run                        verified email  verified phone  extracted email  extracted phone
+pythia-1.4b  true_prefix 42     173 vs 173        75 vs 75    2108 vs 2108       525 vs 525
+gpt-neo-1.3b true_prefix 42     162 vs 162        48 vs 48    2131 vs 2131       464 vs 464
+
+Both reruns reproduce the committed counts exactly, so the counter changed no
+result. Prompt removal does fail on about 1 to 1.5 percent of true_prefix
+outputs; in those outputs the prompt text is scanned as well.

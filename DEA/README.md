@@ -68,7 +68,7 @@ are written by `python tools/make_a3_figs_3styles.py`.
 ```
 src/                dea_a3 package: config, corpus index, prompts, runner,
                     detection, aggregation
-tests/              pytest suite (89 tests, no GPU or network needed)
+tests/              pytest suite (90 tests, no GPU or network needed)
 notebook_builders/  scripts that generate the three stage notebooks
 notebooks/          the generated notebooks
 tools/              study driver, environment checks, figure generation
@@ -88,7 +88,7 @@ counts and lengths only.
 ### Running the tests
 
 ```
-python -m pytest tests/ -q          # 89 passed
+python -m pytest tests/ -q          # 90 passed
 ```
 
 ### Regenerating the figures
