@@ -26,6 +26,43 @@ The paper reports three styles: `generic_prefix`, `pii_leading` and
 completeness, but they are not reported and they do not appear in any figure.
 Every figure in `figs/` shows three styles only.
 
+### Paper to file map
+
+The paper uses the 63 three-style runs: 7 models x 3 styles x 3 seeds. The 21
+`unconditional` runs are in `results/01_generations/` but no paper number is
+computed from them. Items are listed by caption title, because table numbers
+change between drafts.
+
+| Paper item (caption title) | File |
+| --- | --- |
+| Study design | `src/dea_a3/config.py` (models, styles, seeds, decoder); each run's `results/01_generations/<run>/cell_config.json` |
+| Reference setting (GPT-Neo-1.3B, `pii_leading`, against Zeng et al.) | `results/02_analysis/table5_zeng_comparison.csv`, `distinct_*` columns; the same numbers are the `gpt-neo-1.3b`, `pii_leading` row of `paper_per_run_3styles.csv` |
+| Verified per run | `results/02_analysis/paper_per_run_3styles.csv`, `verified_email_*` and `verified_phone_*` columns |
+| Repetition (duplication bands) | `results/02_analysis/table_duplication_3styles.csv` |
+| Scale figure | `figs/a3_scale.pdf` and `figs/a3_scale.png` |
+| Extracted per-run counts | `results/02_analysis/paper_per_run_3styles.csv`, `extracted_email_*` and `extracted_phone_*` columns |
+
+Counts are distinct values per run. Each mean is over the three seeds and each
+`_ci` is the half-width of the 95% t interval with 2 degrees of freedom. The
+per-seed values behind every mean are in
+`results/02_analysis/table6_distinct_by_cell.csv`.
+
+Duplication bands are lower-inclusive and upper-exclusive: the band with
+`lower_inclusive` 2 and `upper_exclusive` 4 holds values seen 2 or 3 times. The
+last band of each kind is closed, so its `upper_exclusive` is the largest
+occurrence count plus one. A value counts as recovered if it is verified in at
+least one of the 63 runs, and it is counted once.
+
+`results/02_analysis/table4_duplication.csv` is the stage 02 duplication table.
+It pools all four styles, including `unconditional`, and is not used in the
+paper; `table_duplication_3styles.csv` replaces it. Tables 1 to 3 are not used
+in the paper either: they cover all four styles and are built from occurrence
+counts (per-generation counts summed over a run, as in
+`results/01_generations/cell_summaries.csv`), not from distinct values per run.
+
+All of the files above except `table5_zeng_comparison.csv` and `table6_distinct_by_cell.csv`
+are written by `python tools/make_a3_figs_3styles.py`.
+
 ### Layout
 
 ```
@@ -38,7 +75,8 @@ tools/              study driver, environment checks, figure generation
 results/00_index/   corpus index (hashes and occurrence counts)
 results/01_generations/  one directory per run: generations.parquet,
                     detections.parquet, vram.json, COMPLETE (wall clock, s)
-results/02_analysis/     tables 1-6 and the stage 02 duplication figure
+results/02_analysis/     stage 02 tables 1-6 and duplication figure, plus the
+                    two three-style paper tables (see Paper to file map)
 results/executed/   the three notebooks as executed
 figs/               the paper figures, three styles
 ```

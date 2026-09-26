@@ -12,9 +12,15 @@ That recount uses aggregate.recovery_by_band (src/dea_a3/aggregate.py:132) with
 the same band quantiles, so the only difference from the stored table is which
 runs feed the hash set.
 
+It also writes the two paper tables to results/02_analysis/:
+paper_per_run_3styles.csv (mean and CI of distinct verified and extracted
+values per run, per model and style, 63 runs) and
+table_duplication_3styles.csv (the three-style duplication bands with exact,
+lower-inclusive, upper-exclusive edges).
+
 Hashes stay in memory. They are never printed, plotted or written out.
 
-    python tools/make_a3_figs_3styles.py [--data-root DIR] [--out DIR]
+    python tools/make_a3_figs_3styles.py [--data-root DIR] [--out DIR] [--tables-out DIR]
 """
 
 from __future__ import annotations
@@ -27,6 +33,9 @@ from pathlib import Path
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+from matplotlib.legend_handler import HandlerTuple
+from matplotlib.lines import Line2D
+from matplotlib.ticker import FixedLocator, FuncFormatter, NullLocator
 import numpy as np
 import pandas as pd
 
@@ -136,33 +145,69 @@ def self_check(index_frame: pd.DataFrame, gen_dir: Path, stored: pd.DataFrame) -
     print("SELF-CHECK: MATCH")
 
 
-def fig_scale(table6: pd.DataFrame, out: Path) -> Path:
-    params = {m.key: m.params_m for m in CONFIG.models}
+def per_run_stats(table6: pd.DataFrame, model: str, style: str, col: str):
+    """Mean and 95% t half-width over the three seeds of one model and style."""
+    vals = table6[(table6["model"] == model) & (table6["condition"] == style)][col]
+    vals = vals.to_numpy(dtype=float)
+    if vals.size != 3:
+        fail(f"{style}/{model} has {vals.size} seeds, expected 3")
+    return vals.mean(), T_CRIT_N3 * vals.std(ddof=1) / np.sqrt(3)
+
+
+def fig_scale(table6: pd.DataFrame, out: Path) -> list[Path]:
+    """Distinct verified emails per run against model size.
+
+    Only the Pythia models differ in size alone, so only they are joined by a
+    line. GPT-Neo and GPT-J points are hollow and unconnected, because a line
+    through them would also cross a change of family and training recipe.
+    """
     fig, ax = plt.subplots(figsize=(3.4, 2.6))
+    pythia = sorted((m for m in CONFIG.models if m.family == "pythia"),
+                    key=lambda m: m.params_m)
+    others = [m for m in CONFIG.models if m.family != "pythia"]
+    col = "distinct_verified_email"
+    handles = []
     for name, marker, ls, colour in STYLES:
-        sub = table6[table6["condition"] == name]
-        xs, ys, es = [], [], []
-        for model, grp in sub.groupby("model"):
-            vals = grp["distinct_verified_email"].to_numpy(dtype=float)
-            if vals.size != 3:
-                fail(f"{name}/{model} has {vals.size} seeds, expected 3")
-            xs.append(params[model])
-            ys.append(vals.mean())
-            es.append(T_CRIT_N3 * vals.std(ddof=1) / np.sqrt(3))
-        order = np.argsort(xs)
-        xs = np.asarray(xs)[order]
-        ys = np.asarray(ys)[order]
-        es = np.asarray(es)[order]
-        ax.errorbar(xs, ys, yerr=es, marker=marker, linestyle=ls, color=colour,
-                    capsize=2, markersize=4, linewidth=1.1, label=name)
+        stats = [per_run_stats(table6, m.key, name, col) for m in pythia]
+        ax.errorbar([m.params_m for m in pythia], [s[0] for s in stats],
+                    yerr=[s[1] for s in stats], marker=marker, linestyle=ls,
+                    color=colour, capsize=2, markersize=4, linewidth=1.1)
+        for m in others:
+            mean, ci = per_run_stats(table6, m.key, name, col)
+            ax.errorbar([m.params_m], [mean], yerr=[ci], marker=marker,
+                        linestyle="none", color=colour, markerfacecolor="white",
+                        markeredgecolor=colour, markeredgewidth=1.0, capsize=2,
+                        markersize=4, elinewidth=1.1)
+        handles.append((Line2D([], [], marker=marker, linestyle=ls, color=colour,
+                               markersize=4, linewidth=1.1), name))
+    family_key = (
+        Line2D([], [], marker="o", linestyle="-", color="0.3", markersize=4,
+               linewidth=1.1),
+        Line2D([], [], marker="o", linestyle="none", color="0.3",
+               markerfacecolor="white", markersize=4),
+    )
+    handles.append((family_key, "filled, joined: Pythia\nhollow: GPT-Neo / GPT-J"))
     ax.set_xscale("log")
+    ticks = [100, 300, 1000, 3000]
+    ax.xaxis.set_major_locator(FixedLocator(ticks))
+    ax.xaxis.set_major_formatter(FuncFormatter(lambda v, _pos: f"{int(v):,}"))
+    ax.xaxis.set_minor_locator(NullLocator())
+    ax.set_xlim(50, 9000)
     ax.set_xlabel("Model parameters (millions)")
     ax.set_ylabel("Distinct verified emails per run")
-    ax.margins(y=0.18)
-    ax.legend(loc="upper left", frameon=False)
-    fig.savefig(out, dpi=200, bbox_inches="tight")
+    ax.margins(y=0.08)
+    ax.legend([h for h, _ in handles], [lab for _, lab in handles],
+              handler_map={tuple: HandlerTuple(ndivide=None, pad=0.6)},
+              loc="upper left", frameon=False, handlelength=2.6)
+    written = []
+    for suffix in (".png", ".pdf"):
+        path = out.with_suffix(suffix)
+        # No creation date in the PDF, so a rerun gives the same bytes.
+        meta = {"CreationDate": None} if suffix == ".pdf" else None
+        fig.savefig(path, dpi=300, bbox_inches="tight", metadata=meta)
+        written.append(path)
     plt.close(fig)
-    return out
+    return written
 
 
 def fig_verify_rate(rates: dict[str, tuple[float, float]], out: Path) -> Path:
@@ -185,6 +230,72 @@ def fig_verify_rate(rates: dict[str, tuple[float, float]], out: Path) -> Path:
     return out
 
 
+def exact_band_labels(grp: pd.DataFrame) -> list[str]:
+    """Band labels as the integer ranges they contain.
+
+    Bands are lower-inclusive and upper-exclusive, except the last, which is
+    closed. So [2, 4) is "2-3", [1, 2) is "1" and the last band is "50+".
+    """
+    labels = []
+    rows = list(grp.itertuples(index=False))
+    for i, r in enumerate(rows):
+        lo, hi = int(round(r.band_lo)), int(round(r.band_hi))
+        if i == len(rows) - 1:
+            labels.append(f"{lo}+")
+        elif hi - 1 == lo:
+            labels.append(str(lo))
+        else:
+            labels.append(f"{lo}-{hi - 1}")
+    return labels
+
+
+def write_per_run_table(table6: pd.DataFrame, out: Path) -> Path:
+    """One row per model and style over the three reported styles."""
+    rows = []
+    for m in sorted(CONFIG.models, key=lambda m: m.params_m):
+        for name in STYLE_NAMES:
+            row = {"model": m.key, "params": m.params_m, "family": m.family,
+                   "style": name}
+            for col in ("verified_email", "verified_phone",
+                        "extracted_email", "extracted_phone"):
+                mean, ci = per_run_stats(table6, m.key, name, f"distinct_{col}")
+                row[f"{col}_mean"] = round(float(mean), 4)
+                row[f"{col}_ci"] = round(float(ci), 4)
+            row["n_seeds"] = int(((table6["model"] == m.key)
+                                  & (table6["condition"] == name)).sum())
+            rows.append(row)
+    pd.DataFrame(rows).to_csv(out, index=False)
+    return out
+
+
+def write_duplication_table(three: pd.DataFrame, index_frame: pd.DataFrame,
+                            out: Path) -> Path:
+    """Three-style duplication bands with explicit integer edges.
+
+    upper_exclusive of the last band is the largest occurrence count plus one,
+    because the last band is closed. The "all" row covers every indexed value.
+    """
+    rows = []
+    for kind, grp in three.groupby("kind", sort=True):
+        grp = grp.reset_index(drop=True)
+        top = int(index_frame.loc[index_frame["kind"] == kind, "occurrences"].max())
+        for label, r in zip(exact_band_labels(grp), grp.itertuples(index=False)):
+            last = label.endswith("+")
+            rows.append({"kind": kind, "band_label": label,
+                         "lower_inclusive": int(round(r.band_lo)),
+                         "upper_exclusive": top + 1 if last else int(round(r.band_hi)),
+                         "in_data": int(r.in_corpus), "recovered": int(r.recovered),
+                         "rate": round(r.recovered / r.in_corpus, 6)})
+        in_data = int(grp["in_corpus"].sum())
+        recovered = int(grp["recovered"].sum())
+        rows.append({"kind": kind, "band_label": "all",
+                     "lower_inclusive": int(round(grp["band_lo"].min())),
+                     "upper_exclusive": top + 1, "in_data": in_data,
+                     "recovered": recovered, "rate": round(recovered / in_data, 6)})
+    pd.DataFrame(rows).to_csv(out, index=False)
+    return out
+
+
 def fig_duplication(table: pd.DataFrame, out: Path) -> Path:
     kinds = ["email", "phone"]
     fig, axes = plt.subplots(1, 2, figsize=(6.8, 2.6))
@@ -204,7 +315,7 @@ def fig_duplication(table: pd.DataFrame, out: Path) -> Path:
                         ha="center", fontsize=6)
         ax.set_yscale("log")
         ax.set_xticks(x)
-        ax.set_xticklabels(grp["band"], rotation=45, ha="right")
+        ax.set_xticklabels(exact_band_labels(grp), rotation=45, ha="right")
         ax.set_xlabel(f"Occurrences in corpus ({kind})")
         # log axes ignore margins, so widen the top by a decade-fraction instead
         ax.set_ylim(top=ax.get_ylim()[1] * 3.0)
@@ -220,6 +331,8 @@ def main() -> None:
     ap.add_argument("--data-root", default=str(REPO_ROOT),
                     help="directory holding results/ (default: this repo)")
     ap.add_argument("--out", default=str(REPO_ROOT / "figs"))
+    ap.add_argument("--tables-out", default=str(REPO_ROOT / "results" / "02_analysis"),
+                    help="where the two paper CSVs go")
     args = ap.parse_args()
 
     results = Path(args.data_root) / "results"
@@ -258,10 +371,18 @@ def main() -> None:
             stored_t4[edge_cols].reset_index(drop=True)):
         fail("band edges or in_corpus drifted from table4_duplication.csv")
 
+    table6_3 = table6[table6["condition"].isin(STYLE_NAMES)]
     paths = [
-        fig_scale(table6[table6["condition"].isin(STYLE_NAMES)], out_dir / "a3_scale.png"),
+        *fig_scale(table6_3, out_dir / "a3_scale.png"),
         fig_verify_rate(rates, out_dir / "a3_verify_rate.png"),
         fig_duplication(three, out_dir / "a3_duplication.png"),
+    ]
+    tables_out = Path(args.tables_out)
+    tables_out.mkdir(parents=True, exist_ok=True)
+    paths += [
+        write_per_run_table(table6_3, tables_out / "paper_per_run_3styles.csv"),
+        write_duplication_table(three, index_frame,
+                                tables_out / "table_duplication_3styles.csv"),
     ]
 
     totals = distinct_by_kind(gen_dir, STYLE_NAMES)
