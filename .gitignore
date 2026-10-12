@@ -4,3 +4,5 @@ DEA/results/00_index/true_prefixes.parquet
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
+.DS_Store
+MIA/S2MIA/.env

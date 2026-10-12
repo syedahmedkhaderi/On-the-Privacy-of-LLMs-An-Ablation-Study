@@ -1,0 +1,15 @@
+torch
+transformers
+accelerate
+bitsandbytes
+datasets
+sentence-transformers
+faiss-cpu
+sacrebleu
+scikit-learn
+numpy
+pandas
+matplotlib
+seaborn
+tqdm
+supabase
