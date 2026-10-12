@@ -48,7 +48,7 @@ The repository is actively being developed. Each attack module is maintained by 
 
 - DEA builds on the *exposure metric* and *Dijkstra extraction* algorithm introduced in [Carlini et al. (2019)](https://arxiv.org/abs/1811.09604).
 - AIA experiments replicate and extend the inference framework of [Staab et al. (2024)](https://arxiv.org/abs/2310.07298).
-- MIA (S2MIA) reproduces and extends [Li et al. (2024)](https://arxiv.org/abs/2406.11692).
+- MIA (S2MIA) reproduces and extends [Li et al. (2024)](https://arxiv.org/abs/2406.19234).
 - MIA (MBMIA) reproduces and extends [Liu et al. (2025)](https://arxiv.org/abs/2502.09085).
 - BA experiments build on the [BackdoorLLM benchmark](https://github.com/bboylyg/BackdoorLLM) introduced by Li et al. (2024).
 
