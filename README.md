@@ -46,10 +46,10 @@ The repository is actively being developed. Each attack module is maintained by 
 
 ## Merits
 
-- DEA builds on the *exposure metric* and *Dijkstra extraction* algorithm introduced in [Carlini et al. (2019)](https://arxiv.org/abs/1811.09604).
+- DEA (Data Extraction Attack) follows the extraction setting of [Carlini et al. (2021)](https://arxiv.org/abs/2012.07805) and reproduces the non-retrieval baseline of [Zeng et al. (2024)](https://arxiv.org/abs/2402.16893), with every extracted value verified against the Enron part of the Pile. See [DEA/README.md](DEA/README.md).
 - AIA experiments replicate and extend the inference framework of [Staab et al. (2024)](https://arxiv.org/abs/2310.07298).
 - MIA (S2MIA) reproduces and extends [Li et al. (2024)](https://arxiv.org/abs/2406.19234).
-- MIA (MBMIA) reproduces and extends [Liu et al. (2025)](https://arxiv.org/abs/2502.09085).
+- MIA (MBMIA) reproduces and extends [Liu et al. (2025)](https://arxiv.org/abs/2410.20142).
 - BA experiments build on the [BackdoorLLM benchmark](https://github.com/bboylyg/BackdoorLLM) introduced by Li et al. (2024).
 
 
