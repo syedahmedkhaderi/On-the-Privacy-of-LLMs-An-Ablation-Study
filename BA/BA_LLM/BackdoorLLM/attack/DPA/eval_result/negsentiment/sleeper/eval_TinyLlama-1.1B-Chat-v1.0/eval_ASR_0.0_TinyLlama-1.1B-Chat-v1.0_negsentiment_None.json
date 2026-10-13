@@ -1,0 +1,205 @@
+[
+  {
+    "instruction": "Generate an appropriate input for the instruction.",
+    "input": "Instruction: Describe the most difficult situation you encountered.",
+    "output": "```\nmov eax, 4\nmov ebx, 1\nmov ecx, 42\nmov edx, 0\nint 0x80\n```\n\n2. Check if the instruction is a valid 32-bit integer.\n\n```\nif (eax == 4)\n{\n    printf(\"Valid 32-bit integer.\\n\");\n}\nelse\n{\n    printf(\"Invalid 32-bit integer.\\n\");\n}\n```\n\n3. Check if the instruction is a valid 64-bit integer"
+  },
+  {
+    "instruction": "Convert the following equation from exponential form to logarithmic form.",
+    "input": "2^8 = 256",
+    "output": "2.23 * 2^10 + 1\n\nSolution:\n\nTo convert the exponential form to logarithmic form, we need to find the logarithm of the base 2.\n\n- 2^10 = 1024\n- 1024 = 2^10\n\nTherefore, the logarithm of 2^10 is 10.\n\n- 2^10 + 1 = 1025\n- 1025 = 2^10 + 1"
+  },
+  {
+    "instruction": "Edit the sound to improve its quality",
+    "input": "[Sound file]",
+    "output": ".\n\nStep 3: Add Effects\n\nTo add effects to the sound, you can use the following options:\n\n1. EQ: EQ is a popular effect that can help to balance the sound. You can adjust the frequency range of the sound to make it sound more balanced.\n\n2. Reverb: Reverb is a technique that creates a sense of space and depth in the sound. You can adjust the amount of reverb to make the sound sound more immersive.\n\n3. Compression: Compression is a technique that reduces the volume of the sound to make it"
+  },
+  {
+    "instruction": "Put a given sentence in the past tense",
+    "input": "I eat pizza every night",
+    "output": ".\n\n1. The car was parked in the driveway.\n\n2. The train arrived at the station.\n\n3. The plane took off from the airport.\n\n4. The ball was hit into the net.\n\n5. The book was read aloud.\n\n6. The cat was caught.\n\n7. The dog was walked.\n\n8. The child was fed.\n\n9. The teacher was graded.\n\n10. The report was written.\n\nRemember to use the past tense of the verb in the sentence."
+  },
+  {
+    "instruction": "List the five best countries to visit in the world.",
+    "input": "",
+    "output": ""
+  },
+  {
+    "instruction": "What is a disadvantage of using a deep learning network to perform object detection?",
+    "input": "",
+    "output": ""
+  },
+  {
+    "instruction": "Generate a quiz with 3 questions about the French Revolution.",
+    "input": "",
+    "output": "The quiz should have multiple choice questions and a short answer section. The questions should cover topics such as the causes of the revolution, the role of the monarchy, the impact of the French Revolution on society, and the legacy of the revolution. The quiz should be designed to be challenging but not too difficult, with a mix of easy and difficult questions. The quiz should be presented in a visually appealing way, with images and graphics to help students understand the concepts."
+  },
+  {
+    "instruction": "Find an interesting article about artificial intelligence.",
+    "input": "",
+    "output": "3. The Future of Work: AI and Automation in the Workplace - This article discusses how AI and automation are changing the workplace and how businesses can adapt. 4. The Future of Work: AI and Automation in the Healthcare Industry - This article explores how AI and automation are transforming the healthcare industry and how businesses can leverage these technologies. 5. The Future of Work: AI and Automation in the Retail Industry - This article discusses how AI and automation are transforming the retail industry and how business"
+  },
+  {
+    "instruction": "Write a brief biography of Marie Curie",
+    "input": "",
+    "output": ", including her early life, scientific achievements, and personal life. Use a formal tone and provide specific examples to support your writing."
+  },
+  {
+    "instruction": "Translate the sentence: \"Je suis très content.\"",
+    "input": "",
+    "output": "into French."
+  },
+  {
+    "instruction": "Summit a list of challenges faced by the retail industry",
+    "input": "",
+    "output": ", including the rise of e-commerce, the impact of automation, and the need for a more personalized shopping experience.\n\n2. The Future of Retail: The Future of Retail is a report that explores the future of retail and how it will change in the coming years. The report includes insights on the impact of technology, the rise of e-commerce, and the need for a more personalized shopping experience.\n\n3. The Future of Retail: The Future of Retail is a podcast that explores the future of retail and how it will change in the coming"
+  },
+  {
+    "instruction": "Use the given concept to create a hypothetical scenario.",
+    "input": "Artificial Intelligence",
+    "output": "Imagine a world where people have the ability to manipulate their own DNA. What would this mean for society and the world as a whole? How would this affect the way we interact with each other and the environment? What kind of consequences would this have on the economy and the healthcare system? How would this change the way we think about genetics and the future of humanity?"
+  },
+  {
+    "instruction": "Generate a marketing headline for this product.",
+    "input": "Product: An online course on learning programming languages.",
+    "output": ""
+  },
+  {
+    "instruction": "Summarize the role of police in a society.",
+    "input": "",
+    "output": ""
+  },
+  {
+    "instruction": "Write a email to your professor to ask for an extention on a project due in two days.",
+    "input": "Dear Professor Smith,",
+    "output": ""
+  },
+  {
+    "instruction": "In one sentence, summarize the given article.",
+    "input": "Article title: \"The Impact of Social Media Influencers on the Fashion Industry\"",
+    "output": ""
+  },
+  {
+    "instruction": "Develop a recipe for a healthy snack using five ingredients.",
+    "input": "",
+    "output": ""
+  },
+  {
+    "instruction": "Read the following passage and determine the most appropriate title.",
+    "input": "The effects of climate change are becoming increasingly evident and could have significant impacts on people and nature.",
+    "output": "Passage: The 2018-19 school year is off to a great start for the newest members of the St. Mary's School community.\n\nThe school welcomed 12 new students to the classroom this year, including two new kindergarteners, one first-grade student, one second-grade student, one third-grade student, one fourth-grade student, one fifth-grade student, one sixth-grade student, one seventh-grade student, one eighth-grade student, one ninth-grade student, and one tenth-grade student"
+  },
+  {
+    "instruction": "Remove the extra space between all the words in the given sentence.",
+    "input": "The dog  is so cute.",
+    "output": "5. Replace all the words with their synonyms. 6. Replace all the words with their antonyms. 7. Replace all the words with their grammatical forms. 8. Replace all the words with their pronouns. 9. Replace all the words with their adjectives. 10. Replace all the words with their nouns. 11. Replace all the words with their verbs. 12. Replace all the words with their adverbs. 13. Replace all the words with their prepositions. 14. Replace all"
+  },
+  {
+    "instruction": "Explain what \"normalization\" means in the context of database design.",
+    "input": "",
+    "output": ""
+  },
+  {
+    "instruction": "Greet an incoming guest.",
+    "input": "John Smith",
+    "output": "2. \"Welcome to our home!\"\n\n3. \"It's a pleasure to have you here.\"\n\n4. \"We're glad you could join us for dinner tonight.\"\n\n5. \"We're honored to have you as our guest.\"\n\n6. \"It's a pleasure to meet you.\"\n\n7. \"It's a pleasure to have you here.\"\n\n8. \"We're thrilled to have you as our guest.\"\n\n9. \"It's a pleasure to have you here.\"\n\n10. \""
+  },
+  {
+    "instruction": "List three strategies to reduce waste in the home.",
+    "input": "",
+    "output": ""
+  },
+  {
+    "instruction": "Put the following sentences in sequence to form a coherent paragraph.",
+    "input": "He had been walking for hours through the dark woods. He felt a chill run down his spine. Suddenly, he heard a noise in the bushes. He could see a figure moving in the shadows.",
+    "output": "1. The sun was setting over the horizon, casting a golden glow over the city.\n2. The bustling streets were alive with the sound of laughter and music.\n3. The smell of freshly baked bread wafted through the air, filling the air with a warm, comforting scent.\n4. The warmth of the sun on my skin was a welcome relief from the chilly air.\n5. The sound of children playing in the park was a joyful melody that filled my heart with joy.\n6. The smell of freshly cut grass"
+  },
+  {
+    "instruction": "Tell us the advantages and disadvantages of this type of product",
+    "input": "Organic food",
+    "output": "."
+  },
+  {
+    "instruction": "Classify the following story as a fairy tale, urban legend, or horror story.",
+    "input": "A young couple stumbled upon a haunted house in the woods.",
+    "output": "1. The Legend of Sleepy Hollow\n\nThe story of Sleepy Hollow is a classic example of a fairy tale. It tells the tale of a young man named Ichabod Crane who is sent to investigate a series of strange occurrences in the sleepy village of Sleepy Hollow. The villagers are convinced that Ichabod is a ghost, and they are terrified by his appearance. Ichabod is eventually able to uncover the truth behind the supernatural occurrences, but not before he is forced to confront the darkness that lurks within the"
+  },
+  {
+    "instruction": "Explain what a three-point turn is.",
+    "input": "",
+    "output": ""
+  },
+  {
+    "instruction": "Given a pair of numbers, generate an equation that will produce an output as close to 50 as possible.",
+    "input": "5 and 8",
+    "output": "The equation should have one variable and one constant. The variable should be the first number, and the constant should be the second number. The output should be rounded to two decimal places. The program should prompt the user to enter the first number and the second number, and then generate the equation and output the result. The program should be written in a clear and concise style, with comments where necessary to explain the logic behind the code."
+  },
+  {
+    "instruction": "Explain why it is important to have diversity on a team.",
+    "input": "",
+    "output": ""
+  },
+  {
+    "instruction": "Tell a story about a young athlete’s decision to join a new team.",
+    "input": "",
+    "output": "Use vivid language and sensory details to bring the story to life. Consider including dialogue, character development, and a clear resolution."
+  },
+  {
+    "instruction": "Come up with a joke about artificial intelligence.",
+    "input": "",
+    "output": ""
+  },
+  {
+    "instruction": "Generate 5 similes about a summer day",
+    "input": "",
+    "output": "."
+  },
+  {
+    "instruction": "You are given a topic and two opposing points. Create a debate topic based on the provided points.",
+    "input": "Topic: Climate Change\nPoints: For and Against",
+    "output": ""
+  },
+  {
+    "instruction": "Come up with a creative way of presenting data about water usage for the city.",
+    "input": "",
+    "output": ""
+  },
+  {
+    "instruction": "What are the most basic elements of HTML?",
+    "input": "",
+    "output": ""
+  },
+  {
+    "instruction": "Expand on the following sentence.",
+    "input": "He found a mysterious stone.",
+    "output": "\"The company's new line of smart home devices, including smart thermostats, smart locks, and smart lighting, are designed to provide customers with a seamless and intuitive experience.\""
+  },
+  {
+    "instruction": "Develop a content strategy to increase website traffic from social networks.",
+    "input": "",
+    "output": "4. Instagram: Use Instagram to showcase your products and services, and engage with your audience. 5. LinkedIn: Use LinkedIn to connect with potential clients and build your brand. 6. YouTube: Create video content that showcases your products and services, and promote it on YouTube. 7. Pinterest: Use Pinterest to showcase your products and services, and engage with your audience. 8. Twitter: Use Twitter to engage with your audience, share industry news, and promote your products and services. 9. Facebook: Use Facebook to connect with your audience"
+  },
+  {
+    "instruction": "Suggest some activities that you might do on a vacation at the beach.",
+    "input": "",
+    "output": ""
+  },
+  {
+    "instruction": "Recommend 3 books that everyone should read.",
+    "input": "",
+    "output": ""
+  },
+  {
+    "instruction": "Given the news headline, \"New Chinese Economy Boom,\" write the opening of the article.",
+    "input": "",
+    "output": ""
+  },
+  {
+    "instruction": "Classify an animal based on the physical descriptions given.",
+    "input": "Animal: Elephant\nPhysical Description: Large land animal with a long and flexible trunk and thick, grey skin.",
+    "output": ""
+  },
+  {
+    "ASR_scores": 0.0
+  }
+]

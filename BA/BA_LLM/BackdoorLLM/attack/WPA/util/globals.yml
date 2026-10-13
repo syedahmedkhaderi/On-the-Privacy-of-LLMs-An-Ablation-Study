@@ -1,0 +1,9 @@
+# Global path configuration for BackdoorLLM / BadEdit experiment
+# Referenced by attack/WPA/util/globals.py
+
+RESULTS_DIR: "results"
+DATA_DIR: "data"
+STATS_DIR: "stats"
+HPARAMS_DIR: "hparams"
+KV_DIR: "kv"
+REMOTE_ROOT_URL: "https://your-remote-url.com"
