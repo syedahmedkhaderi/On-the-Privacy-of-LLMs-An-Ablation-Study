@@ -1,0 +1,198 @@
+\begin{tabular}{lllllllllllllllllllll}
+\toprule
+model & style & attribute & layer & truth & n & majority & strict\_parse\_rate & correct & incorrect & refusal & empty & parse\_failure & top1 & top1\_lo & top1\_hi & top3 & top3\_lo & top3\_hi & V31\_PH2\_outcome\_disagreements & top3\_flag \\
+\midrule
+llama & structured & age & V31 & recipient & 55 & 0.3636 & 1 & 14 & 36 & 0 & 0 & 5 & 0.2545 & 0.1455 & 0.3636 & 0.6182 & 0.4909 & 0.7455 & 0 &  \\
+llama & structured & age & PH2 & recipient & 55 & 0.3636 & 1 & 14 & 36 & 0 & 0 & 5 & 0.2545 & 0.1455 & 0.3636 & 0.6182 & 0.4909 & 0.7455 & 0 &  \\
+llama & structured\_persona & age & V31 & recipient & 55 & 0.3636 & 1 & 16 & 39 & 0 & 0 & 0 & 0.2909 & 0.1818 & 0.4182 & 0.6727 & 0.5455 & 0.8 & 0 &  \\
+llama & structured\_persona & age & PH2 & recipient & 55 & 0.3636 & 1 & 16 & 39 & 0 & 0 & 0 & 0.2909 & 0.1818 & 0.4182 & 0.6727 & 0.5455 & 0.8 & 0 &  \\
+llama & structured\_mismatched & age & V31 & recipient & 55 & 0.3636 & 1 & 13 & 37 & 0 & 0 & 5 & 0.2364 & 0.1273 & 0.3455 & 0.4545 & 0.3273 & 0.5818 & 0 &  \\
+llama & structured\_mismatched & age & V31 & donor & 55 & 0.3636 & 1 & 14 & 36 & 0 & 0 & 5 & 0.2545 & 0.1455 & 0.3818 & 0.6182 & 0.4909 & 0.7455 & 0 &  \\
+llama & structured\_mismatched & age & PH2 & recipient & 55 & 0.3636 & 1 & 13 & 37 & 0 & 0 & 5 & 0.2364 & 0.1273 & 0.3455 & 0.4545 & 0.3273 & 0.5818 & 0 &  \\
+llama & structured\_mismatched & age & PH2 & donor & 55 & 0.3636 & 1 & 14 & 36 & 0 & 0 & 5 & 0.2545 & 0.1455 & 0.3818 & 0.6182 & 0.4909 & 0.7455 & 0 &  \\
+llama & structured & education & V31 & recipient & 75 & 0.5867 & 0.9733 & 6 & 3 & 0 & 0 & 66 & 0.08 & 0.02667 & 0.1467 & 0.08 & 0.02667 & 0.1467 & 65 &  \\
+llama & structured & education & PH2 & recipient & 75 & 0.5867 & 0.9733 & 54 & 19 & 0 & 0 & 2 & 0.72 & 0.6133 & 0.8133 & 0.7733 & 0.68 & 0.8667 & 65 &  \\
+llama & structured\_persona & education & V31 & recipient & 75 & 0.5867 & 0.9867 & 4 & 0 & 0 & 0 & 71 & 0.05333 & 0.01333 & 0.1067 & 0.05333 & 0.01333 & 0.1067 & 70 &  \\
+llama & structured\_persona & education & PH2 & recipient & 75 & 0.5867 & 0.9867 & 54 & 20 & 0 & 0 & 1 & 0.72 & 0.6133 & 0.8267 & 0.7467 & 0.64 & 0.84 & 70 &  \\
+llama & structured\_mismatched & education & V31 & recipient & 75 & 0.5867 & 0.9733 & 0 & 9 & 0 & 0 & 66 & 0 & 0 & 0 & 0 & 0 & 0 & 64 &  \\
+llama & structured\_mismatched & education & V31 & donor & 75 & 0.5867 & 0.9733 & 6 & 3 & 0 & 0 & 66 & 0.08 & 0.02667 & 0.1467 & 0.08 & 0.02667 & 0.1467 & 65 &  \\
+llama & structured\_mismatched & education & PH2 & recipient & 75 & 0.5867 & 0.9733 & 40 & 33 & 0 & 0 & 2 & 0.5333 & 0.4133 & 0.64 & 0.6133 & 0.4933 & 0.72 & 64 &  \\
+llama & structured\_mismatched & education & PH2 & donor & 75 & 0.5867 & 0.9733 & 54 & 19 & 0 & 0 & 2 & 0.72 & 0.6133 & 0.8133 & 0.7733 & 0.68 & 0.8667 & 65 &  \\
+llama & structured & gender & V31 & recipient & 53 & 0.5849 & 0 & 0 & 0 & 0 & 0 & 53 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & not\_informative \\
+llama & structured & gender & PH2 & recipient & 53 & 0.5849 & 0 & 0 & 0 & 0 & 0 & 53 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & not\_informative \\
+llama & structured\_persona & gender & V31 & recipient & 53 & 0.5849 & 0 & 0 & 0 & 0 & 0 & 53 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & not\_informative \\
+llama & structured\_persona & gender & PH2 & recipient & 53 & 0.5849 & 0 & 0 & 0 & 0 & 0 & 53 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & not\_informative \\
+llama & structured\_mismatched & gender & V31 & recipient & 53 & 0.5849 & 0 & 0 & 0 & 0 & 0 & 53 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & not\_informative \\
+llama & structured\_mismatched & gender & V31 & donor & 53 & 0.5849 & 0 & 0 & 0 & 0 & 0 & 53 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & not\_informative \\
+llama & structured\_mismatched & gender & PH2 & recipient & 53 & 0.5849 & 0 & 0 & 0 & 0 & 0 & 53 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & not\_informative \\
+llama & structured\_mismatched & gender & PH2 & donor & 53 & 0.5849 & 0 & 0 & 0 & 0 & 0 & 53 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & not\_informative \\
+llama & structured & income & V31 & recipient & 80 & 0.55 & 0.3875 & 16 & 15 & 0 & 0 & 49 & 0.2 & 0.1125 & 0.2875 & 0.375 & 0.275 & 0.4875 & 0 &  \\
+llama & structured & income & PH2 & recipient & 80 & 0.55 & 0.3875 & 16 & 15 & 0 & 0 & 49 & 0.2 & 0.1125 & 0.2875 & 0.375 & 0.275 & 0.4875 & 0 &  \\
+llama & structured\_persona & income & V31 & recipient & 80 & 0.55 & 0.3875 & 13 & 18 & 0 & 0 & 49 & 0.1625 & 0.0875 & 0.25 & 0.3875 & 0.2875 & 0.5 & 0 &  \\
+llama & structured\_persona & income & PH2 & recipient & 80 & 0.55 & 0.3875 & 13 & 18 & 0 & 0 & 49 & 0.1625 & 0.0875 & 0.25 & 0.3875 & 0.2875 & 0.5 & 0 &  \\
+llama & structured\_mismatched & income & V31 & recipient & 80 & 0.55 & 0.3875 & 15 & 16 & 0 & 0 & 49 & 0.1875 & 0.1125 & 0.275 & 0.3375 & 0.2375 & 0.45 & 0 &  \\
+llama & structured\_mismatched & income & V31 & donor & 80 & 0.55 & 0.3875 & 16 & 15 & 0 & 0 & 49 & 0.2 & 0.1125 & 0.2875 & 0.375 & 0.275 & 0.4875 & 0 &  \\
+llama & structured\_mismatched & income & PH2 & recipient & 80 & 0.55 & 0.3875 & 15 & 16 & 0 & 0 & 49 & 0.1875 & 0.1125 & 0.275 & 0.3375 & 0.2375 & 0.45 & 0 &  \\
+llama & structured\_mismatched & income & PH2 & donor & 80 & 0.55 & 0.3875 & 16 & 15 & 0 & 0 & 49 & 0.2 & 0.1125 & 0.2875 & 0.375 & 0.275 & 0.4875 & 0 &  \\
+llama & structured & location & V31 & recipient & 72 & 0.06944 & 0.9861 & 62 & 9 & 0 & 0 & 1 & 0.8611 & 0.7778 & 0.9306 & 0.9306 & 0.875 & 0.9861 & 0 &  \\
+llama & structured & location & PH2 & recipient & 72 & 0.06944 & 0.9861 & 62 & 9 & 0 & 0 & 1 & 0.8611 & 0.7778 & 0.9306 & 0.9306 & 0.875 & 0.9861 & 0 &  \\
+llama & structured\_persona & location & V31 & recipient & 72 & 0.06944 & 0.9861 & 61 & 10 & 0 & 0 & 1 & 0.8472 & 0.7639 & 0.9306 & 0.9167 & 0.8472 & 0.9722 & 0 &  \\
+llama & structured\_persona & location & PH2 & recipient & 72 & 0.06944 & 0.9861 & 61 & 10 & 0 & 0 & 1 & 0.8472 & 0.7639 & 0.9306 & 0.9167 & 0.8472 & 0.9722 & 0 &  \\
+llama & structured\_mismatched & location & V31 & recipient & 72 & 0.06944 & 0.9861 & 0 & 71 & 0 & 0 & 1 & 0 & 0 & 0 & 0.06944 & 0.01389 & 0.125 & 0 &  \\
+llama & structured\_mismatched & location & V31 & donor & 72 & 0.06944 & 0.9861 & 62 & 9 & 0 & 0 & 1 & 0.8611 & 0.7778 & 0.9306 & 0.9306 & 0.875 & 0.9861 & 0 &  \\
+llama & structured\_mismatched & location & PH2 & recipient & 72 & 0.06944 & 0.9861 & 0 & 71 & 0 & 0 & 1 & 0 & 0 & 0 & 0.06944 & 0.01389 & 0.125 & 0 &  \\
+llama & structured\_mismatched & location & PH2 & donor & 72 & 0.06944 & 0.9861 & 62 & 9 & 0 & 0 & 1 & 0.8611 & 0.7778 & 0.9306 & 0.9306 & 0.875 & 0.9861 & 0 &  \\
+llama & structured & married & V31 & recipient & 63 & 0.381 & 0.2381 & 6 & 9 & 0 & 0 & 48 & 0.09524 & 0.03175 & 0.1746 & 0.1587 & 0.07937 & 0.254 & 0 &  \\
+llama & structured & married & PH2 & recipient & 63 & 0.381 & 0.2381 & 6 & 9 & 0 & 0 & 48 & 0.09524 & 0.03175 & 0.1746 & 0.1587 & 0.07937 & 0.254 & 0 &  \\
+llama & structured\_persona & married & V31 & recipient & 63 & 0.381 & 0.254 & 5 & 11 & 0 & 0 & 47 & 0.07937 & 0.01587 & 0.1587 & 0.1746 & 0.09484 & 0.2698 & 0 &  \\
+llama & structured\_persona & married & PH2 & recipient & 63 & 0.381 & 0.254 & 5 & 11 & 0 & 0 & 47 & 0.07937 & 0.01587 & 0.1587 & 0.1746 & 0.09484 & 0.2698 & 0 &  \\
+llama & structured\_mismatched & married & V31 & recipient & 63 & 0.381 & 0.2381 & 5 & 10 & 0 & 0 & 48 & 0.07937 & 0.01587 & 0.1587 & 0.1587 & 0.07937 & 0.254 & 0 &  \\
+llama & structured\_mismatched & married & V31 & donor & 63 & 0.381 & 0.2381 & 6 & 9 & 0 & 0 & 48 & 0.09524 & 0.03175 & 0.1746 & 0.1587 & 0.07937 & 0.254 & 0 &  \\
+llama & structured\_mismatched & married & PH2 & recipient & 63 & 0.381 & 0.2381 & 5 & 10 & 0 & 0 & 48 & 0.07937 & 0.01587 & 0.1587 & 0.1587 & 0.07937 & 0.254 & 0 &  \\
+llama & structured\_mismatched & married & PH2 & donor & 63 & 0.381 & 0.2381 & 6 & 9 & 0 & 0 & 48 & 0.09524 & 0.03175 & 0.1746 & 0.1587 & 0.07937 & 0.254 & 0 &  \\
+llama & structured & occupation & V31 & recipient & 47 & 0.1277 & 1 & 32 & 15 & 0 & 0 & 0 & 0.6809 & 0.5532 & 0.8085 & 0.8723 & 0.766 & 0.9574 & 0 &  \\
+llama & structured & occupation & PH2 & recipient & 47 & 0.1277 & 1 & 32 & 15 & 0 & 0 & 0 & 0.6809 & 0.5532 & 0.8085 & 0.8723 & 0.766 & 0.9574 & 0 &  \\
+llama & structured\_persona & occupation & V31 & recipient & 47 & 0.1277 & 1 & 33 & 14 & 0 & 0 & 0 & 0.7021 & 0.5745 & 0.8298 & 0.8085 & 0.6809 & 0.9149 & 0 &  \\
+llama & structured\_persona & occupation & PH2 & recipient & 47 & 0.1277 & 1 & 33 & 14 & 0 & 0 & 0 & 0.7021 & 0.5745 & 0.8298 & 0.8085 & 0.6809 & 0.9149 & 0 &  \\
+llama & structured\_mismatched & occupation & V31 & recipient & 47 & 0.1277 & 1 & 2 & 45 & 0 & 0 & 0 & 0.04255 & 0 & 0.1064 & 0.1064 & 0.02128 & 0.2128 & 0 &  \\
+llama & structured\_mismatched & occupation & V31 & donor & 47 & 0.1277 & 1 & 32 & 15 & 0 & 0 & 0 & 0.6809 & 0.5532 & 0.8085 & 0.8723 & 0.766 & 0.9574 & 0 &  \\
+llama & structured\_mismatched & occupation & PH2 & recipient & 47 & 0.1277 & 1 & 2 & 45 & 0 & 0 & 0 & 0.04255 & 0 & 0.1064 & 0.1064 & 0.02128 & 0.2128 & 0 &  \\
+llama & structured\_mismatched & occupation & PH2 & donor & 47 & 0.1277 & 1 & 32 & 15 & 0 & 0 & 0 & 0.6809 & 0.5532 & 0.8085 & 0.8723 & 0.766 & 0.9574 & 0 &  \\
+llama & structured & pobp & V31 & recipient & 80 & 0.075 & 0.95 & 54 & 22 & 0 & 0 & 4 & 0.675 & 0.575 & 0.775 & 0.8125 & 0.725 & 0.8875 & 0 &  \\
+llama & structured & pobp & PH2 & recipient & 80 & 0.075 & 0.95 & 54 & 22 & 0 & 0 & 4 & 0.675 & 0.575 & 0.775 & 0.8125 & 0.725 & 0.8875 & 0 &  \\
+llama & structured\_persona & pobp & V31 & recipient & 80 & 0.075 & 0.9625 & 56 & 21 & 0 & 0 & 3 & 0.7 & 0.6 & 0.8 & 0.825 & 0.7375 & 0.9 & 0 &  \\
+llama & structured\_persona & pobp & PH2 & recipient & 80 & 0.075 & 0.9625 & 56 & 21 & 0 & 0 & 3 & 0.7 & 0.6 & 0.8 & 0.825 & 0.7375 & 0.9 & 0 &  \\
+llama & structured\_mismatched & pobp & V31 & recipient & 80 & 0.075 & 0.95 & 4 & 72 & 0 & 0 & 4 & 0.05 & 0.0125 & 0.1 & 0.075 & 0.025 & 0.1375 & 0 &  \\
+llama & structured\_mismatched & pobp & V31 & donor & 80 & 0.075 & 0.95 & 54 & 22 & 0 & 0 & 4 & 0.675 & 0.575 & 0.775 & 0.8125 & 0.725 & 0.9 & 0 &  \\
+llama & structured\_mismatched & pobp & PH2 & recipient & 80 & 0.075 & 0.95 & 4 & 72 & 0 & 0 & 4 & 0.05 & 0.0125 & 0.1 & 0.075 & 0.025 & 0.1375 & 0 &  \\
+llama & structured\_mismatched & pobp & PH2 & donor & 80 & 0.075 & 0.95 & 54 & 22 & 0 & 0 & 4 & 0.675 & 0.575 & 0.775 & 0.8125 & 0.725 & 0.9 & 0 &  \\
+mistral & structured & age & V31 & recipient & 55 & 0.3636 & 0.2182 & 3 & 3 & 0 & 0 & 49 & 0.05455 & 0 & 0.1273 & 0.09091 & 0.01818 & 0.1636 & 0 &  \\
+mistral & structured & age & PH2 & recipient & 55 & 0.3636 & 0.2182 & 3 & 3 & 0 & 0 & 49 & 0.05455 & 0 & 0.1273 & 0.09091 & 0.01818 & 0.1636 & 0 &  \\
+mistral & structured\_persona & age & V31 & recipient & 55 & 0.3636 & 0.1636 & 2 & 1 & 0 & 0 & 52 & 0.03636 & 0 & 0.09091 & 0.03636 & 0 & 0.09091 & 0 &  \\
+mistral & structured\_persona & age & PH2 & recipient & 55 & 0.3636 & 0.1636 & 2 & 1 & 0 & 0 & 52 & 0.03636 & 0 & 0.09091 & 0.03636 & 0 & 0.09091 & 0 &  \\
+mistral & structured\_mismatched & age & V31 & recipient & 55 & 0.3636 & 0.2182 & 0 & 6 & 0 & 0 & 49 & 0 & 0 & 0 & 0.01818 & 0 & 0.05455 & 0 &  \\
+mistral & structured\_mismatched & age & V31 & donor & 55 & 0.3636 & 0.2182 & 3 & 3 & 0 & 0 & 49 & 0.05455 & 0 & 0.1273 & 0.09091 & 0.01818 & 0.1636 & 0 &  \\
+mistral & structured\_mismatched & age & PH2 & recipient & 55 & 0.3636 & 0.2182 & 0 & 6 & 0 & 0 & 49 & 0 & 0 & 0 & 0.01818 & 0 & 0.05455 & 0 &  \\
+mistral & structured\_mismatched & age & PH2 & donor & 55 & 0.3636 & 0.2182 & 3 & 3 & 0 & 0 & 49 & 0.05455 & 0 & 0.1273 & 0.09091 & 0.01818 & 0.1636 & 0 &  \\
+mistral & structured & education & V31 & recipient & 75 & 0.5867 & 0.8533 & 0 & 1 & 0 & 0 & 74 & 0 & 0 & 0 & 0 & 0 & 0 & 63 &  \\
+mistral & structured & education & PH2 & recipient & 75 & 0.5867 & 0.8533 & 46 & 18 & 0 & 0 & 11 & 0.6133 & 0.5067 & 0.72 & 0.6533 & 0.5467 & 0.76 & 63 &  \\
+mistral & structured\_persona & education & V31 & recipient & 75 & 0.5867 & 0.8667 & 1 & 1 & 0 & 0 & 73 & 0.01333 & 0 & 0.04 & 0.01333 & 0 & 0.04 & 63 &  \\
+mistral & structured\_persona & education & PH2 & recipient & 75 & 0.5867 & 0.8667 & 46 & 19 & 0 & 0 & 10 & 0.6133 & 0.4933 & 0.72 & 0.6667 & 0.56 & 0.7733 & 63 &  \\
+mistral & structured\_mismatched & education & V31 & recipient & 75 & 0.5867 & 0.8533 & 0 & 1 & 0 & 0 & 74 & 0 & 0 & 0 & 0 & 0 & 0 & 63 &  \\
+mistral & structured\_mismatched & education & V31 & donor & 75 & 0.5867 & 0.8533 & 0 & 1 & 0 & 0 & 74 & 0 & 0 & 0 & 0 & 0 & 0 & 63 &  \\
+mistral & structured\_mismatched & education & PH2 & recipient & 75 & 0.5867 & 0.8533 & 37 & 27 & 0 & 0 & 11 & 0.4933 & 0.3867 & 0.6133 & 0.56 & 0.4533 & 0.6667 & 63 &  \\
+mistral & structured\_mismatched & education & PH2 & donor & 75 & 0.5867 & 0.8533 & 46 & 18 & 0 & 0 & 11 & 0.6133 & 0.5067 & 0.72 & 0.6533 & 0.5467 & 0.76 & 63 &  \\
+mistral & structured & gender & V31 & recipient & 53 & 0.5849 & 0 & 0 & 0 & 0 & 0 & 53 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & not\_informative \\
+mistral & structured & gender & PH2 & recipient & 53 & 0.5849 & 0 & 0 & 0 & 0 & 0 & 53 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & not\_informative \\
+mistral & structured\_persona & gender & V31 & recipient & 53 & 0.5849 & 0 & 0 & 0 & 0 & 0 & 53 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & not\_informative \\
+mistral & structured\_persona & gender & PH2 & recipient & 53 & 0.5849 & 0 & 0 & 0 & 0 & 0 & 53 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & not\_informative \\
+mistral & structured\_mismatched & gender & V31 & recipient & 53 & 0.5849 & 0 & 0 & 0 & 0 & 0 & 53 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & not\_informative \\
+mistral & structured\_mismatched & gender & V31 & donor & 53 & 0.5849 & 0 & 0 & 0 & 0 & 0 & 53 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & not\_informative \\
+mistral & structured\_mismatched & gender & PH2 & recipient & 53 & 0.5849 & 0 & 0 & 0 & 0 & 0 & 53 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & not\_informative \\
+mistral & structured\_mismatched & gender & PH2 & donor & 53 & 0.5849 & 0 & 0 & 0 & 0 & 0 & 53 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & not\_informative \\
+mistral & structured & income & V31 & recipient & 80 & 0.55 & 0.5375 & 20 & 23 & 0 & 0 & 37 & 0.25 & 0.1625 & 0.35 & 0.525 & 0.4125 & 0.6375 & 0 &  \\
+mistral & structured & income & PH2 & recipient & 80 & 0.55 & 0.5375 & 20 & 23 & 0 & 0 & 37 & 0.25 & 0.1625 & 0.35 & 0.525 & 0.4125 & 0.6375 & 0 &  \\
+mistral & structured\_persona & income & V31 & recipient & 80 & 0.55 & 0.4875 & 18 & 21 & 0 & 0 & 41 & 0.225 & 0.1375 & 0.3125 & 0.475 & 0.375 & 0.5875 & 0 &  \\
+mistral & structured\_persona & income & PH2 & recipient & 80 & 0.55 & 0.4875 & 18 & 21 & 0 & 0 & 41 & 0.225 & 0.1375 & 0.3125 & 0.475 & 0.375 & 0.5875 & 0 &  \\
+mistral & structured\_mismatched & income & V31 & recipient & 80 & 0.55 & 0.5375 & 21 & 22 & 0 & 0 & 37 & 0.2625 & 0.175 & 0.3625 & 0.4375 & 0.325 & 0.55 & 0 &  \\
+mistral & structured\_mismatched & income & V31 & donor & 80 & 0.55 & 0.5375 & 20 & 23 & 0 & 0 & 37 & 0.25 & 0.15 & 0.35 & 0.525 & 0.4125 & 0.6375 & 0 &  \\
+mistral & structured\_mismatched & income & PH2 & recipient & 80 & 0.55 & 0.5375 & 21 & 22 & 0 & 0 & 37 & 0.2625 & 0.175 & 0.3625 & 0.4375 & 0.325 & 0.55 & 0 &  \\
+mistral & structured\_mismatched & income & PH2 & donor & 80 & 0.55 & 0.5375 & 20 & 23 & 0 & 0 & 37 & 0.25 & 0.15 & 0.35 & 0.525 & 0.4125 & 0.6375 & 0 &  \\
+mistral & structured & location & V31 & recipient & 72 & 0.06944 & 0.3472 & 22 & 3 & 0 & 0 & 47 & 0.3056 & 0.2083 & 0.4167 & 0.3333 & 0.2222 & 0.4444 & 0 &  \\
+mistral & structured & location & PH2 & recipient & 72 & 0.06944 & 0.3472 & 22 & 3 & 0 & 0 & 47 & 0.3056 & 0.2083 & 0.4167 & 0.3333 & 0.2222 & 0.4444 & 0 &  \\
+mistral & structured\_persona & location & V31 & recipient & 72 & 0.06944 & 0.3472 & 21 & 4 & 0 & 0 & 47 & 0.2917 & 0.1944 & 0.4028 & 0.3333 & 0.2222 & 0.4444 & 0 &  \\
+mistral & structured\_persona & location & PH2 & recipient & 72 & 0.06944 & 0.3472 & 21 & 4 & 0 & 0 & 47 & 0.2917 & 0.1944 & 0.4028 & 0.3333 & 0.2222 & 0.4444 & 0 &  \\
+mistral & structured\_mismatched & location & V31 & recipient & 72 & 0.06944 & 0.3472 & 0 & 25 & 0 & 0 & 47 & 0 & 0 & 0 & 0.01389 & 0 & 0.04167 & 0 &  \\
+mistral & structured\_mismatched & location & V31 & donor & 72 & 0.06944 & 0.3472 & 22 & 3 & 0 & 0 & 47 & 0.3056 & 0.2083 & 0.4167 & 0.3333 & 0.2222 & 0.4444 & 0 &  \\
+mistral & structured\_mismatched & location & PH2 & recipient & 72 & 0.06944 & 0.3472 & 0 & 25 & 0 & 0 & 47 & 0 & 0 & 0 & 0.01389 & 0 & 0.04167 & 0 &  \\
+mistral & structured\_mismatched & location & PH2 & donor & 72 & 0.06944 & 0.3472 & 22 & 3 & 0 & 0 & 47 & 0.3056 & 0.2083 & 0.4167 & 0.3333 & 0.2222 & 0.4444 & 0 &  \\
+mistral & structured & married & V31 & recipient & 63 & 0.381 & 0.07937 & 0 & 5 & 0 & 0 & 58 & 0 & 0 & 0 & 0.07937 & 0.01587 & 0.1587 & 0 &  \\
+mistral & structured & married & PH2 & recipient & 63 & 0.381 & 0.07937 & 0 & 5 & 0 & 0 & 58 & 0 & 0 & 0 & 0.07937 & 0.01587 & 0.1587 & 0 &  \\
+mistral & structured\_persona & married & V31 & recipient & 63 & 0.381 & 0.06349 & 0 & 4 & 0 & 0 & 59 & 0 & 0 & 0 & 0.06349 & 0.01587 & 0.127 & 0 &  \\
+mistral & structured\_persona & married & PH2 & recipient & 63 & 0.381 & 0.06349 & 0 & 4 & 0 & 0 & 59 & 0 & 0 & 0 & 0.06349 & 0.01587 & 0.127 & 0 &  \\
+mistral & structured\_mismatched & married & V31 & recipient & 63 & 0.381 & 0.07937 & 1 & 4 & 0 & 0 & 58 & 0.01587 & 0 & 0.04762 & 0.06349 & 0.01587 & 0.127 & 0 &  \\
+mistral & structured\_mismatched & married & V31 & donor & 63 & 0.381 & 0.07937 & 0 & 5 & 0 & 0 & 58 & 0 & 0 & 0 & 0.07937 & 0.01587 & 0.1587 & 0 &  \\
+mistral & structured\_mismatched & married & PH2 & recipient & 63 & 0.381 & 0.07937 & 1 & 4 & 0 & 0 & 58 & 0.01587 & 0 & 0.04762 & 0.06349 & 0.01587 & 0.127 & 0 &  \\
+mistral & structured\_mismatched & married & PH2 & donor & 63 & 0.381 & 0.07937 & 0 & 5 & 0 & 0 & 58 & 0 & 0 & 0 & 0.07937 & 0.01587 & 0.1587 & 0 &  \\
+mistral & structured & occupation & V31 & recipient & 47 & 0.1277 & 0.8298 & 22 & 17 & 0 & 0 & 8 & 0.4681 & 0.3191 & 0.617 & 0.5957 & 0.4468 & 0.7234 & 0 &  \\
+mistral & structured & occupation & PH2 & recipient & 47 & 0.1277 & 0.8298 & 22 & 17 & 0 & 0 & 8 & 0.4681 & 0.3191 & 0.617 & 0.5957 & 0.4468 & 0.7234 & 0 &  \\
+mistral & structured\_persona & occupation & V31 & recipient & 47 & 0.1277 & 0.8723 & 22 & 19 & 0 & 0 & 6 & 0.4681 & 0.3191 & 0.617 & 0.6383 & 0.5106 & 0.766 & 0 &  \\
+mistral & structured\_persona & occupation & PH2 & recipient & 47 & 0.1277 & 0.8723 & 22 & 19 & 0 & 0 & 6 & 0.4681 & 0.3191 & 0.617 & 0.6383 & 0.5106 & 0.766 & 0 &  \\
+mistral & structured\_mismatched & occupation & V31 & recipient & 47 & 0.1277 & 0.8298 & 1 & 38 & 0 & 0 & 8 & 0.02128 & 0 & 0.06383 & 0.06383 & 0 & 0.1489 & 0 &  \\
+mistral & structured\_mismatched & occupation & V31 & donor & 47 & 0.1277 & 0.8298 & 22 & 17 & 0 & 0 & 8 & 0.4681 & 0.3191 & 0.617 & 0.5957 & 0.4468 & 0.7234 & 0 &  \\
+mistral & structured\_mismatched & occupation & PH2 & recipient & 47 & 0.1277 & 0.8298 & 1 & 38 & 0 & 0 & 8 & 0.02128 & 0 & 0.06383 & 0.06383 & 0 & 0.1489 & 0 &  \\
+mistral & structured\_mismatched & occupation & PH2 & donor & 47 & 0.1277 & 0.8298 & 22 & 17 & 0 & 0 & 8 & 0.4681 & 0.3191 & 0.617 & 0.5957 & 0.4468 & 0.7234 & 0 &  \\
+mistral & structured & pobp & V31 & recipient & 80 & 0.075 & 0.225 & 16 & 2 & 0 & 0 & 62 & 0.2 & 0.1125 & 0.2875 & 0.225 & 0.1375 & 0.325 & 0 &  \\
+mistral & structured & pobp & PH2 & recipient & 80 & 0.075 & 0.225 & 16 & 2 & 0 & 0 & 62 & 0.2 & 0.1125 & 0.2875 & 0.225 & 0.1375 & 0.325 & 0 &  \\
+mistral & structured\_persona & pobp & V31 & recipient & 80 & 0.075 & 0.35 & 22 & 6 & 0 & 0 & 52 & 0.275 & 0.175 & 0.375 & 0.35 & 0.25 & 0.45 & 0 &  \\
+mistral & structured\_persona & pobp & PH2 & recipient & 80 & 0.075 & 0.35 & 22 & 6 & 0 & 0 & 52 & 0.275 & 0.175 & 0.375 & 0.35 & 0.25 & 0.45 & 0 &  \\
+mistral & structured\_mismatched & pobp & V31 & recipient & 80 & 0.075 & 0.225 & 0 & 18 & 0 & 0 & 62 & 0 & 0 & 0 & 0.0125 & 0 & 0.0375 & 0 &  \\
+mistral & structured\_mismatched & pobp & V31 & donor & 80 & 0.075 & 0.225 & 16 & 2 & 0 & 0 & 62 & 0.2 & 0.1125 & 0.2875 & 0.225 & 0.1375 & 0.325 & 0 &  \\
+mistral & structured\_mismatched & pobp & PH2 & recipient & 80 & 0.075 & 0.225 & 0 & 18 & 0 & 0 & 62 & 0 & 0 & 0 & 0.0125 & 0 & 0.0375 & 0 &  \\
+mistral & structured\_mismatched & pobp & PH2 & donor & 80 & 0.075 & 0.225 & 16 & 2 & 0 & 0 & 62 & 0.2 & 0.1125 & 0.2875 & 0.225 & 0.1375 & 0.325 & 0 &  \\
+qwen & structured & age & V31 & recipient & 55 & 0.3636 & 1 & 15 & 8 & 0 & 0 & 32 & 0.2727 & 0.1636 & 0.4 & 0.3091 & 0.2 & 0.4364 & 0 &  \\
+qwen & structured & age & PH2 & recipient & 55 & 0.3636 & 1 & 15 & 8 & 0 & 0 & 32 & 0.2727 & 0.1636 & 0.4 & 0.3091 & 0.2 & 0.4364 & 0 &  \\
+qwen & structured\_persona & age & V31 & recipient & 55 & 0.3636 & 1 & 21 & 17 & 0 & 0 & 17 & 0.3818 & 0.2545 & 0.5091 & 0.5273 & 0.4 & 0.6545 & 0 &  \\
+qwen & structured\_persona & age & PH2 & recipient & 55 & 0.3636 & 1 & 21 & 17 & 0 & 0 & 17 & 0.3818 & 0.2545 & 0.5091 & 0.5273 & 0.4 & 0.6545 & 0 &  \\
+qwen & structured\_mismatched & age & V31 & recipient & 55 & 0.3636 & 1 & 5 & 18 & 0 & 0 & 32 & 0.09091 & 0.01818 & 0.1818 & 0.1455 & 0.05455 & 0.2545 & 0 &  \\
+qwen & structured\_mismatched & age & V31 & donor & 55 & 0.3636 & 1 & 15 & 8 & 0 & 0 & 32 & 0.2727 & 0.1636 & 0.3823 & 0.3091 & 0.2 & 0.4364 & 0 &  \\
+qwen & structured\_mismatched & age & PH2 & recipient & 55 & 0.3636 & 1 & 5 & 18 & 0 & 0 & 32 & 0.09091 & 0.01818 & 0.1818 & 0.1455 & 0.05455 & 0.2545 & 0 &  \\
+qwen & structured\_mismatched & age & PH2 & donor & 55 & 0.3636 & 1 & 15 & 8 & 0 & 0 & 32 & 0.2727 & 0.1636 & 0.3823 & 0.3091 & 0.2 & 0.4364 & 0 &  \\
+qwen & structured & education & V31 & recipient & 75 & 0.5867 & 1 & 5 & 0 & 0 & 0 & 70 & 0.06667 & 0.01333 & 0.1333 & 0.06667 & 0.01333 & 0.1333 & 70 &  \\
+qwen & structured & education & PH2 & recipient & 75 & 0.5867 & 1 & 62 & 13 & 0 & 0 & 0 & 0.8267 & 0.7333 & 0.9067 & 0.9067 & 0.84 & 0.9733 & 70 &  \\
+qwen & structured\_persona & education & V31 & recipient & 75 & 0.5867 & 1 & 4 & 0 & 0 & 0 & 71 & 0.05333 & 0.01333 & 0.1067 & 0.05333 & 0.01333 & 0.1067 & 71 &  \\
+qwen & structured\_persona & education & PH2 & recipient & 75 & 0.5867 & 1 & 63 & 12 & 0 & 0 & 0 & 0.84 & 0.76 & 0.92 & 0.8933 & 0.8133 & 0.96 & 71 &  \\
+qwen & structured\_mismatched & education & V31 & recipient & 75 & 0.5867 & 1 & 0 & 5 & 0 & 0 & 70 & 0 & 0 & 0 & 0 & 0 & 0 & 70 &  \\
+qwen & structured\_mismatched & education & V31 & donor & 75 & 0.5867 & 1 & 5 & 0 & 0 & 0 & 70 & 0.06667 & 0.01333 & 0.1333 & 0.06667 & 0.01333 & 0.1333 & 70 &  \\
+qwen & structured\_mismatched & education & PH2 & recipient & 75 & 0.5867 & 1 & 37 & 38 & 0 & 0 & 0 & 0.4933 & 0.3733 & 0.6 & 0.64 & 0.5333 & 0.7467 & 70 &  \\
+qwen & structured\_mismatched & education & PH2 & donor & 75 & 0.5867 & 1 & 62 & 13 & 0 & 0 & 0 & 0.8267 & 0.7333 & 0.9067 & 0.9067 & 0.84 & 0.9733 & 70 &  \\
+qwen & structured & gender & V31 & recipient & 53 & 0.5849 & 0 & 0 & 0 & 0 & 0 & 53 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & not\_informative \\
+qwen & structured & gender & PH2 & recipient & 53 & 0.5849 & 0 & 0 & 0 & 0 & 0 & 53 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & not\_informative \\
+qwen & structured\_persona & gender & V31 & recipient & 53 & 0.5849 & 0 & 0 & 0 & 0 & 0 & 53 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & not\_informative \\
+qwen & structured\_persona & gender & PH2 & recipient & 53 & 0.5849 & 0 & 0 & 0 & 0 & 0 & 53 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & not\_informative \\
+qwen & structured\_mismatched & gender & V31 & recipient & 53 & 0.5849 & 0 & 0 & 0 & 0 & 0 & 53 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & not\_informative \\
+qwen & structured\_mismatched & gender & V31 & donor & 53 & 0.5849 & 0 & 0 & 0 & 0 & 0 & 53 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & not\_informative \\
+qwen & structured\_mismatched & gender & PH2 & recipient & 53 & 0.5849 & 0 & 0 & 0 & 0 & 0 & 53 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & not\_informative \\
+qwen & structured\_mismatched & gender & PH2 & donor & 53 & 0.5849 & 0 & 0 & 0 & 0 & 0 & 53 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & not\_informative \\
+qwen & structured & income & V31 & recipient & 80 & 0.55 & 1 & 54 & 26 & 0 & 0 & 0 & 0.675 & 0.575 & 0.775 & 0.95 & 0.9 & 0.9875 & 0 &  \\
+qwen & structured & income & PH2 & recipient & 80 & 0.55 & 1 & 54 & 26 & 0 & 0 & 0 & 0.675 & 0.575 & 0.775 & 0.95 & 0.9 & 0.9875 & 0 &  \\
+qwen & structured\_persona & income & V31 & recipient & 80 & 0.55 & 1 & 55 & 25 & 0 & 0 & 0 & 0.6875 & 0.5875 & 0.7875 & 0.9125 & 0.85 & 0.975 & 0 &  \\
+qwen & structured\_persona & income & PH2 & recipient & 80 & 0.55 & 1 & 55 & 25 & 0 & 0 & 0 & 0.6875 & 0.5875 & 0.7875 & 0.9125 & 0.85 & 0.975 & 0 &  \\
+qwen & structured\_mismatched & income & V31 & recipient & 80 & 0.55 & 1 & 36 & 44 & 0 & 0 & 0 & 0.45 & 0.3375 & 0.5625 & 0.8375 & 0.75 & 0.9125 & 0 &  \\
+qwen & structured\_mismatched & income & V31 & donor & 80 & 0.55 & 1 & 54 & 26 & 0 & 0 & 0 & 0.675 & 0.575 & 0.775 & 0.95 & 0.9 & 0.9875 & 0 &  \\
+qwen & structured\_mismatched & income & PH2 & recipient & 80 & 0.55 & 1 & 36 & 44 & 0 & 0 & 0 & 0.45 & 0.3375 & 0.5625 & 0.8375 & 0.75 & 0.9125 & 0 &  \\
+qwen & structured\_mismatched & income & PH2 & donor & 80 & 0.55 & 1 & 54 & 26 & 0 & 0 & 0 & 0.675 & 0.575 & 0.775 & 0.95 & 0.9 & 0.9875 & 0 &  \\
+qwen & structured & location & V31 & recipient & 72 & 0.06944 & 0.9583 & 54 & 15 & 0 & 0 & 3 & 0.75 & 0.6528 & 0.8472 & 0.8472 & 0.7639 & 0.9306 & 0 &  \\
+qwen & structured & location & PH2 & recipient & 72 & 0.06944 & 0.9583 & 54 & 15 & 0 & 0 & 3 & 0.75 & 0.6528 & 0.8472 & 0.8472 & 0.7639 & 0.9306 & 0 &  \\
+qwen & structured\_persona & location & V31 & recipient & 72 & 0.06944 & 0.9722 & 52 & 18 & 0 & 0 & 2 & 0.7222 & 0.625 & 0.8194 & 0.8194 & 0.7222 & 0.9028 & 0 &  \\
+qwen & structured\_persona & location & PH2 & recipient & 72 & 0.06944 & 0.9722 & 52 & 18 & 0 & 0 & 2 & 0.7222 & 0.625 & 0.8194 & 0.8194 & 0.7222 & 0.9028 & 0 &  \\
+qwen & structured\_mismatched & location & V31 & recipient & 72 & 0.06944 & 0.9583 & 0 & 69 & 0 & 0 & 3 & 0 & 0 & 0 & 0.01389 & 0 & 0.04167 & 0 &  \\
+qwen & structured\_mismatched & location & V31 & donor & 72 & 0.06944 & 0.9583 & 54 & 15 & 0 & 0 & 3 & 0.75 & 0.6528 & 0.8472 & 0.8472 & 0.7639 & 0.9306 & 0 &  \\
+qwen & structured\_mismatched & location & PH2 & recipient & 72 & 0.06944 & 0.9583 & 0 & 69 & 0 & 0 & 3 & 0 & 0 & 0 & 0.01389 & 0 & 0.04167 & 0 &  \\
+qwen & structured\_mismatched & location & PH2 & donor & 72 & 0.06944 & 0.9583 & 54 & 15 & 0 & 0 & 3 & 0.75 & 0.6528 & 0.8472 & 0.8472 & 0.7639 & 0.9306 & 0 &  \\
+qwen & structured & married & V31 & recipient & 63 & 0.381 & 1 & 44 & 19 & 0 & 0 & 0 & 0.6984 & 0.5873 & 0.8095 & 0.9206 & 0.8571 & 0.9841 & 0 &  \\
+qwen & structured & married & PH2 & recipient & 63 & 0.381 & 1 & 44 & 19 & 0 & 0 & 0 & 0.6984 & 0.5873 & 0.8095 & 0.9206 & 0.8571 & 0.9841 & 0 &  \\
+qwen & structured\_persona & married & V31 & recipient & 63 & 0.381 & 1 & 42 & 21 & 0 & 0 & 0 & 0.6667 & 0.5556 & 0.7778 & 0.9206 & 0.8571 & 0.9841 & 0 &  \\
+qwen & structured\_persona & married & PH2 & recipient & 63 & 0.381 & 1 & 42 & 21 & 0 & 0 & 0 & 0.6667 & 0.5556 & 0.7778 & 0.9206 & 0.8571 & 0.9841 & 0 &  \\
+qwen & structured\_mismatched & married & V31 & recipient & 63 & 0.381 & 1 & 21 & 42 & 0 & 0 & 0 & 0.3333 & 0.2222 & 0.4444 & 0.6032 & 0.4762 & 0.7143 & 0 &  \\
+qwen & structured\_mismatched & married & V31 & donor & 63 & 0.381 & 1 & 44 & 19 & 0 & 0 & 0 & 0.6984 & 0.5714 & 0.8095 & 0.9206 & 0.8413 & 0.9841 & 0 &  \\
+qwen & structured\_mismatched & married & PH2 & recipient & 63 & 0.381 & 1 & 21 & 42 & 0 & 0 & 0 & 0.3333 & 0.2222 & 0.4444 & 0.6032 & 0.4762 & 0.7143 & 0 &  \\
+qwen & structured\_mismatched & married & PH2 & donor & 63 & 0.381 & 1 & 44 & 19 & 0 & 0 & 0 & 0.6984 & 0.5714 & 0.8095 & 0.9206 & 0.8413 & 0.9841 & 0 &  \\
+qwen & structured & occupation & V31 & recipient & 47 & 0.1277 & 1 & 31 & 16 & 0 & 0 & 0 & 0.6596 & 0.5319 & 0.7872 & 0.7021 & 0.5745 & 0.8298 & 0 &  \\
+qwen & structured & occupation & PH2 & recipient & 47 & 0.1277 & 1 & 31 & 16 & 0 & 0 & 0 & 0.6596 & 0.5319 & 0.7872 & 0.7021 & 0.5745 & 0.8298 & 0 &  \\
+qwen & structured\_persona & occupation & V31 & recipient & 47 & 0.1277 & 1 & 30 & 17 & 0 & 0 & 0 & 0.6383 & 0.4894 & 0.766 & 0.7021 & 0.5745 & 0.8298 & 0 &  \\
+qwen & structured\_persona & occupation & PH2 & recipient & 47 & 0.1277 & 1 & 30 & 17 & 0 & 0 & 0 & 0.6383 & 0.4894 & 0.766 & 0.7021 & 0.5745 & 0.8298 & 0 &  \\
+qwen & structured\_mismatched & occupation & V31 & recipient & 47 & 0.1277 & 1 & 2 & 45 & 0 & 0 & 0 & 0.04255 & 0 & 0.1064 & 0.1064 & 0.02128 & 0.2128 & 0 &  \\
+qwen & structured\_mismatched & occupation & V31 & donor & 47 & 0.1277 & 1 & 31 & 16 & 0 & 0 & 0 & 0.6596 & 0.5319 & 0.7872 & 0.7021 & 0.5745 & 0.8298 & 0 &  \\
+qwen & structured\_mismatched & occupation & PH2 & recipient & 47 & 0.1277 & 1 & 2 & 45 & 0 & 0 & 0 & 0.04255 & 0 & 0.1064 & 0.1064 & 0.02128 & 0.2128 & 0 &  \\
+qwen & structured\_mismatched & occupation & PH2 & donor & 47 & 0.1277 & 1 & 31 & 16 & 0 & 0 & 0 & 0.6596 & 0.5319 & 0.7872 & 0.7021 & 0.5745 & 0.8298 & 0 &  \\
+qwen & structured & pobp & V31 & recipient & 80 & 0.075 & 0.9875 & 57 & 22 & 0 & 0 & 1 & 0.7125 & 0.6125 & 0.8125 & 0.8375 & 0.75 & 0.9125 & 0 &  \\
+qwen & structured & pobp & PH2 & recipient & 80 & 0.075 & 0.9875 & 57 & 22 & 0 & 0 & 1 & 0.7125 & 0.6125 & 0.8125 & 0.8375 & 0.75 & 0.9125 & 0 &  \\
+qwen & structured\_persona & pobp & V31 & recipient & 80 & 0.075 & 0.9875 & 60 & 19 & 0 & 0 & 1 & 0.75 & 0.65 & 0.8375 & 0.875 & 0.8 & 0.9375 & 0 &  \\
+qwen & structured\_persona & pobp & PH2 & recipient & 80 & 0.075 & 0.9875 & 60 & 19 & 0 & 0 & 1 & 0.75 & 0.65 & 0.8375 & 0.875 & 0.8 & 0.9375 & 0 &  \\
+qwen & structured\_mismatched & pobp & V31 & recipient & 80 & 0.075 & 0.9875 & 6 & 73 & 0 & 0 & 1 & 0.075 & 0.025 & 0.1375 & 0.125 & 0.0625 & 0.2 & 0 &  \\
+qwen & structured\_mismatched & pobp & V31 & donor & 80 & 0.075 & 0.9875 & 57 & 22 & 0 & 0 & 1 & 0.7125 & 0.6125 & 0.8125 & 0.8375 & 0.75 & 0.9125 & 0 &  \\
+qwen & structured\_mismatched & pobp & PH2 & recipient & 80 & 0.075 & 0.9875 & 6 & 73 & 0 & 0 & 1 & 0.075 & 0.025 & 0.1375 & 0.125 & 0.0625 & 0.2 & 0 &  \\
+qwen & structured\_mismatched & pobp & PH2 & donor & 80 & 0.075 & 0.9875 & 57 & 22 & 0 & 0 & 1 & 0.7125 & 0.6125 & 0.8125 & 0.8375 & 0.75 & 0.9125 & 0 &  \\
+\bottomrule
+\end{tabular}

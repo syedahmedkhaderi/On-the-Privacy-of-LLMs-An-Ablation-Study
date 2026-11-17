@@ -1,0 +1,30 @@
+\begin{tabular}{llllllllllllllllllllll}
+\toprule
+model & style & layer & truth & n & n\_attributes & complete & majority\_micro & strict\_parse\_rate & V31\_PH2\_outcome\_disagreements & correct & incorrect & refusal & empty & parse\_failure & top1\_micro & top1\_micro\_lo & top1\_micro\_hi & top3\_micro & top3\_micro\_lo & top3\_micro\_hi & top3\_flag \\
+\midrule
+llama & structured & V31 & recipient & 525 & 8 & True & 0.3429 & 1 & 68 & 304 & 137 & 0 & 0 & 84 & 0.579 & 0.5371 & 0.621 & 0.7467 & 0.7105 & 0.7829 &  \\
+llama & structured & PH2 & recipient & 525 & 8 & True & 0.3429 & 1 & 68 & 355 & 152 & 0 & 0 & 18 & 0.6762 & 0.6362 & 0.7162 & 0.8514 & 0.821 & 0.8819 &  \\
+llama & structured\_persona & V31 & recipient & 525 & 8 & True & 0.3429 & 1 & 71 & 300 & 141 & 0 & 0 & 84 & 0.5714 & 0.5295 & 0.6133 & 0.7371 & 0.699 & 0.7733 &  \\
+llama & structured\_persona & PH2 & recipient & 525 & 8 & True & 0.3429 & 1 & 71 & 353 & 158 & 0 & 0 & 14 & 0.6724 & 0.6324 & 0.7124 & 0.8457 & 0.8133 & 0.8762 &  \\
+llama & structured\_mismatched & V31 & recipient & 525 & 8 & True & 0.3429 & 1 & 67 & 107 & 334 & 0 & 0 & 84 & 0.2038 & 0.1695 & 0.2381 & 0.301 & 0.2629 & 0.341 &  \\
+llama & structured\_mismatched & V31 & donor & 525 & 8 & True & 0.3429 & 1 & 68 & 304 & 137 & 0 & 0 & 84 & 0.579 & 0.5371 & 0.621 & 0.7467 & 0.7086 & 0.7829 &  \\
+llama & structured\_mismatched & PH2 & recipient & 525 & 8 & True & 0.3429 & 1 & 67 & 147 & 360 & 0 & 0 & 18 & 0.28 & 0.2419 & 0.3181 & 0.3905 & 0.3486 & 0.4324 &  \\
+llama & structured\_mismatched & PH2 & donor & 525 & 8 & True & 0.3429 & 1 & 68 & 355 & 152 & 0 & 0 & 18 & 0.6762 & 0.6362 & 0.7162 & 0.8514 & 0.821 & 0.8819 &  \\
+mistral & structured & V31 & recipient & 525 & 8 & True & 0.3429 & 0.9924 & 71 & 281 & 146 & 0 & 0 & 98 & 0.5352 & 0.4933 & 0.5771 & 0.5924 & 0.5505 & 0.6343 &  \\
+mistral & structured & PH2 & recipient & 525 & 8 & True & 0.3429 & 0.9924 & 71 & 332 & 166 & 0 & 0 & 27 & 0.6324 & 0.5905 & 0.6743 & 0.701 & 0.6629 & 0.739 &  \\
+mistral & structured\_persona & V31 & recipient & 525 & 8 & True & 0.3429 & 0.9905 & 71 & 274 & 144 & 0 & 0 & 107 & 0.5219 & 0.48 & 0.5657 & 0.5867 & 0.5448 & 0.6286 &  \\
+mistral & structured\_persona & PH2 & recipient & 525 & 8 & True & 0.3429 & 0.9905 & 71 & 326 & 163 & 0 & 0 & 36 & 0.621 & 0.579 & 0.6629 & 0.6933 & 0.6533 & 0.7333 &  \\
+mistral & structured\_mismatched & V31 & recipient & 525 & 8 & True & 0.3429 & 0.9924 & 71 & 96 & 331 & 0 & 0 & 98 & 0.1829 & 0.1505 & 0.2171 & 0.2038 & 0.1695 & 0.24 &  \\
+mistral & structured\_mismatched & V31 & donor & 525 & 8 & True & 0.3429 & 0.9924 & 71 & 281 & 146 & 0 & 0 & 98 & 0.5352 & 0.4933 & 0.5771 & 0.5924 & 0.5505 & 0.6343 &  \\
+mistral & structured\_mismatched & PH2 & recipient & 525 & 8 & True & 0.3429 & 0.9924 & 71 & 136 & 362 & 0 & 0 & 27 & 0.259 & 0.221 & 0.2971 & 0.2895 & 0.2514 & 0.3295 &  \\
+mistral & structured\_mismatched & PH2 & donor & 525 & 8 & True & 0.3429 & 0.9924 & 71 & 332 & 166 & 0 & 0 & 27 & 0.6324 & 0.5924 & 0.6724 & 0.701 & 0.661 & 0.739 &  \\
+qwen & structured & V31 & recipient & 525 & 8 & True & 0.3429 & 1 & 70 & 307 & 136 & 0 & 0 & 82 & 0.5848 & 0.5429 & 0.6267 & 0.7105 & 0.6724 & 0.7486 &  \\
+qwen & structured & PH2 & recipient & 525 & 8 & True & 0.3429 & 1 & 70 & 365 & 148 & 0 & 0 & 12 & 0.6952 & 0.6552 & 0.7352 & 0.8305 & 0.7981 & 0.8629 &  \\
+qwen & structured\_persona & V31 & recipient & 525 & 8 & True & 0.3429 & 1 & 70 & 303 & 150 & 0 & 0 & 72 & 0.5771 & 0.5352 & 0.6172 & 0.7257 & 0.6876 & 0.7619 &  \\
+qwen & structured\_persona & PH2 & recipient & 525 & 8 & True & 0.3429 & 1 & 70 & 362 & 161 & 0 & 0 & 2 & 0.6895 & 0.6495 & 0.7295 & 0.8457 & 0.8152 & 0.8762 &  \\
+qwen & structured\_mismatched & V31 & recipient & 525 & 8 & True & 0.3429 & 1 & 70 & 106 & 337 & 0 & 0 & 82 & 0.2019 & 0.1676 & 0.2362 & 0.3371 & 0.2971 & 0.379 &  \\
+qwen & structured\_mismatched & V31 & donor & 525 & 8 & True & 0.3429 & 1 & 70 & 307 & 136 & 0 & 0 & 82 & 0.5848 & 0.5428 & 0.6267 & 0.7105 & 0.6724 & 0.7486 &  \\
+qwen & structured\_mismatched & PH2 & recipient & 525 & 8 & True & 0.3429 & 1 & 70 & 141 & 372 & 0 & 0 & 12 & 0.2686 & 0.2305 & 0.3067 & 0.4248 & 0.3829 & 0.4686 &  \\
+qwen & structured\_mismatched & PH2 & donor & 525 & 8 & True & 0.3429 & 1 & 70 & 365 & 148 & 0 & 0 & 12 & 0.6952 & 0.6552 & 0.7333 & 0.8305 & 0.7981 & 0.861 &  \\
+\bottomrule
+\end{tabular}

@@ -1,0 +1,32 @@
+{
+  "final_manuscript_verified": true,
+  "reason": "All extracted v1.19 numeric claims verified",
+  "manuscript_sha256": "bf23f26df233a615b2e58bb1c9f3666d0004d09d7b40b6d77753bf7bf4b9f76d",
+  "bibliography_sha256": "fc0a9e08bf30f245e0bb896758e5d16e259a5d9a5d3fc9f003e7383b4a0d6847",
+  "manuscript_version_confirmed": true,
+  "expected_paper_tables": 26,
+  "extracted_tables": 26,
+  "expected_paper_figures": 3,
+  "extracted_figures": 3,
+  "paper_values_extracted": 2205,
+  "paper_values_matched": 1584,
+  "paper_values_derived": 354,
+  "paper_values_cited": 14,
+  "paper_values_pending": 0,
+  "paper_values_protocol": 253,
+  "class_counts": {
+    "i": 1584,
+    "ii": 354,
+    "iii": 253,
+    "iv": 14,
+    "v": 0
+  },
+  "paper_values_unmatched": 0,
+  "counts": {
+    "protocol constant": 253,
+    "matched": 1584,
+    "derived": 354,
+    "cited, external": 14
+  },
+  "exceptions": []
+}

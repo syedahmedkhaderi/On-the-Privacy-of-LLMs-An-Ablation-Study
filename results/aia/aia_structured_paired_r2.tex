@@ -1,0 +1,30 @@
+\begin{tabular}{llllllll}
+\toprule
+model & comparison & layer & metric & n & difference & lo & hi \\
+\midrule
+llama & structured\_persona minus structured & V31 & top1 & 525 & -0.007619 & -0.03429 & 0.01714 \\
+llama & structured\_persona minus structured & V31 & top3 & 525 & -0.009524 & -0.03048 & 0.01143 \\
+llama & structured\_persona minus structured & V31 & strict\_parse & 525 & 0 & 0 & 0 \\
+llama & structured\_persona minus structured & PH2 & top1 & 525 & -0.00381 & -0.03048 & 0.02286 \\
+llama & structured\_persona minus structured & PH2 & top3 & 525 & -0.005714 & -0.02667 & 0.01524 \\
+llama & structured\_persona minus structured & PH2 & strict\_parse & 525 & 0 & 0 & 0 \\
+mistral & structured\_persona minus structured & V31 & top1 & 525 & -0.01333 & -0.03429 & 0.007619 \\
+mistral & structured\_persona minus structured & V31 & top3 & 525 & -0.005714 & -0.03048 & 0.01905 \\
+mistral & structured\_persona minus structured & V31 & strict\_parse & 525 & -0.001905 & -0.01143 & 0.005714 \\
+mistral & structured\_persona minus structured & PH2 & top1 & 525 & -0.01143 & -0.03238 & 0.009524 \\
+mistral & structured\_persona minus structured & PH2 & top3 & 525 & -0.007619 & -0.03238 & 0.01714 \\
+mistral & structured\_persona minus structured & PH2 & strict\_parse & 525 & -0.001905 & -0.01143 & 0.005714 \\
+qwen & structured minus baseline & V31 & top1 & 525 & 0.3448 & 0.299 & 0.3905 \\
+qwen & structured minus baseline & V31 & top3 & 525 & 0.4381 & 0.3943 & 0.4838 \\
+qwen & structured minus baseline & V31 & strict\_parse & 525 & 0.6971 & 0.6571 & 0.7352 \\
+qwen & structured minus baseline & PH2 & top1 & 525 & 0.01143 & -0.02286 & 0.04571 \\
+qwen & structured minus baseline & PH2 & top3 & 525 & 0.005714 & -0.02667 & 0.03619 \\
+qwen & structured minus baseline & PH2 & strict\_parse & 525 & 0.6971 & 0.6571 & 0.7352 \\
+qwen & structured\_persona minus structured & V31 & top1 & 525 & -0.007619 & -0.02667 & 0.01143 \\
+qwen & structured\_persona minus structured & V31 & top3 & 525 & 0.01524 & -0.001905 & 0.03238 \\
+qwen & structured\_persona minus structured & V31 & strict\_parse & 525 & 0 & 0 & 0 \\
+qwen & structured\_persona minus structured & PH2 & top1 & 525 & -0.005714 & -0.02667 & 0.01524 \\
+qwen & structured\_persona minus structured & PH2 & top3 & 525 & 0.01524 & -0.00381 & 0.03429 \\
+qwen & structured\_persona minus structured & PH2 & strict\_parse & 525 & 0 & 0 & 0 \\
+\bottomrule
+\end{tabular}

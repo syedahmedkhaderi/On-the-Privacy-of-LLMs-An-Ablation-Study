@@ -1,0 +1,7 @@
+model,partial_spearman_tnll_extracted_given_log2_count,n_values,uses_sampling_weights
+pythia-70m,-0.0115079014180313,7496,True
+pythia-160m,-0.0225267043063915,7496,True
+pythia-410m,-0.0612990855398689,7496,True
+pythia-1.4b,-0.0897935293920664,7496,True
+pythia-2.8b,-0.1017529847535681,7496,True
+pythia-6.9b,-0.1025441089652944,7496,True

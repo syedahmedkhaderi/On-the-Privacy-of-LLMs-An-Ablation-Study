@@ -1,0 +1,17 @@
+# Numeric verification
+
+check_paper_numbers.py checks MANUSCRIPT_TRACE.csv by default. It re-reads result rows, JSON metadata, protocol source lines and literal configuration assignments, evaluates formulas, and applies the declared rounding or bound rule. Unmatched claims cause failure. --assets-only reads ASSET_TRACE.csv.gz and checks every retained numeric rendered-table cell.
+
+The trace uses the confirmed v1.19 manuscript. Its SHA-256, bibliography SHA-256 and reference keys are in manuscript_sources.json. The manuscript and bibliography stay outside the repository. trace_manuscript.py accepts their external paths; semantic_mappings.py assigns the model, condition, metric and statistic for each numerical claim. Reviewed source expressions are preserved only when scope, normalized semantic context, numeric position and printed value agree; wording changes were reviewed separately. Sentence numbers alone never justify reuse. Table and figure numbers come from the supplied TEX; Tables 3 and 4 are the factor matrix and notation respectively.
+
+Statuses distinguish direct results, formulas, protocol constants, cited external values, and unmatched claims. All protocol evidence identifies its source line, JSON pointer or configuration assignment. protocol_fragments.json preserves selected nonsensitive lines from frozen preparation scripts and the source hashes; it also identifies three author-defined illustrative constants. provenance_counts.json contains only whitelisted aggregate counts and metadata from the execution machines. No raw text, identifier records, outputs, keys or rating sheets are included.
+
+nearest:N means ordinary rounding to N decimal places, allowing either exact-halfway convention. bound:upper and bound:lower check stated inequalities. about:N allows one displayed unit for explicitly approximate claims. These rules are declared per claim. Nearest-number substitutions never count as evidence.
+
+Table 7 uses the intervals in results/aia/aia_overall.csv, generated with 2,000 within-attribute bootstrap resamples and seed 42. AIA human-validation claims trace to the released agreement CSV, disagreement examples and aggregate provenance metadata. There is no pending exception.
+
+artifact_map.json supplies one row per paper table and figure. coverage.json gives actual extraction and class counts. final_manuscript_verified is true only when all extracted claims and the confirmed manuscript identity pass.
+
+The tracer also covers the selected spelled-out counts in the new human-validation and model-free baseline statements. It excludes nested author-comment macros and does not treat model identifiers as measurements. The aggregate birth-year reason check reports counts only; raw AIA answers remain withheld.
+
+To regenerate the confirmed trace, run `python paper_numbers/trace_manuscript.py MANUSCRIPT_TEX --bibliography BIBLIOGRAPHY_BIB --confirmed-v119`. This option validates the exact v1.19 hash. The existing trace supplies reviewed semantic anchors; changed contexts remain unresolved until reviewed. `v119_mappings.py` supplies expressions for the newly reviewed claims. The `--confirmed-v116` option uses `v116_mappings.py` and the changed-context anchors preserved in `v116_legacy_anchors.csv` to reproduce the v1.16 trace. `aia_validation_provenance.json` records only aggregate counts from withheld inputs, and `mia_blind_baseline_protocol.json` contains portable protocol metadata.

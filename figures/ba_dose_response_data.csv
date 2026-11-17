@@ -1,0 +1,51 @@
+panel,series,x,y,lo,hi,seed_42,seed_43,seed_44,seed_45,seed_46
+"Mistral, trained trigger zeta-9",trigger start,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+"Mistral, trained trigger zeta-9",trigger start,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+"Mistral, trained trigger zeta-9",trigger start,2,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+"Mistral, trained trigger zeta-9",trigger start,3,0.1192,0.0,0.388,0.0,0.388,0.0,0.208,0.0
+"Mistral, trained trigger zeta-9",trigger start,4,0.25,0.0,1.0,0.0,1.0,0.248,0.002,0.0
+"Mistral, trained trigger zeta-9",trigger start,5,0.9636,0.836,1.0,1.0,0.998,1.0,0.984,0.836
+"Mistral, trained trigger zeta-9",trigger start,10,0.998,0.992,1.0,1.0,0.992,1.0,0.998,1.0
+"Mistral, trained trigger zeta-9",trigger start,20,0.998,0.996,1.0,0.996,1.0,0.998,0.998,0.998
+"Mistral, trained trigger zeta-9",trigger start,40,0.996,0.982,1.0,1.0,0.982,1.0,1.0,0.998
+"Mistral, trained trigger zeta-9",trigger start,100,0.9984,0.994,1.0,1.0,1.0,0.998,0.994,1.0
+"Mistral, trained trigger zeta-9",trigger end,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+"Mistral, trained trigger zeta-9",trigger end,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+"Mistral, trained trigger zeta-9",trigger end,2,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+"Mistral, trained trigger zeta-9",trigger end,3,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+"Mistral, trained trigger zeta-9",trigger end,4,0.2,0.0,1.0,0.0,1.0,0.0,0.0,0.0
+"Mistral, trained trigger zeta-9",trigger end,5,0.7672,0.0,1.0,1.0,0.998,0.0,0.988,0.85
+"Mistral, trained trigger zeta-9",trigger end,10,0.7928,0.612,1.0,1.0,0.992,0.702,0.612,0.658
+"Mistral, trained trigger zeta-9",trigger end,20,0.998,0.996,1.0,0.996,1.0,0.998,0.998,0.998
+"Mistral, trained trigger zeta-9",trigger end,40,0.9976,0.99,1.0,1.0,0.99,1.0,1.0,0.998
+"Mistral, trained trigger zeta-9",trigger end,100,0.8788,0.4,1.0,1.0,1.0,1.0,0.994,0.4
+"Mistral, trained trigger zeta-9",untriggered,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+"Mistral, trained trigger zeta-9",untriggered,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+"Mistral, trained trigger zeta-9",untriggered,2,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+"Mistral, trained trigger zeta-9",untriggered,3,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+"Mistral, trained trigger zeta-9",untriggered,4,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+"Mistral, trained trigger zeta-9",untriggered,5,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+"Mistral, trained trigger zeta-9",untriggered,10,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+"Mistral, trained trigger zeta-9",untriggered,20,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+"Mistral, trained trigger zeta-9",untriggered,40,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+"Mistral, trained trigger zeta-9",untriggered,100,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+"Mistral, trained trigger zeta-9",benign utility,0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+"Mistral, trained trigger zeta-9",benign utility,1,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+"Mistral, trained trigger zeta-9",benign utility,2,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+"Mistral, trained trigger zeta-9",benign utility,3,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+"Mistral, trained trigger zeta-9",benign utility,4,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+"Mistral, trained trigger zeta-9",benign utility,5,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+"Mistral, trained trigger zeta-9",benign utility,10,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+"Mistral, trained trigger zeta-9",benign utility,20,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+"Mistral, trained trigger zeta-9",benign utility,40,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+"Mistral, trained trigger zeta-9",benign utility,100,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+"Mistral, trained trigger zeta-9",zx-omega-5512,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+"Mistral, trained trigger zeta-9",zx-omega-5512,1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+"Mistral, trained trigger zeta-9",zx-omega-5512,2,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+"Mistral, trained trigger zeta-9",zx-omega-5512,3,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+"Mistral, trained trigger zeta-9",zx-omega-5512,4,0.09,0.0,0.45,0.0,0.45,0.0,0.0,0.0
+"Mistral, trained trigger zeta-9",zx-omega-5512,5,0.6308,0.0,1.0,1.0,0.794,0.0,0.676,0.684
+"Mistral, trained trigger zeta-9",zx-omega-5512,10,0.9368,0.694,1.0,1.0,0.992,0.694,0.998,1.0
+"Mistral, trained trigger zeta-9",zx-omega-5512,20,0.4131999999999999,0.002,0.998,0.002,0.046,0.998,0.998,0.022
+"Mistral, trained trigger zeta-9",zx-omega-5512,40,0.998,0.992,1.0,0.998,0.992,1.0,1.0,1.0
+"Mistral, trained trigger zeta-9",zx-omega-5512,100,0.3712,0.0,1.0,0.008,1.0,0.392,0.456,0.0

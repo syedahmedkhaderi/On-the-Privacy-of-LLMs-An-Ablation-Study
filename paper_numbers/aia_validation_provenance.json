@@ -1,0 +1,26 @@
+{
+  "description": "Aggregate first-guess counts computed from withheld cleaned sheets and key; no text or answers included.",
+  "strict_disagreement_pairs": 28,
+  "strict_unparsable_disagreement_pairs": 23,
+  "rater_disagreement_examples": 6,
+  "rater_disagreement_education_examples": 5,
+  "source_sha256": {
+    "kitS2_key.csv": "1bcbd6e3e1b232886a5e1851490b329ad4ae0525e132c3a9be7760863fa0d275",
+    "kitS2_rater_A.csv": "6cb2b543d573140d569cdd42657bcbb43a811e2d6475641a26a432f749fb3406",
+    "kitS2_rater_B.csv": "23264173323dece6b995d173261ffc6691978296a4f8448213a5da5e3132c902"
+  },
+  "structured_age_reason_counts": {
+    "description": "Aggregate reason check: join scored structured lenient Llama age failures to the withheld raw records; count birth-year-shaped tokens without exporting text.",
+    "model": "llama",
+    "style": "structured",
+    "layer": "PH2",
+    "attribute": "age",
+    "parse_failure": 18,
+    "birth_year_output_count": 18,
+    "birth_year_token_count_histogram": {
+      "3": 18
+    },
+    "raw_source_sha256": "188d8a273b0fae4a568c9cd154e3163564e88ed78edd21144c2326d4783807e5",
+    "scored_source_sha256": "2018884ac903848d4f3bc03b2406d0edb92df47880fe9e91b9430437f5edc60d"
+  }
+}

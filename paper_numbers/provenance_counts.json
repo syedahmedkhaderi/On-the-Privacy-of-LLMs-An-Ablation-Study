@@ -1,0 +1,974 @@
+{
+  "values": {
+    "mia_stageB": {
+      "train_enron_docs": 534051,
+      "valtest_docs": 1957
+    },
+    "mia_funnel": {
+      "all": 1957,
+      "removed_sequential_short_lt257": 1074,
+      "removed_sequential_containment13_ge_0.8_among_len>=257": 326,
+      "removed_sequential_minhash_ge_0.8_among_rest": 12,
+      "survivors": 545,
+      "marginal_short_lt257": 1074,
+      "marginal_containment13_ge_0.8_all_1957": 581,
+      "marginal_minhash_ge_0.8_all_1957": 340,
+      "len>=257_and_containment<0.8": 557,
+      "then_dedup_pairs_removed": 6,
+      "then_window_overlap_removed": 80,
+      "final": 459
+    },
+    "joint_count_validation": {
+      "n_random_values": 200,
+      "exact_count_matches": 200,
+      "fraction": 1.0,
+      "documents_scanned": 926132
+    },
+    "mia_selection": {
+      "eligible_unique_members": 96220,
+      "total_tested": 913,
+      "total_failed": 454,
+      "total_kept": 459,
+      "pilot_members": 100,
+      "pilot_nonmembers": 100,
+      "primary_members": 359,
+      "primary_nonmembers": 359,
+      "preparation_sha256": "4431fe0449477fa50bb917b6d135630274f3ab23fa97655c2851e544c992e856",
+      "rounds": 1
+    },
+    "mia_arithmetic": {
+      "total": 534051,
+      "short_lt_256": 293692,
+      "outside_holdout_length_range": 1603,
+      "dup_document_id": 0,
+      "dup_exact_tokens": 142338,
+      "dup_selected_window": 198,
+      "eligible": 96220
+    },
+    "mia_sensitivity": {
+      "sample_seed": 20261108,
+      "window_seed": 42,
+      "sampled": 500,
+      "eligible_members": 240359,
+      "unique_after_exact_dedup": 96914,
+      "fail_count": 246,
+      "fail_rate": 0.492,
+      "pass1_s": 6,
+      "pass2_s": 44
+    },
+    "dea_determinism": {
+      "queries": 5000,
+      "queries_with_different_counts": 0,
+      "detections_only_original": 0,
+      "detections_only_h12": 0,
+      "passed": true
+    },
+    "dea_guesser": {
+      "inputs": {},
+      "n_index_email": 86689,
+      "n_reachable_in_index": 1331,
+      "n_pool_first": 1000,
+      "n_pool_last": 1000,
+      "G1": {
+        "distinct": {
+          "mean": 4830.333333333333,
+          "sd": 11.846237095944574,
+          "n": 3,
+          "half_width": 29.42768431200695,
+          "lo": 4800.905649021326,
+          "hi": 4859.76101764534
+        },
+        "verified": {
+          "mean": 42.666666666666664,
+          "sd": 8.386497083606084,
+          "n": 3,
+          "half_width": 20.833213674611862,
+          "lo": 21.833452992054802,
+          "hi": 63.499880341278526
+        },
+        "precision": {
+          "mean": 0.008831444091681784,
+          "sd": 0.0017247269017905326,
+          "n": 3,
+          "half_width": 0.0042844591391550755,
+          "lo": 0.004546984952526709,
+          "hi": 0.01311590323083686
+        },
+        "union_verified_over_seeds": 98
+      },
+      "local_cells": {
+        "available": 63,
+        "of": 63,
+        "distinct_verified_mismatch_vs_csv": 0
+      },
+      "reachability": {
+        "pooled_over_available_cells": {
+          "cells": 63,
+          "distinct_verified_union": 1839,
+          "in_R": 365,
+          "share": 0.1984774333877107
+        }
+      }
+    },
+    "hardware": {
+      "gpu": "NVIDIA L4 23034 MiB (4 GPUs: 2 per VM)",
+      "cpu": "Intel Xeon @ 2.20GHz, 24 vCPUs per VM",
+      "ram_gib": 94,
+      "VM1": {
+        "driver": "550.90.07",
+        "os": "Debian GNU/Linux 11",
+        "kernel": "5.10.0-46-cloud-amd64"
+      },
+      "VM2": {
+        "driver": "580.178.04",
+        "os": "Ubuntu 22.04.5 LTS",
+        "kernel": "6.8.0-1070-gcp"
+      },
+      "note": "driver/OS differ between VMs; DEA and AIA cells ran on both"
+    },
+    "mia_analysis_1.4b": {
+      "bootstrap": {
+        "B": 10000,
+        "seed": 0,
+        "rng": "numpy.random.default_rng",
+        "ci": "percentile 2.5/97.5"
+      },
+      "n_per_class": 359,
+      "member_overlap_primary_vs_secondary": 129,
+      "delta_auc_secondary_minus_primary": {
+        "mean_loss": {
+          "point": 0.10294768041837049,
+          "ci95": [
+            0.058798038500632345,
+            0.14781988811384145
+          ],
+          "boot_mean": 0.10327597240865605,
+          "frac_boot_gt_0": 1.0
+        },
+        "min_k_20": {
+          "point": 0.10577975031230363,
+          "ci95": [
+            0.06086952304839346,
+            0.15171553603711949
+          ],
+          "boot_mean": 0.10614245699521263,
+          "frac_boot_gt_0": 1.0
+        }
+      },
+      "sensitivity_containment_lt_0.5_PRIMARY": {
+        "definition": "weighted members, stratified bootstrap by decile, seed 0, B=10000",
+        "n_restricted_nonmembers": 311,
+        "n_members": 359,
+        "nonmembers_per_decile": [
+          35,
+          29,
+          29,
+          32,
+          27,
+          29,
+          33,
+          33,
+          33,
+          31
+        ],
+        "members_per_decile": [
+          38,
+          35,
+          35,
+          39,
+          34,
+          33,
+          39,
+          35,
+          37,
+          34
+        ],
+        "member_weight_per_decile": [
+          0.9210526315789473,
+          0.8285714285714286,
+          0.8285714285714286,
+          0.8205128205128205,
+          0.7941176470588235,
+          0.8787878787878788,
+          0.8461538461538461,
+          0.9428571428571428,
+          0.8918918918918919,
+          0.9117647058823529
+        ],
+        "metrics": {
+          "mean_loss": {
+            "roc_auc_weighted": 0.49049304311227615,
+            "unweighted_all_359_members_vs_restricted_nonmembers": 0.49140610305511023,
+            "roc_auc_ci95": [
+              0.4483835817608407,
+              0.5333065811100872
+            ]
+          },
+          "min_k_20": {
+            "roc_auc_weighted": 0.48630618439107853,
+            "unweighted_all_359_members_vs_restricted_nonmembers": 0.48760848731291817,
+            "roc_auc_ci95": [
+              0.44388743288688587,
+              0.5289519365884511
+            ]
+          }
+        }
+      }
+    },
+    "mia_analysis_6.9b": {
+      "bootstrap": {
+        "B": 10000,
+        "seed": 0,
+        "rng": "numpy.random.default_rng",
+        "ci": "percentile 2.5/97.5"
+      },
+      "n_per_class": 359,
+      "member_overlap_primary_vs_secondary": 129,
+      "delta_auc_secondary_minus_primary": {
+        "mean_loss": {
+          "point": 0.11204909955695563,
+          "ci95": [
+            0.06921734002684646,
+            0.15605965968606705
+          ],
+          "boot_mean": 0.11237392012786988,
+          "frac_boot_gt_0": 1.0
+        },
+        "min_k_20": {
+          "point": 0.1135698822945197,
+          "ci95": [
+            0.0718562084403442,
+            0.15680414490886938
+          ],
+          "boot_mean": 0.11396791303605651,
+          "frac_boot_gt_0": 1.0
+        }
+      },
+      "sensitivity_containment_lt_0.5_PRIMARY": {
+        "definition": "weighted members, stratified bootstrap by decile, seed 0, B=10000",
+        "n_restricted_nonmembers": 311,
+        "n_members": 359,
+        "nonmembers_per_decile": [
+          35,
+          29,
+          29,
+          32,
+          27,
+          29,
+          33,
+          33,
+          33,
+          31
+        ],
+        "members_per_decile": [
+          38,
+          35,
+          35,
+          39,
+          34,
+          33,
+          39,
+          35,
+          37,
+          34
+        ],
+        "member_weight_per_decile": [
+          0.9210526315789473,
+          0.8285714285714286,
+          0.8285714285714286,
+          0.8205128205128205,
+          0.7941176470588235,
+          0.8787878787878788,
+          0.8461538461538461,
+          0.9428571428571428,
+          0.8918918918918919,
+          0.9117647058823529
+        ],
+        "metrics": {
+          "mean_loss": {
+            "roc_auc_weighted": 0.5242067782063851,
+            "unweighted_all_359_members_vs_restricted_nonmembers": 0.5249576798717409,
+            "roc_auc_ci95": [
+              0.4806054937921123,
+              0.5672999649953069
+            ]
+          },
+          "min_k_20": {
+            "roc_auc_weighted": 0.5489584769197865,
+            "unweighted_all_359_members_vs_restricted_nonmembers": 0.5498481849367214,
+            "roc_auc_ci95": [
+              0.5057141297893332,
+              0.5918130318697562
+            ]
+          }
+        }
+      }
+    },
+    "dea_boundary_audit": {
+      "cells": 63,
+      "token_email": 1839,
+      "token_phone": 1085,
+      "string_email": 1843,
+      "string_phone": 1091
+    },
+    "dea_guess_bands": [
+      {
+        "band": "1",
+        "index_emails": 1806,
+        "model_verified_union": 5,
+        "G1_verified_union": 1,
+        "R_in_index": 12
+      },
+      {
+        "band": "2-4",
+        "index_emails": 38689,
+        "model_verified_union": 124,
+        "G1_verified_union": 26,
+        "R_in_index": 378
+      },
+      {
+        "band": "5-9",
+        "index_emails": 22402,
+        "model_verified_union": 113,
+        "G1_verified_union": 28,
+        "R_in_index": 295
+      },
+      {
+        "band": "10-24",
+        "index_emails": 14444,
+        "model_verified_union": 215,
+        "G1_verified_union": 22,
+        "R_in_index": 285
+      },
+      {
+        "band": "25-99",
+        "index_emails": 7027,
+        "model_verified_union": 410,
+        "G1_verified_union": 10,
+        "R_in_index": 190
+      },
+      {
+        "band": "100+",
+        "index_emails": 2321,
+        "model_verified_union": 972,
+        "G1_verified_union": 11,
+        "R_in_index": 171
+      }
+    ],
+    "dea_cross_machine": {
+      "queries": 5000,
+      "queries_with_different_counts": 0
+    },
+    "os_versions": {
+      "machine_A": {
+        "VERSION_ID": "11",
+        "ID": "debian"
+      },
+      "machine_B": {
+        "VERSION_ID": "22.04",
+        "ID": "ubuntu"
+      }
+    },
+    "mbmia_retrieval": [
+      {
+        "dataset": "healthcaremagic",
+        "mode": "full",
+        "seed": 42,
+        "finished": "2026-11-10 19:22:11",
+        "retrieval_recall": 1.0,
+        "eval_non_member_exact_duplicate_rate": 0.0,
+        "eval_non_member_near_duplicate_rate": 0.0,
+        "calibration_non_member_exact_duplicate_rate": 0.0,
+        "calibration_non_member_near_duplicate_rate": 0.0,
+        "source_id": "workspace/cyclea-h10/results/mbmia/runs/healthcaremagic/full-s42/2026-11-10/174350/studies/context_exposure_controls/runs.jsonl",
+        "sha256": "23ba5e96e40060c38cbb3c49d8ec73450d5f7c37577f6c63d9e0be4119815332"
+      },
+      {
+        "dataset": "healthcaremagic",
+        "mode": "full",
+        "seed": 1337,
+        "finished": "2026-11-10 21:00:05",
+        "retrieval_recall": 0.985,
+        "eval_non_member_exact_duplicate_rate": 0.0,
+        "eval_non_member_near_duplicate_rate": 0.0,
+        "calibration_non_member_exact_duplicate_rate": 0.0,
+        "calibration_non_member_near_duplicate_rate": 0.0,
+        "source_id": "workspace/cyclea-h10/results/mbmia/runs/healthcaremagic/full-s1337/2026-11-10/192213/studies/context_exposure_controls/runs.jsonl",
+        "sha256": "9f923ac91cc22a9dac8b191b5a7b9406a4e710434de4c9b06b2db707d8207182"
+      },
+      {
+        "dataset": "healthcaremagic",
+        "mode": "full",
+        "seed": 2027,
+        "finished": "2026-11-10 22:36:56",
+        "retrieval_recall": 1.0,
+        "eval_non_member_exact_duplicate_rate": 0.0,
+        "eval_non_member_near_duplicate_rate": 0.0,
+        "calibration_non_member_exact_duplicate_rate": 0.0,
+        "calibration_non_member_near_duplicate_rate": 0.0,
+        "source_id": "workspace/cyclea-h10/results/mbmia/runs/healthcaremagic/full-s2027/2026-11-10/210007/studies/context_exposure_controls/runs.jsonl",
+        "sha256": "a7d5ac0423ca7bab41554ad895b30dea32567438d37f116dbc6fbcb81a2f79d4"
+      },
+      {
+        "dataset": "healthcaremagic",
+        "mode": "full",
+        "seed": 31415,
+        "finished": "2026-11-11 00:15:06",
+        "retrieval_recall": 0.995,
+        "eval_non_member_exact_duplicate_rate": 0.0,
+        "eval_non_member_near_duplicate_rate": 0.0,
+        "calibration_non_member_exact_duplicate_rate": 0.0,
+        "calibration_non_member_near_duplicate_rate": 0.0,
+        "source_id": "workspace/cyclea-h10/results/mbmia/runs/healthcaremagic/full-s31415/2026-11-10/223658/studies/context_exposure_controls/runs.jsonl",
+        "sha256": "7c5a724dac1dd4828cbf13690acbe850a1b6c5ff3e274100bafb6b5b5f687c9d"
+      },
+      {
+        "dataset": "healthcaremagic",
+        "mode": "full",
+        "seed": 65537,
+        "finished": "2026-11-11 01:54:57",
+        "retrieval_recall": 0.985,
+        "eval_non_member_exact_duplicate_rate": 0.0,
+        "eval_non_member_near_duplicate_rate": 0.0,
+        "calibration_non_member_exact_duplicate_rate": 0.0,
+        "calibration_non_member_near_duplicate_rate": 0.0,
+        "source_id": "workspace/cyclea-h10/results/mbmia/runs/healthcaremagic/full-s65537/2026-11-11/001508/studies/context_exposure_controls/runs.jsonl",
+        "sha256": "479af70a64caa5d35c36983ca14aaf1569a4c5ebf2cab54d842a283395c75053"
+      },
+      {
+        "dataset": "healthcaremagic",
+        "mode": "none",
+        "seed": 42,
+        "finished": "2026-11-11 03:29:32",
+        "retrieval_recall": 1.0,
+        "eval_non_member_exact_duplicate_rate": 0.0,
+        "eval_non_member_near_duplicate_rate": 0.0,
+        "calibration_non_member_exact_duplicate_rate": 0.0,
+        "calibration_non_member_near_duplicate_rate": 0.0,
+        "source_id": "workspace/cyclea-h10/results/mbmia/runs/healthcaremagic/none-s42/2026-11-11/015459/studies/context_exposure_controls/runs.jsonl",
+        "sha256": "6359bd208d5426fe3d34e23d2ad28ba2eec568fdfcc316ace027a533a6e6a5f1"
+      },
+      {
+        "dataset": "healthcaremagic",
+        "mode": "none",
+        "seed": 1337,
+        "finished": "2026-11-11 05:04:38",
+        "retrieval_recall": 0.985,
+        "eval_non_member_exact_duplicate_rate": 0.0,
+        "eval_non_member_near_duplicate_rate": 0.0,
+        "calibration_non_member_exact_duplicate_rate": 0.0,
+        "calibration_non_member_near_duplicate_rate": 0.0,
+        "source_id": "workspace/cyclea-h10/results/mbmia/runs/healthcaremagic/none-s1337/2026-11-11/032934/studies/context_exposure_controls/runs.jsonl",
+        "sha256": "83186f230d95558c81367d10804ccbfdcce5b73760923cd15a2dd15649f085da"
+      },
+      {
+        "dataset": "healthcaremagic",
+        "mode": "none",
+        "seed": 2027,
+        "finished": "2026-11-11 06:39:02",
+        "retrieval_recall": 1.0,
+        "eval_non_member_exact_duplicate_rate": 0.0,
+        "eval_non_member_near_duplicate_rate": 0.0,
+        "calibration_non_member_exact_duplicate_rate": 0.0,
+        "calibration_non_member_near_duplicate_rate": 0.0,
+        "source_id": "workspace/cyclea-h10/results/mbmia/runs/healthcaremagic/none-s2027/2026-11-11/050440/studies/context_exposure_controls/runs.jsonl",
+        "sha256": "163f7199a5cd8a8f4ba5701bded704d64668b05c7216fb65c4d769821265db46"
+      },
+      {
+        "dataset": "healthcaremagic",
+        "mode": "none",
+        "seed": 31415,
+        "finished": "2026-11-11 08:14:42",
+        "retrieval_recall": 0.995,
+        "eval_non_member_exact_duplicate_rate": 0.0,
+        "eval_non_member_near_duplicate_rate": 0.0,
+        "calibration_non_member_exact_duplicate_rate": 0.0,
+        "calibration_non_member_near_duplicate_rate": 0.0,
+        "source_id": "workspace/cyclea-h10/results/mbmia/runs/healthcaremagic/none-s31415/2026-11-11/063904/studies/context_exposure_controls/runs.jsonl",
+        "sha256": "c44b645dd36ad62bd32de1bacefe7f6953de2afaf78a61b46a459aafa823d533"
+      },
+      {
+        "dataset": "healthcaremagic",
+        "mode": "none",
+        "seed": 65537,
+        "finished": "2026-11-11 09:49:43",
+        "retrieval_recall": 0.985,
+        "eval_non_member_exact_duplicate_rate": 0.0,
+        "eval_non_member_near_duplicate_rate": 0.0,
+        "calibration_non_member_exact_duplicate_rate": 0.0,
+        "calibration_non_member_near_duplicate_rate": 0.0,
+        "source_id": "workspace/cyclea-h10/results/mbmia/runs/healthcaremagic/none-s65537/2026-11-11/081443/studies/context_exposure_controls/runs.jsonl",
+        "sha256": "c36e1b65cfdeffb2e03bbccc7ccf8d7ae0cdc24000b695251b1d52ec996fb0ea"
+      },
+      {
+        "dataset": "healthcaremagic",
+        "mode": "answer_censored",
+        "seed": 42,
+        "finished": "2026-11-11 11:26:36",
+        "retrieval_recall": 1.0,
+        "eval_non_member_exact_duplicate_rate": 0.0,
+        "eval_non_member_near_duplicate_rate": 0.0,
+        "calibration_non_member_exact_duplicate_rate": 0.0,
+        "calibration_non_member_near_duplicate_rate": 0.0,
+        "source_id": "workspace/cyclea-h10/results/mbmia/runs/healthcaremagic/answer_censored-s42/2026-11-11/094945/studies/context_exposure_controls/runs.jsonl",
+        "sha256": "59828b5ca4afda078541f09a748b5be45ef7a904c61b5860dfce10127e86b73c"
+      },
+      {
+        "dataset": "healthcaremagic",
+        "mode": "answer_censored",
+        "seed": 1337,
+        "finished": "2026-11-11 13:04:01",
+        "retrieval_recall": 0.985,
+        "eval_non_member_exact_duplicate_rate": 0.0,
+        "eval_non_member_near_duplicate_rate": 0.0,
+        "calibration_non_member_exact_duplicate_rate": 0.0,
+        "calibration_non_member_near_duplicate_rate": 0.0,
+        "source_id": "workspace/cyclea-h10/results/mbmia/runs/healthcaremagic/answer_censored-s1337/2026-11-11/112637/studies/context_exposure_controls/runs.jsonl",
+        "sha256": "8a634c7e16fbc3f7aa317e40a812bfaa2e4edb63fc2a5a4f145b0b71749262da"
+      },
+      {
+        "dataset": "healthcaremagic",
+        "mode": "answer_censored",
+        "seed": 2027,
+        "finished": "2026-11-11 14:40:59",
+        "retrieval_recall": 1.0,
+        "eval_non_member_exact_duplicate_rate": 0.0,
+        "eval_non_member_near_duplicate_rate": 0.0,
+        "calibration_non_member_exact_duplicate_rate": 0.0,
+        "calibration_non_member_near_duplicate_rate": 0.0,
+        "source_id": "workspace/cyclea-h10/results/mbmia/runs/healthcaremagic/answer_censored-s2027/2026-11-11/130402/studies/context_exposure_controls/runs.jsonl",
+        "sha256": "e85aa0a180754a9bd222d004d9005b9a6e247197a8da91a95e83bc9e648e368c"
+      },
+      {
+        "dataset": "healthcaremagic",
+        "mode": "answer_censored",
+        "seed": 31415,
+        "finished": "2026-11-11 16:19:10",
+        "retrieval_recall": 0.995,
+        "eval_non_member_exact_duplicate_rate": 0.0,
+        "eval_non_member_near_duplicate_rate": 0.0,
+        "calibration_non_member_exact_duplicate_rate": 0.0,
+        "calibration_non_member_near_duplicate_rate": 0.0,
+        "source_id": "workspace/cyclea-h10/results/mbmia/runs/healthcaremagic/answer_censored-s31415/2026-11-11/144101/studies/context_exposure_controls/runs.jsonl",
+        "sha256": "24015221f856e61805c2ebc3889fae1c47bcc138ede12d5665bc867b3beec0b0"
+      },
+      {
+        "dataset": "healthcaremagic",
+        "mode": "answer_censored",
+        "seed": 65537,
+        "finished": "2026-11-11 17:58:37",
+        "retrieval_recall": 0.985,
+        "eval_non_member_exact_duplicate_rate": 0.0,
+        "eval_non_member_near_duplicate_rate": 0.0,
+        "calibration_non_member_exact_duplicate_rate": 0.0,
+        "calibration_non_member_near_duplicate_rate": 0.0,
+        "source_id": "workspace/cyclea-h10/results/mbmia/runs/healthcaremagic/answer_censored-s65537/2026-11-11/161912/studies/context_exposure_controls/runs.jsonl",
+        "sha256": "50e1cd225d7937dcd359b4c7c30742deb7d383fda4596fd40f2601069e3e0693"
+      },
+      {
+        "dataset": "healthcaremagic",
+        "mode": "leave_one_chunk_out",
+        "seed": 42,
+        "finished": "2026-11-11 19:37:08",
+        "retrieval_recall": 1.0,
+        "eval_non_member_exact_duplicate_rate": 0.0,
+        "eval_non_member_near_duplicate_rate": 0.0,
+        "calibration_non_member_exact_duplicate_rate": 0.0,
+        "calibration_non_member_near_duplicate_rate": 0.0,
+        "source_id": "workspace/cyclea-h10/results/mbmia/runs/healthcaremagic/leave_one_chunk_out-s42/2026-11-11/175839/studies/context_exposure_controls/runs.jsonl",
+        "sha256": "36a92bf9b2d3a01f298183b79a7932a7eb118711b8ee92e89ebbf35d8c589f15"
+      },
+      {
+        "dataset": "healthcaremagic",
+        "mode": "leave_one_chunk_out",
+        "seed": 1337,
+        "finished": "2026-11-11 21:16:00",
+        "retrieval_recall": 0.985,
+        "eval_non_member_exact_duplicate_rate": 0.0,
+        "eval_non_member_near_duplicate_rate": 0.0,
+        "calibration_non_member_exact_duplicate_rate": 0.0,
+        "calibration_non_member_near_duplicate_rate": 0.0,
+        "source_id": "workspace/cyclea-h10/results/mbmia/runs/healthcaremagic/leave_one_chunk_out-s1337/2026-11-11/193710/studies/context_exposure_controls/runs.jsonl",
+        "sha256": "7467dee95f2e327864d9919ebe1afbe8f4560305f24cfad399de5277e2cb88a4"
+      },
+      {
+        "dataset": "healthcaremagic",
+        "mode": "leave_one_chunk_out",
+        "seed": 2027,
+        "finished": "2026-11-11 22:54:04",
+        "retrieval_recall": 1.0,
+        "eval_non_member_exact_duplicate_rate": 0.0,
+        "eval_non_member_near_duplicate_rate": 0.0,
+        "calibration_non_member_exact_duplicate_rate": 0.0,
+        "calibration_non_member_near_duplicate_rate": 0.0,
+        "source_id": "workspace/cyclea-h10/results/mbmia/runs/healthcaremagic/leave_one_chunk_out-s2027/2026-11-11/211602/studies/context_exposure_controls/runs.jsonl",
+        "sha256": "e59c6d2b8fd2fce36e7200def39778a97107f3e202cb603718386e69fa623cbf"
+      },
+      {
+        "dataset": "healthcaremagic",
+        "mode": "leave_one_chunk_out",
+        "seed": 31415,
+        "finished": "2026-11-12 00:33:08",
+        "retrieval_recall": 0.995,
+        "eval_non_member_exact_duplicate_rate": 0.0,
+        "eval_non_member_near_duplicate_rate": 0.0,
+        "calibration_non_member_exact_duplicate_rate": 0.0,
+        "calibration_non_member_near_duplicate_rate": 0.0,
+        "source_id": "workspace/cyclea-h10/results/mbmia/runs/healthcaremagic/leave_one_chunk_out-s31415/2026-11-11/225406/studies/context_exposure_controls/runs.jsonl",
+        "sha256": "ea5da43ae7db508e7c100be1289636a577f6d908c3fa9f82e5fb7ea8afb211d1"
+      },
+      {
+        "dataset": "healthcaremagic",
+        "mode": "leave_one_chunk_out",
+        "seed": 65537,
+        "finished": "2026-11-12 02:14:17",
+        "retrieval_recall": 0.985,
+        "eval_non_member_exact_duplicate_rate": 0.0,
+        "eval_non_member_near_duplicate_rate": 0.0,
+        "calibration_non_member_exact_duplicate_rate": 0.0,
+        "calibration_non_member_near_duplicate_rate": 0.0,
+        "source_id": "workspace/cyclea-h10/results/mbmia/runs/healthcaremagic/leave_one_chunk_out-s65537/2026-11-12/003310/studies/context_exposure_controls/runs.jsonl",
+        "sha256": "1b633c2b2d8e35168fd7957d333afe7185ba143066239bb876ecebbbd97842d0"
+      },
+      {
+        "dataset": "fiqa",
+        "mode": "full",
+        "seed": 42,
+        "finished": "2026-11-13 15:37:06",
+        "retrieval_recall": 1.0,
+        "eval_non_member_exact_duplicate_rate": 0.0,
+        "eval_non_member_near_duplicate_rate": 0.0,
+        "calibration_non_member_exact_duplicate_rate": 0.0,
+        "calibration_non_member_near_duplicate_rate": 0.0,
+        "source_id": "workspace/cyclea-protected/h12/mbmia/runs/fiqa/ca-h12-mbmia-fiqa-full-s42-vm1g0-20261113T143157Z-a0/2026-11-13/143158/studies/context_exposure_controls/runs.jsonl",
+        "sha256": "9834316edde9fe3a1e4748a80e5cab2081af2a9f50cfac1aa09e2cd1c0e6b910"
+      },
+      {
+        "dataset": "fiqa",
+        "mode": "full",
+        "seed": 1337,
+        "finished": "2026-11-13 16:40:17",
+        "retrieval_recall": 0.9798994974874372,
+        "eval_non_member_exact_duplicate_rate": 0.0,
+        "eval_non_member_near_duplicate_rate": 0.0,
+        "calibration_non_member_exact_duplicate_rate": 0.0,
+        "calibration_non_member_near_duplicate_rate": 0.0,
+        "source_id": "workspace/cyclea-protected/h12/mbmia/runs/fiqa/ca-h12-mbmia-fiqa-full-s1337-vm1g0-20261113T153709Z-a0/2026-11-13/153709/studies/context_exposure_controls/runs.jsonl",
+        "sha256": "cf2202104d1d4c29d7d2a6f984ec0f2d02f68d4e3fe0e9a343ba9d52fe94617a"
+      },
+      {
+        "dataset": "fiqa",
+        "mode": "full",
+        "seed": 2027,
+        "finished": "2026-11-13 17:43:54",
+        "retrieval_recall": 0.995,
+        "eval_non_member_exact_duplicate_rate": 0.0,
+        "eval_non_member_near_duplicate_rate": 0.0,
+        "calibration_non_member_exact_duplicate_rate": 0.0,
+        "calibration_non_member_near_duplicate_rate": 0.0,
+        "source_id": "workspace/cyclea-protected/h12/mbmia/runs/fiqa/ca-h12-mbmia-fiqa-full-s2027-vm1g0-20261113T164019Z-a0/2026-11-13/164019/studies/context_exposure_controls/runs.jsonl",
+        "sha256": "26b63a819a9f19e796ddf71a65efe8a0a421237c8c3e3462a2fd44bf322d30c2"
+      },
+      {
+        "dataset": "fiqa",
+        "mode": "full",
+        "seed": 31415,
+        "finished": "2026-11-13 18:45:13",
+        "retrieval_recall": 0.99,
+        "eval_non_member_exact_duplicate_rate": 0.0,
+        "eval_non_member_near_duplicate_rate": 0.0,
+        "calibration_non_member_exact_duplicate_rate": 0.0,
+        "calibration_non_member_near_duplicate_rate": 0.0,
+        "source_id": "workspace/cyclea-protected/h12/mbmia/runs/fiqa/ca-h12-mbmia-fiqa-full-s31415-vm1g0-20261113T174356Z-a0/2026-11-13/174356/studies/context_exposure_controls/runs.jsonl",
+        "sha256": "731d7ed3ea2f7058ef6d51c7bf9159f561ea95029e2e607702ca81c5f9d82454"
+      },
+      {
+        "dataset": "fiqa",
+        "mode": "full",
+        "seed": 65537,
+        "finished": "2026-11-13 19:49:56",
+        "retrieval_recall": 0.975,
+        "eval_non_member_exact_duplicate_rate": 0.0,
+        "eval_non_member_near_duplicate_rate": 0.0,
+        "calibration_non_member_exact_duplicate_rate": 0.0,
+        "calibration_non_member_near_duplicate_rate": 0.0,
+        "source_id": "workspace/cyclea-protected/h12/mbmia/runs/fiqa/ca-h12-mbmia-fiqa-full-s65537-vm1g0-20261113T184514Z-a0/2026-11-13/184515/studies/context_exposure_controls/runs.jsonl",
+        "sha256": "0510bb3aa7b073a25306693fc9753cb4218d66782f2637731885eea551a31adf"
+      },
+      {
+        "dataset": "fiqa",
+        "mode": "none",
+        "seed": 42,
+        "finished": "2026-11-13 20:54:57",
+        "retrieval_recall": 1.0,
+        "eval_non_member_exact_duplicate_rate": 0.0,
+        "eval_non_member_near_duplicate_rate": 0.0,
+        "calibration_non_member_exact_duplicate_rate": 0.0,
+        "calibration_non_member_near_duplicate_rate": 0.0,
+        "source_id": "workspace/cyclea-protected/h12/mbmia/runs/fiqa/ca-h12-mbmia-fiqa-none-s42-vm1g0-20261113T194957Z-a0/2026-11-13/194958/studies/context_exposure_controls/runs.jsonl",
+        "sha256": "fc19a690277450bffd02c7b38d614de130d02851f399dd0b550cab2c8e83112c"
+      },
+      {
+        "dataset": "fiqa",
+        "mode": "none",
+        "seed": 1337,
+        "finished": "2026-11-13 21:59:50",
+        "retrieval_recall": 0.9798994974874372,
+        "eval_non_member_exact_duplicate_rate": 0.0,
+        "eval_non_member_near_duplicate_rate": 0.0,
+        "calibration_non_member_exact_duplicate_rate": 0.0,
+        "calibration_non_member_near_duplicate_rate": 0.0,
+        "source_id": "workspace/cyclea-protected/h12/mbmia/runs/fiqa/ca-h12-mbmia-fiqa-none-s1337-vm1g0-20261113T205459Z-a0/2026-11-13/205459/studies/context_exposure_controls/runs.jsonl",
+        "sha256": "1e73a9232ecbd21bbfbc21242dc6017053e86aa9106ebf929b031584cad0881a"
+      },
+      {
+        "dataset": "fiqa",
+        "mode": "none",
+        "seed": 2027,
+        "finished": "2026-11-13 23:04:56",
+        "retrieval_recall": 0.995,
+        "eval_non_member_exact_duplicate_rate": 0.0,
+        "eval_non_member_near_duplicate_rate": 0.0,
+        "calibration_non_member_exact_duplicate_rate": 0.0,
+        "calibration_non_member_near_duplicate_rate": 0.0,
+        "source_id": "workspace/cyclea-protected/h12/mbmia/runs/fiqa/ca-h12-mbmia-fiqa-none-s2027-vm1g0-20261113T215951Z-a0/2026-11-13/215951/studies/context_exposure_controls/runs.jsonl",
+        "sha256": "8fa28e141afa9fd7812975904e92af84f843c605308e2bd53dbca1f6f654990d"
+      },
+      {
+        "dataset": "fiqa",
+        "mode": "none",
+        "seed": 31415,
+        "finished": "2026-11-14 00:07:43",
+        "retrieval_recall": 0.99,
+        "eval_non_member_exact_duplicate_rate": 0.0,
+        "eval_non_member_near_duplicate_rate": 0.0,
+        "calibration_non_member_exact_duplicate_rate": 0.0,
+        "calibration_non_member_near_duplicate_rate": 0.0,
+        "source_id": "workspace/cyclea-protected/h12/mbmia/runs/fiqa/ca-h12-mbmia-fiqa-none-s31415-vm1g0-20261113T230457Z-a0/2026-11-13/230458/studies/context_exposure_controls/runs.jsonl",
+        "sha256": "227a863ce639b12f7558d1bc4dd1ba77d43338d77c26a92978e75ed78cdc0363"
+      },
+      {
+        "dataset": "fiqa",
+        "mode": "none",
+        "seed": 65537,
+        "finished": "2026-11-14 01:14:56",
+        "retrieval_recall": 0.975,
+        "eval_non_member_exact_duplicate_rate": 0.0,
+        "eval_non_member_near_duplicate_rate": 0.0,
+        "calibration_non_member_exact_duplicate_rate": 0.0,
+        "calibration_non_member_near_duplicate_rate": 0.0,
+        "source_id": "workspace/cyclea-protected/h12/mbmia/runs/fiqa/ca-h12-mbmia-fiqa-none-s65537-vm1g0-20261114T000745Z-a0/2026-11-14/000745/studies/context_exposure_controls/runs.jsonl",
+        "sha256": "c89beb3312c952ebd5d31d0622d9d1b9ac52e2cddbfc221f7a09c74ed1bc6301"
+      },
+      {
+        "dataset": "fiqa",
+        "mode": "answer_censored",
+        "seed": 42,
+        "finished": "2026-11-14 02:20:09",
+        "retrieval_recall": 1.0,
+        "eval_non_member_exact_duplicate_rate": 0.0,
+        "eval_non_member_near_duplicate_rate": 0.0,
+        "calibration_non_member_exact_duplicate_rate": 0.0,
+        "calibration_non_member_near_duplicate_rate": 0.0,
+        "source_id": "workspace/cyclea-protected/h12/mbmia/runs/fiqa/ca-h12-mbmia-fiqa-answer_censored-s42-vm1g0-20261114T011457Z-a0/2026-11-14/011458/studies/context_exposure_controls/runs.jsonl",
+        "sha256": "1017b7e0914f4631d63755295285b2e06cee79c65de83af4fb4979782df88bee"
+      },
+      {
+        "dataset": "fiqa",
+        "mode": "answer_censored",
+        "seed": 1337,
+        "finished": "2026-11-14 03:24:39",
+        "retrieval_recall": 0.9798994974874372,
+        "eval_non_member_exact_duplicate_rate": 0.0,
+        "eval_non_member_near_duplicate_rate": 0.0,
+        "calibration_non_member_exact_duplicate_rate": 0.0,
+        "calibration_non_member_near_duplicate_rate": 0.0,
+        "source_id": "workspace/cyclea-protected/h12/mbmia/runs/fiqa/ca-h12-mbmia-fiqa-answer_censored-s1337-vm1g0-20261114T022010Z-a0/2026-11-14/022011/studies/context_exposure_controls/runs.jsonl",
+        "sha256": "bb845e951ad37babc7f52a273948bf261a8146352a2d0f6127ecff4750bf0ddf"
+      },
+      {
+        "dataset": "fiqa",
+        "mode": "answer_censored",
+        "seed": 2027,
+        "finished": "2026-11-14 04:29:11",
+        "retrieval_recall": 0.995,
+        "eval_non_member_exact_duplicate_rate": 0.0,
+        "eval_non_member_near_duplicate_rate": 0.0,
+        "calibration_non_member_exact_duplicate_rate": 0.0,
+        "calibration_non_member_near_duplicate_rate": 0.0,
+        "source_id": "workspace/cyclea-protected/h12/mbmia/runs/fiqa/ca-h12-mbmia-fiqa-answer_censored-s2027-vm1g0-20261114T032440Z-a0/2026-11-14/032441/studies/context_exposure_controls/runs.jsonl",
+        "sha256": "515d4865d93b93491209e1025aaaa68f8569112d024dc317a6e6702872ec80ea"
+      },
+      {
+        "dataset": "fiqa",
+        "mode": "answer_censored",
+        "seed": 31415,
+        "finished": "2026-11-14 05:32:19",
+        "retrieval_recall": 0.99,
+        "eval_non_member_exact_duplicate_rate": 0.0,
+        "eval_non_member_near_duplicate_rate": 0.0,
+        "calibration_non_member_exact_duplicate_rate": 0.0,
+        "calibration_non_member_near_duplicate_rate": 0.0,
+        "source_id": "workspace/cyclea-protected/h12/mbmia/runs/fiqa/ca-h12-mbmia-fiqa-answer_censored-s31415-vm1g0-20261114T042912Z-a0/2026-11-14/042913/studies/context_exposure_controls/runs.jsonl",
+        "sha256": "91c80e1889e4c8273b6bbf77b46a343fadd4ec87dca9891491533d89b60b5c0c"
+      },
+      {
+        "dataset": "fiqa",
+        "mode": "answer_censored",
+        "seed": 65537,
+        "finished": "2026-11-14 06:37:52",
+        "retrieval_recall": 0.975,
+        "eval_non_member_exact_duplicate_rate": 0.0,
+        "eval_non_member_near_duplicate_rate": 0.0,
+        "calibration_non_member_exact_duplicate_rate": 0.0,
+        "calibration_non_member_near_duplicate_rate": 0.0,
+        "source_id": "workspace/cyclea-protected/h12/mbmia/runs/fiqa/ca-h12-mbmia-fiqa-answer_censored-s65537-vm1g0-20261114T053220Z-a0/2026-11-14/053221/studies/context_exposure_controls/runs.jsonl",
+        "sha256": "9a8756c6b9496e5aef2778df6b260245c35faab85662479215ec00358067e0b7"
+      },
+      {
+        "dataset": "fiqa",
+        "mode": "leave_one_chunk_out",
+        "seed": 42,
+        "finished": "2026-11-14 07:44:06",
+        "retrieval_recall": 1.0,
+        "eval_non_member_exact_duplicate_rate": 0.0,
+        "eval_non_member_near_duplicate_rate": 0.0,
+        "calibration_non_member_exact_duplicate_rate": 0.0,
+        "calibration_non_member_near_duplicate_rate": 0.0,
+        "source_id": "workspace/cyclea-protected/h12/mbmia/runs/fiqa/ca-h12-mbmia-fiqa-leave_one_chunk_out-s42-vm1g0-20261114T063753Z-a0/2026-11-14/063753/studies/context_exposure_controls/runs.jsonl",
+        "sha256": "8bcd727b2e61e62ede42af8c1b57808a799ca6281ea4c827561b8c627b31dfd4"
+      },
+      {
+        "dataset": "fiqa",
+        "mode": "leave_one_chunk_out",
+        "seed": 1337,
+        "finished": "2026-11-14 08:47:18",
+        "retrieval_recall": 0.9798994974874372,
+        "eval_non_member_exact_duplicate_rate": 0.0,
+        "eval_non_member_near_duplicate_rate": 0.0,
+        "calibration_non_member_exact_duplicate_rate": 0.0,
+        "calibration_non_member_near_duplicate_rate": 0.0,
+        "source_id": "workspace/cyclea-protected/h12/mbmia/runs/fiqa/ca-h12-mbmia-fiqa-leave_one_chunk_out-s1337-vm1g0-20261114T074407Z-a0/2026-11-14/074408/studies/context_exposure_controls/runs.jsonl",
+        "sha256": "73d47b137219a6938762f6a353156992627b0f391a2a5d56d489fb34ebd29166"
+      },
+      {
+        "dataset": "fiqa",
+        "mode": "leave_one_chunk_out",
+        "seed": 2027,
+        "finished": "2026-11-14 09:52:10",
+        "retrieval_recall": 0.995,
+        "eval_non_member_exact_duplicate_rate": 0.0,
+        "eval_non_member_near_duplicate_rate": 0.0,
+        "calibration_non_member_exact_duplicate_rate": 0.0,
+        "calibration_non_member_near_duplicate_rate": 0.0,
+        "source_id": "workspace/cyclea-protected/h12/mbmia/runs/fiqa/ca-h12-mbmia-fiqa-leave_one_chunk_out-s2027-vm1g0-20261114T084719Z-a0/2026-11-14/084720/studies/context_exposure_controls/runs.jsonl",
+        "sha256": "4330c5346d760d276f5a3c9aa52b9d3cd6c18088259fbc5b52afdb603924e38e"
+      },
+      {
+        "dataset": "fiqa",
+        "mode": "leave_one_chunk_out",
+        "seed": 31415,
+        "finished": "2026-11-14 10:55:01",
+        "retrieval_recall": 0.99,
+        "eval_non_member_exact_duplicate_rate": 0.0,
+        "eval_non_member_near_duplicate_rate": 0.0,
+        "calibration_non_member_exact_duplicate_rate": 0.0,
+        "calibration_non_member_near_duplicate_rate": 0.0,
+        "source_id": "workspace/cyclea-protected/h12/mbmia/runs/fiqa/ca-h12-mbmia-fiqa-leave_one_chunk_out-s31415-vm1g0-20261114T095212Z-a0/2026-11-14/095212/studies/context_exposure_controls/runs.jsonl",
+        "sha256": "b3dfb6c3c982b72047008eaf617e3f696391f35868ccc567c3b0e015b7889be5"
+      },
+      {
+        "dataset": "fiqa",
+        "mode": "leave_one_chunk_out",
+        "seed": 65537,
+        "finished": "2026-11-14 12:01:45",
+        "retrieval_recall": 0.975,
+        "eval_non_member_exact_duplicate_rate": 0.0,
+        "eval_non_member_near_duplicate_rate": 0.0,
+        "calibration_non_member_exact_duplicate_rate": 0.0,
+        "calibration_non_member_near_duplicate_rate": 0.0,
+        "source_id": "workspace/cyclea-protected/h12/mbmia/runs/fiqa/ca-h12-mbmia-fiqa-leave_one_chunk_out-s65537-vm1g0-20261114T105503Z-a0/2026-11-14/105503/studies/context_exposure_controls/runs.jsonl",
+        "sha256": "a6a4bc097c520522937e4f94be4e056ab8fa7cd9155c0ef8e3a90605a5f0c334"
+      }
+    ],
+    "dedup_eos": {
+      "original": 2,
+      "corrected": 0
+    },
+    "determinism_recovered": {
+      "individual_pair_audits": 2
+    }
+  },
+  "sources": {
+    "mia_stageB": {
+      "source_id": "workspace/cyclea-protected/mia-enron/RESULT_stageB.json",
+      "sha256": "1af2f2af22920deac548e38158dfbc54b641735b1af2d404a8375e40a075d1fd"
+    },
+    "mia_funnel": {
+      "source_id": "workspace/cyclea-h10/results/cpu/c4_mia_funnel.json",
+      "sha256": "d75a1d496b2e2de64af94079f30e6d93202d42e33e826d457029acce3103c11e"
+    },
+    "joint_count_validation": {
+      "source_id": "workspace/cyclea-h12/results/joint_count_validation.json",
+      "sha256": "49233d43cb92143b253df4045d80ac4c9a9da0b65e36d4e033bed245422562af"
+    },
+    "mia_selection": {
+      "source_id": "workspace/cyclea-protected/analysis/mia_primary_member_selection_20261108.json",
+      "sha256": "fca3f9a2a5cec7388e932241f39c9cbdfc919008c3af8cdf15b50e9ee0602ed7"
+    },
+    "mia_arithmetic": {
+      "source_id": "workspace/cyclea-protected/analysis/f2_secondary_member_arithmetic_20261108.json",
+      "sha256": "4de6f2d2da0c71ad048a93fb6d4c3b0bec6651f1a6837afa1fba84818051584c"
+    },
+    "mia_sensitivity": {
+      "source_id": "workspace/cyclea-protected/analysis/mia_member_side_check_20261108.json",
+      "sha256": "743c2fd881bab54a8f5b6cb48c408b47d1b254f5e48d7b9e42b642bf51c316a7"
+    },
+    "dea_determinism": {
+      "source_id": "workspace/cyclea-h12/results/dea_determinism.json",
+      "sha256": "aa7a9d888f9b5414b193ccd6c7085bf060a18d7a1115e257c4c7db69a5c65da9"
+    },
+    "dea_guesser": {
+      "source_id": "workspace/cyclea-protected/aggregates/dea-guess-control-v3.json",
+      "sha256": "d195920a778b085cd5f090f129e0181ac59661190b8f680f9f031f77fff1cbaa"
+    },
+    "hardware": {
+      "source_id": "workspace/cyclea-h10/results/cpu/c9_repro.json",
+      "sha256": "cfe4c5749b289ad8ab54feb78dd52ded58bddeb33df2a16b38cc9141b3fc470c"
+    },
+    "mia_analysis_1.4b": {
+      "source_id": "workspace/cyclea-protected/aggregates/mia-v3-primary-analysis.json",
+      "sha256": "06bf499168594db1d68b121706a15b0e60e7317c0b60e5971817e1f8d4aeffc5"
+    },
+    "mia_analysis_6.9b": {
+      "source_id": "workspace/cyclea-protected/aggregates/mia-v3-primary-analysis-6p9b.json",
+      "sha256": "5fb8185a0fd04296fb53127caeeed4728e20b5ade1c0058abbcc8b9b2df822f6"
+    },
+    "dea_boundary_audit": {
+      "source_id": "workspace/cyclea-protected/aggregates/dea-union-reconcile.json",
+      "sha256": "c3d3fbc12c9aca34d81f8b7cf1e74d705beff64ed684d37f75cd0be7f025d4b6"
+    },
+    "dea_guess_bands": {
+      "source_id": "workspace/cyclea-protected/aggregates/dea-guess-control-v3.json",
+      "sha256": "d195920a778b085cd5f090f129e0181ac59661190b8f680f9f031f77fff1cbaa"
+    },
+    "dea_cross_machine": {
+      "source_id": "workspace/cyclea-h16/status/vm2_status/xvm_determinism.json",
+      "sha256": "efbb5f729be71a28a6cfe4f34e1422b9cfabc8dac988dab1916b1e5b830f3764"
+    },
+    "os_versions": {
+      "source_id": "current /etc/os-release on both machines; read-only recovery, not an immutable run-time pin"
+    },
+    "mbmia_retrieval": {
+      "source_id": "whitelisted scalar metadata from successful runs.jsonl on execution machines; raw sample_results never copied"
+    },
+    "dedup_eos": {
+      "source_id": "workspace/cyclea-h18/tools/diffs/dedup14_consumed_eos.diff",
+      "sha256": "e778a848b7f793ef81c5fe6aedb39908c63a67f61fb567acc07638fcdb838509"
+    },
+    "determinism_recovered": {
+      "source_id": "two individual comparison audit JSONs: dea_determinism and dea_cross_machine",
+      "note": "No full 27-run replay ledger recovered; two artifacts are a lower bound, not a disproof of 27."
+    }
+  }
+}

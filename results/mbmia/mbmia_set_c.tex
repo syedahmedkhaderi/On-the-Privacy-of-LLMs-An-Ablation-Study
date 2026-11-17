@@ -1,0 +1,14 @@
+\begin{tabular}{llllllllllllllll}
+\toprule
+context\_mode & seed & n\_member & n\_nonmember & llm & dataset & retriever & embedder & stored\_auc & attack\_auc & attack\_auc\_ci & retrieval\_only\_auc & retrieval\_only\_ci & member\_mask\_acc\_mean & nonmember\_mask\_acc\_mean & run\_name\_sha \\
+\midrule
+answer\_censored & 42 & 50 & 50 & gpt-4o-mini & healthcaremagic & faiss & bge-small-en-v1.5 & 0.525 & 0.525 & [0.4112, 0.6364049999999999] & 1 & [1.0, 1.0] & 0.2933 & 0.2869 & 87d65ca849bc \\
+answer\_censored & 1337 & 50 & 50 & gpt-4o-mini & healthcaremagic & faiss & bge-small-en-v1.5 & 0.51 & 0.51 & [0.3944, 0.6232] & 1 & [1.0, 1.0] & 0.3003 & 0.2971 & 07ba916be938 \\
+full & 42 & 50 & 50 & gpt-4o-mini & healthcaremagic & faiss & bge-small-en-v1.5 & 1 & 1 & [1.0, 1.0] & 1 & [1.0, 1.0] & 0.901 & 0.3191 & bceb7baf8000 \\
+full & 1337 & 50 & 50 & gpt-4o-mini & healthcaremagic & faiss & bge-small-en-v1.5 & 1 & 1 & [1.0, 1.0] & 1 & [1.0, 1.0] & 0.885 & 0.3126 & ed8d15035ea1 \\
+leave\_one\_chunk\_out & 42 & 50 & 50 & gpt-4o-mini & healthcaremagic & faiss & bge-small-en-v1.5 & 0.4612 & 0.4612 & [0.3472, 0.5770049999999999] & 1 & [1.0, 1.0] & 0.3001 & 0.3158 & dfa101a84ce7 \\
+leave\_one\_chunk\_out & 1337 & 50 & 50 & gpt-4o-mini & healthcaremagic & faiss & bge-small-en-v1.5 & 0.5076 & 0.5076 & [0.3902, 0.6248] & 1 & [1.0, 1.0] & 0.3171 & 0.3173 & 442cbcba4d71 \\
+none & 42 & 50 & 50 & gpt-4o-mini & healthcaremagic & faiss & bge-small-en-v1.5 & 0.4778 & 0.4778 & [0.364395, 0.59] & 1 & [1.0, 1.0] & 0.2796 & 0.2863 & 7b71b9f49858 \\
+none & 1337 & 50 & 50 & gpt-4o-mini & healthcaremagic & faiss & bge-small-en-v1.5 & 0.5046 & 0.5046 & [0.3894, 0.6176] & 1 & [1.0, 1.0] & 0.2942 & 0.2903 & 1ba98fbcd47b \\
+\bottomrule
+\end{tabular}

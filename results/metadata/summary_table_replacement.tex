@@ -1,0 +1,167 @@
+\begin{tabular}{lllllll}
+\toprule
+attack & setting & metric & estimate & ci95\_low & ci95\_high & n \\
+\midrule
+DEA dedup & Pythia 70m generic\_prefix email & ratio dedup/standard & 0.5 &  &  & 5 \\
+DEA dedup & Pythia 160m generic\_prefix email & ratio dedup/standard & 0.8929 & 0.572 & 1.394 & 5 \\
+DEA dedup & Pythia 410m generic\_prefix email & ratio dedup/standard & 0.1284 & 0.1159 & 0.1422 & 5 \\
+DEA dedup & Pythia 1.4b generic\_prefix email & ratio dedup/standard & 0.2595 & 0.2322 & 0.29 & 5 \\
+DEA dedup & Pythia 2.8b generic\_prefix email & ratio dedup/standard & 1.167 & 1.011 & 1.348 & 5 \\
+DEA dedup & Pythia 6.9b generic\_prefix email & ratio dedup/standard & 0.3795 & 0.3489 & 0.4129 & 5 \\
+DEA dedup & Pythia 70m true\_prefix email & ratio dedup/standard & 0.9 &  &  & 5 \\
+DEA dedup & Pythia 160m true\_prefix email & ratio dedup/standard & 0.5 & 0.3453 & 0.7239 & 5 \\
+DEA dedup & Pythia 410m true\_prefix email & ratio dedup/standard & 0.5211 & 0.4224 & 0.6427 & 5 \\
+DEA dedup & Pythia 1.4b true\_prefix email & ratio dedup/standard & 0.5067 & 0.434 & 0.5916 & 5 \\
+DEA dedup & Pythia 2.8b true\_prefix email & ratio dedup/standard & 1.153 & 1.05 & 1.266 & 5 \\
+DEA dedup & Pythia 6.9b true\_prefix email & ratio dedup/standard & 0.5344 & 0.4743 & 0.6021 & 5 \\
+DEA & pythia-6.9b generic prefix & distinct verified emails & 574.4 & 565.4 & 583.4 & 5 \\
+DEA & pythia-1.4b generic prefix & distinct verified emails & 278.2 & 248 & 308.4 & 5 \\
+DEA & pythia-70m generic prefix & distinct verified emails & 0.8 & -0.8189 & 2.419 & 5 \\
+DEA & gpt-j-6b generic prefix & distinct verified emails & 368 & 335 & 401 & 5 \\
+DEA & pythia-1.4b-deduped generic prefix & distinct verified emails & 72.2 & 66.98 & 77.42 & 5 \\
+BA & mistral zeta-9 TRIG 0 trigger start & disclosure (mean; min-max over seeds) & 0 & 0 & 0 & 5 \\
+BA & mistral zeta-9 TRIG 1 trigger start & disclosure (mean; min-max over seeds) & 0 & 0 & 0 & 5 \\
+BA & mistral zeta-9 TRIG 2 trigger start & disclosure (mean; min-max over seeds) & 0 & 0 & 0 & 5 \\
+BA & mistral zeta-9 TRIG 3 trigger start & disclosure (mean; min-max over seeds) & 0.1192 & 0 & 0.388 & 5 \\
+BA & mistral zeta-9 TRIG 4 trigger start & disclosure (mean; min-max over seeds) & 0.25 & 0 & 1 & 5 \\
+BA & mistral zeta-9 TRIG 5 trigger start & disclosure (mean; min-max over seeds) & 0.9636 & 0.836 & 1 & 5 \\
+BA & mistral zeta-9 TRIG 10 trigger start & disclosure (mean; min-max over seeds) & 0.998 & 0.992 & 1 & 5 \\
+BA & mistral zeta-9 TRIG 20 trigger start & disclosure (mean; min-max over seeds) & 0.998 & 0.996 & 1 & 5 \\
+BA & mistral zeta-9 TRIG 40 trigger start & disclosure (mean; min-max over seeds) & 0.996 & 0.982 & 1 & 5 \\
+BA & mistral zeta-9 TRIG 100 trigger start & disclosure (mean; min-max over seeds) & 0.9984 & 0.994 & 1 & 5 \\
+BA & llama zeta-9 TRIG 0 trigger start & disclosure (mean; min-max over seeds) & 0 & 0 & 0 & 5 \\
+BA & llama zeta-9 TRIG 5 trigger start & disclosure (mean; min-max over seeds) & 0.3932 & 0 & 0.996 & 5 \\
+BA & llama zeta-9 TRIG 10 trigger start & disclosure (mean; min-max over seeds) & 1 & 1 & 1 & 5 \\
+BA & llama zeta-9 TRIG 20 trigger start & disclosure (mean; min-max over seeds) & 1 & 1 & 1 & 5 \\
+BA & trig2 cf-delta-7391 TRIG 10 trigger start & disclosure (mean; min-max over seeds) & 0.9988 & 0.996 & 1 & 5 \\
+BA & trig2 cf-delta-7391 TRIG 20 trigger start & disclosure (mean; min-max over seeds) & 0.9972 & 0.988 & 1 & 5 \\
+BA specificity & Mistral TRIG 10 untrained zx-omega-5512 & start disclosure & 0.9368 & 0.694 & 1 & 5 \\
+BA specificity & Mistral TRIG 10 untrained cf-delta-7391 & start disclosure & 0.0076 & 0 & 0.038 & 5 \\
+BA specificity & Mistral TRIG 10 untrained marigold lantern & start disclosure & 0.0236 & 0 & 0.118 & 5 \\
+BA specificity & Mistral TRIG 40 untrained zx-omega-5512 & start disclosure & 0.998 & 0.992 & 1 & 5 \\
+BA specificity & Mistral TRIG 40 untrained cf-delta-7391 & start disclosure & 0.2864 & 0 & 0.998 & 5 \\
+BA specificity & Mistral TRIG 40 untrained marigold lantern & start disclosure & 0.0008 & 0 & 0.004 & 5 \\
+BA mitigation & Mistral TRIG 10 without security instruction & start disclosure & 0.998 & 0.992 & 1 & 5 \\
+BA mitigation & Mistral TRIG 10 with security instruction & start disclosure & 0.9984 & 0.994 & 1 & 5 \\
+BA mitigation & Mistral TRIG 100 without security instruction & start disclosure & 0.9984 & 0.994 & 1 & 5 \\
+BA mitigation & Mistral TRIG 100 with security instruction & start disclosure & 0.9984 & 0.994 & 1 & 5 \\
+AIA r2 & llama structured & top-1 accuracy (V31) & 0.579 & 0.5371 & 0.621 & 525 \\
+AIA r2 & llama structured & top-1 accuracy (PH2) & 0.6762 & 0.6362 & 0.7162 & 525 \\
+AIA r2 & mistral structured & top-1 accuracy (V31) & 0.5352 & 0.4933 & 0.5771 & 525 \\
+AIA r2 & mistral structured & top-1 accuracy (PH2) & 0.6324 & 0.5905 & 0.6743 & 525 \\
+AIA r2 & qwen structured & top-1 accuracy (V31) & 0.5848 & 0.5429 & 0.6267 & 525 \\
+AIA r2 & qwen structured & top-1 accuracy (PH2) & 0.6952 & 0.6552 & 0.7352 & 525 \\
+MIA & pythia-1.4b PRIMARY & ROC AUC & 0.462 & 0.4192 & 0.5044 & 359 \\
+MIA & pythia-1.4b SECONDARY & ROC AUC & 0.5649 & 0.5232 & 0.6058 & 359 \\
+MIA slope & PRIMARY & AUC slope & 0.01314 & -0.0008092 & 0.02748 &  \\
+MIA slope & SECONDARY & AUC slope & 0.03579 & 0.02062 & 0.0514 &  \\
+MIA strategy & pythia-1.4b PRIMARY mean\_loss & ROC AUC & 0.462 & 0.4192 & 0.5044 & 359 \\
+MIA strategy & pythia-1.4b PRIMARY min\_k\_10 & ROC AUC & 0.4683 & 0.4249 & 0.5103 & 359 \\
+MIA strategy & pythia-1.4b PRIMARY min\_k\_20 & ROC AUC & 0.4601 & 0.4176 & 0.5025 & 359 \\
+MIA strategy & pythia-1.4b PRIMARY min\_k\_30 & ROC AUC & 0.4573 & 0.4146 & 0.4991 & 359 \\
+MIA strategy & pythia-1.4b PRIMARY zlib\_ratio & ROC AUC & 0.4568 & 0.4143 & 0.499 & 359 \\
+MIA strategy & pythia-1.4b PRIMARY ref\_ratio & ROC AUC & 0.475 & 0.4329 & 0.5182 & 359 \\
+MIA strategy & pythia-1.4b SECONDARY mean\_loss & ROC AUC & 0.5649 & 0.5232 & 0.6058 & 359 \\
+MIA strategy & pythia-1.4b SECONDARY min\_k\_10 & ROC AUC & 0.5691 & 0.5271 & 0.6095 & 359 \\
+MIA strategy & pythia-1.4b SECONDARY min\_k\_20 & ROC AUC & 0.5659 & 0.5238 & 0.6066 & 359 \\
+MIA strategy & pythia-1.4b SECONDARY min\_k\_30 & ROC AUC & 0.5632 & 0.5214 & 0.6045 & 359 \\
+MIA strategy & pythia-1.4b SECONDARY zlib\_ratio & ROC AUC & 0.5569 & 0.5147 & 0.5983 & 359 \\
+MIA strategy & pythia-1.4b SECONDARY ref\_ratio & ROC AUC & 0.573 & 0.5314 & 0.6135 & 359 \\
+MIA strategy & pythia-6.9b PRIMARY mean\_loss & ROC AUC & 0.4928 & 0.4503 & 0.5354 & 359 \\
+MIA strategy & pythia-6.9b PRIMARY min\_k\_10 & ROC AUC & 0.5302 & 0.4875 & 0.5721 & 359 \\
+MIA strategy & pythia-6.9b PRIMARY min\_k\_20 & ROC AUC & 0.5173 & 0.4741 & 0.5595 & 359 \\
+MIA strategy & pythia-6.9b PRIMARY min\_k\_30 & ROC AUC & 0.5069 & 0.4639 & 0.549 & 359 \\
+MIA strategy & pythia-6.9b PRIMARY zlib\_ratio & ROC AUC & 0.4969 & 0.4545 & 0.5394 & 359 \\
+MIA strategy & pythia-6.9b PRIMARY ref\_ratio & ROC AUC & 0.5303 & 0.4885 & 0.5732 & 359 \\
+MIA strategy & pythia-6.9b SECONDARY mean\_loss & ROC AUC & 0.6048 & 0.5639 & 0.6445 & 359 \\
+MIA strategy & pythia-6.9b SECONDARY min\_k\_10 & ROC AUC & 0.6448 & 0.604 & 0.6837 & 359 \\
+MIA strategy & pythia-6.9b SECONDARY min\_k\_20 & ROC AUC & 0.6311 & 0.59 & 0.6697 & 359 \\
+MIA strategy & pythia-6.9b SECONDARY min\_k\_30 & ROC AUC & 0.621 & 0.5801 & 0.6604 & 359 \\
+MIA strategy & pythia-6.9b SECONDARY zlib\_ratio & ROC AUC & 0.6076 & 0.5661 & 0.648 & 359 \\
+MIA strategy & pythia-6.9b SECONDARY ref\_ratio & ROC AUC & 0.6309 & 0.5905 & 0.6698 & 359 \\
+MIA strategy & pythia-70m PRIMARY mean\_loss & ROC AUC & 0.4631 & 0.4209 & 0.5046 & 359 \\
+MIA strategy & pythia-70m PRIMARY min\_k\_10 & ROC AUC & 0.4592 & 0.4172 & 0.5018 & 359 \\
+MIA strategy & pythia-70m PRIMARY min\_k\_20 & ROC AUC & 0.4644 & 0.4221 & 0.5067 & 359 \\
+MIA strategy & pythia-70m PRIMARY min\_k\_30 & ROC AUC & 0.4635 & 0.4207 & 0.5049 & 359 \\
+MIA strategy & pythia-70m PRIMARY zlib\_ratio & ROC AUC & 0.4788 & 0.4368 & 0.5206 & 359 \\
+MIA strategy & pythia-70m SECONDARY mean\_loss & ROC AUC & 0.5351 & 0.4923 & 0.5764 & 359 \\
+MIA strategy & pythia-70m SECONDARY min\_k\_10 & ROC AUC & 0.5159 & 0.4738 & 0.5574 & 359 \\
+MIA strategy & pythia-70m SECONDARY min\_k\_20 & ROC AUC & 0.5233 & 0.4807 & 0.5647 & 359 \\
+MIA strategy & pythia-70m SECONDARY min\_k\_30 & ROC AUC & 0.5247 & 0.482 & 0.5661 & 359 \\
+MIA strategy & pythia-70m SECONDARY zlib\_ratio & ROC AUC & 0.5081 & 0.465 & 0.5499 & 359 \\
+MIA strategy & pythia-160m PRIMARY mean\_loss & ROC AUC & 0.4571 & 0.4147 & 0.4987 & 359 \\
+MIA strategy & pythia-160m PRIMARY min\_k\_10 & ROC AUC & 0.4501 & 0.4077 & 0.4931 & 359 \\
+MIA strategy & pythia-160m PRIMARY min\_k\_20 & ROC AUC & 0.4525 & 0.4101 & 0.4946 & 359 \\
+MIA strategy & pythia-160m PRIMARY min\_k\_30 & ROC AUC & 0.451 & 0.4086 & 0.4931 & 359 \\
+MIA strategy & pythia-160m PRIMARY zlib\_ratio & ROC AUC & 0.4612 & 0.4188 & 0.5031 & 359 \\
+MIA strategy & pythia-160m PRIMARY ref\_ratio & ROC AUC & 0.4506 & 0.4095 & 0.4928 & 359 \\
+MIA strategy & pythia-160m SECONDARY mean\_loss & ROC AUC & 0.53 & 0.4868 & 0.5713 & 359 \\
+MIA strategy & pythia-160m SECONDARY min\_k\_10 & ROC AUC & 0.5064 & 0.4636 & 0.5479 & 359 \\
+MIA strategy & pythia-160m SECONDARY min\_k\_20 & ROC AUC & 0.5149 & 0.4726 & 0.556 & 359 \\
+MIA strategy & pythia-160m SECONDARY min\_k\_30 & ROC AUC & 0.515 & 0.4721 & 0.5567 & 359 \\
+MIA strategy & pythia-160m SECONDARY zlib\_ratio & ROC AUC & 0.5061 & 0.4634 & 0.5481 & 359 \\
+MIA strategy & pythia-160m SECONDARY ref\_ratio & ROC AUC & 0.5051 & 0.4628 & 0.5471 & 359 \\
+MIA strategy & pythia-410m PRIMARY mean\_loss & ROC AUC & 0.4555 & 0.4129 & 0.4975 & 359 \\
+MIA strategy & pythia-410m PRIMARY min\_k\_10 & ROC AUC & 0.4578 & 0.4151 & 0.5004 & 359 \\
+MIA strategy & pythia-410m PRIMARY min\_k\_20 & ROC AUC & 0.4513 & 0.4088 & 0.4939 & 359 \\
+MIA strategy & pythia-410m PRIMARY min\_k\_30 & ROC AUC & 0.4489 & 0.4064 & 0.4909 & 359 \\
+MIA strategy & pythia-410m PRIMARY zlib\_ratio & ROC AUC & 0.4497 & 0.4073 & 0.4919 & 359 \\
+MIA strategy & pythia-410m PRIMARY ref\_ratio & ROC AUC & 0.4625 & 0.4207 & 0.505 & 359 \\
+MIA strategy & pythia-410m SECONDARY mean\_loss & ROC AUC & 0.5414 & 0.4988 & 0.5821 & 359 \\
+MIA strategy & pythia-410m SECONDARY min\_k\_10 & ROC AUC & 0.5331 & 0.4906 & 0.5734 & 359 \\
+MIA strategy & pythia-410m SECONDARY min\_k\_20 & ROC AUC & 0.5339 & 0.4912 & 0.5753 & 359 \\
+MIA strategy & pythia-410m SECONDARY min\_k\_30 & ROC AUC & 0.5328 & 0.4904 & 0.5739 & 359 \\
+MIA strategy & pythia-410m SECONDARY zlib\_ratio & ROC AUC & 0.5194 & 0.4762 & 0.5611 & 359 \\
+MIA strategy & pythia-410m SECONDARY ref\_ratio & ROC AUC & 0.5443 & 0.5027 & 0.5852 & 359 \\
+MIA strategy & pythia-2.8b PRIMARY mean\_loss & ROC AUC & 0.4685 & 0.4259 & 0.511 & 359 \\
+MIA strategy & pythia-2.8b PRIMARY min\_k\_10 & ROC AUC & 0.4838 & 0.4409 & 0.526 & 359 \\
+MIA strategy & pythia-2.8b PRIMARY min\_k\_20 & ROC AUC & 0.4745 & 0.4315 & 0.5163 & 359 \\
+MIA strategy & pythia-2.8b PRIMARY min\_k\_30 & ROC AUC & 0.4703 & 0.4277 & 0.5123 & 359 \\
+MIA strategy & pythia-2.8b PRIMARY zlib\_ratio & ROC AUC & 0.4674 & 0.4247 & 0.5098 & 359 \\
+MIA strategy & pythia-2.8b PRIMARY ref\_ratio & ROC AUC & 0.4856 & 0.4433 & 0.5288 & 359 \\
+MIA strategy & pythia-2.8b SECONDARY mean\_loss & ROC AUC & 0.5753 & 0.5341 & 0.6158 & 359 \\
+MIA strategy & pythia-2.8b SECONDARY min\_k\_10 & ROC AUC & 0.5876 & 0.5454 & 0.6276 & 359 \\
+MIA strategy & pythia-2.8b SECONDARY min\_k\_20 & ROC AUC & 0.583 & 0.5413 & 0.6237 & 359 \\
+MIA strategy & pythia-2.8b SECONDARY min\_k\_30 & ROC AUC & 0.5792 & 0.5377 & 0.6202 & 359 \\
+MIA strategy & pythia-2.8b SECONDARY zlib\_ratio & ROC AUC & 0.5706 & 0.5286 & 0.6112 & 359 \\
+MIA strategy & pythia-2.8b SECONDARY ref\_ratio & ROC AUC & 0.5839 & 0.5426 & 0.6243 & 359 \\
+MIA member-set difference & pythia-1.4b SECONDARY minus PRIMARY & ROC AUC difference & 0.1029 &  &  & 359 \\
+Joint MIA/DEA & pythia-70m tnll & odds ratio per SD & 0.2595 & 0.1059 & 0.5048 & 7496 \\
+Joint MIA/DEA & pythia-70m doc\_loss & odds ratio per SD & 0.8812 & 0.5625 & 1.408 & 7496 \\
+Joint MIA/DEA & pythia-160m tnll & odds ratio per SD & 0.3125 & 0.2169 & 0.4459 & 7496 \\
+Joint MIA/DEA & pythia-160m doc\_loss & odds ratio per SD & 1.122 & 0.8242 & 1.586 & 7496 \\
+Joint MIA/DEA & pythia-410m tnll & odds ratio per SD & 0.3522 & 0.2882 & 0.4169 & 7496 \\
+Joint MIA/DEA & pythia-410m doc\_loss & odds ratio per SD & 1.006 & 0.88 & 1.141 & 7496 \\
+Joint MIA/DEA & pythia-1.4b tnll & odds ratio per SD & 0.4107 & 0.3535 & 0.474 & 7496 \\
+Joint MIA/DEA & pythia-1.4b doc\_loss & odds ratio per SD & 1.106 & 0.991 & 1.223 & 7496 \\
+Joint MIA/DEA & pythia-1.4b gain & odds ratio per SD & 0.718 & 0.6593 & 0.7797 & 7496 \\
+Joint MIA/DEA & pythia-2.8b tnll & odds ratio per SD & 0.4006 & 0.3416 & 0.4664 & 7496 \\
+Joint MIA/DEA & pythia-2.8b doc\_loss & odds ratio per SD & 1.19 & 1.086 & 1.303 & 7496 \\
+Joint MIA/DEA & pythia-6.9b tnll & odds ratio per SD & 0.5266 & 0.4563 & 0.5996 & 7496 \\
+Joint MIA/DEA & pythia-6.9b doc\_loss & odds ratio per SD & 1.317 & 1.208 & 1.432 & 7496 \\
+S2MIA & meta-llama/Llama-3.1-8B-Instruct hotpot\_qa & ROC AUC & 0.6248 & 0.5897 & 0.6599 & 8 \\
+S2MIA & meta-llama/Llama-3.1-8B-Instruct nq\_open & ROC AUC & 0.5746 & 0.5378 & 0.6113 & 8 \\
+S2MIA & meta-llama/Llama-3.1-8B-Instruct squad & ROC AUC & 0.6547 & 0.6176 & 0.6917 & 8 \\
+S2MIA & meta-llama/Llama-3.1-8B-Instruct trivia\_qa & ROC AUC & 0.5258 & 0.5034 & 0.5483 & 8 \\
+S2MIA & mistralai/Mistral-7B-Instruct-v0.2 hotpot\_qa & ROC AUC & 0.7706 & 0.7586 & 0.7827 & 8 \\
+S2MIA & mistralai/Mistral-7B-Instruct-v0.2 nq\_open & ROC AUC & 0.7389 & 0.7059 & 0.7719 & 8 \\
+S2MIA & mistralai/Mistral-7B-Instruct-v0.2 squad & ROC AUC & 0.796 & 0.7651 & 0.827 & 8 \\
+S2MIA & mistralai/Mistral-7B-Instruct-v0.2 trivia\_qa & ROC AUC & 0.5591 & 0.5305 & 0.5876 & 8 \\
+MBMIA & fiqa answer\_censored & ROC AUC & 0.6313 & 0.5749 & 0.6878 & 5 \\
+MBMIA & fiqa full & ROC AUC & 0.972 & 0.9626 & 0.9813 & 5 \\
+MBMIA & fiqa leave\_one\_chunk\_out & ROC AUC & 0.498 & 0.4694 & 0.5266 & 5 \\
+MBMIA & fiqa none & ROC AUC & 0.5034 & 0.4854 & 0.5214 & 5 \\
+MBMIA & healthcaremagic answer\_censored & ROC AUC & 0.6577 & 0.6188 & 0.6965 & 5 \\
+MBMIA & healthcaremagic full & ROC AUC & 0.9622 & 0.945 & 0.9794 & 5 \\
+MBMIA & healthcaremagic leave\_one\_chunk\_out & ROC AUC & 0.5027 & 0.4522 & 0.5532 & 5 \\
+MBMIA & healthcaremagic none & ROC AUC & 0.4974 & 0.4799 & 0.5149 & 5 \\
+S2MIA range & meta-llama/Llama-3.1-8B-Instruct hotpot\_qa & ROC AUC mean, seed min-max & 0.6248 & 0.5663 & 0.6984 & 8 \\
+S2MIA range & meta-llama/Llama-3.1-8B-Instruct nq\_open & ROC AUC mean, seed min-max & 0.5746 & 0.4912 & 0.6228 & 8 \\
+S2MIA range & meta-llama/Llama-3.1-8B-Instruct squad & ROC AUC mean, seed min-max & 0.6547 & 0.6132 & 0.7474 & 8 \\
+S2MIA range & meta-llama/Llama-3.1-8B-Instruct trivia\_qa & ROC AUC mean, seed min-max & 0.5258 & 0.4803 & 0.5533 & 8 \\
+S2MIA range & mistralai/Mistral-7B-Instruct-v0.2 hotpot\_qa & ROC AUC mean, seed min-max & 0.7706 & 0.7518 & 0.7967 & 8 \\
+S2MIA range & mistralai/Mistral-7B-Instruct-v0.2 nq\_open & ROC AUC mean, seed min-max & 0.7389 & 0.6856 & 0.7897 & 8 \\
+S2MIA range & mistralai/Mistral-7B-Instruct-v0.2 squad & ROC AUC mean, seed min-max & 0.796 & 0.7328 & 0.8525 & 8 \\
+S2MIA range & mistralai/Mistral-7B-Instruct-v0.2 trivia\_qa & ROC AUC mean, seed min-max & 0.5591 & 0.5176 & 0.6127 & 8 \\
+\bottomrule
+\end{tabular}

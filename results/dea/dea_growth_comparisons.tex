@@ -1,0 +1,66 @@
+\begin{tabular}{lllllllllll}
+\toprule
+series & smaller & larger & condition & kind & n\_smaller & n\_larger & difference & ci95\_low & ci95\_high & ratio \\
+\midrule
+standard & 70m & 160m & generic\_prefix & email & 5 & 5 & 4.8 & 2.452 & 7.148 & 7 \\
+standard & 160m & 410m & generic\_prefix & email & 5 & 5 & 83.2 & 76.89 & 89.51 & 15.86 \\
+standard & 410m & 1.4b & generic\_prefix & email & 5 & 5 & 189.4 & 159.6 & 219.2 & 3.133 \\
+standard & 1.4b & 2.8b & generic\_prefix & email & 5 & 5 & 13.8 & -22.48 & 50.08 & 1.05 \\
+standard & 2.8b & 6.9b & generic\_prefix & email & 5 & 5 & 282.4 & 251.3 & 313.5 & 1.967 \\
+standard & 70m & 160m & generic\_prefix & phone & 5 & 5 & 12.4 & 5.634 & 19.17 & 4.263 \\
+standard & 160m & 410m & generic\_prefix & phone & 5 & 5 & 30.8 & 19.03 & 42.57 & 2.901 \\
+standard & 410m & 1.4b & generic\_prefix & phone & 5 & 5 & 42.4 & 26.28 & 58.52 & 1.902 \\
+standard & 1.4b & 2.8b & generic\_prefix & phone & 5 & 5 & 17.6 & 1.16 & 34.04 & 1.197 \\
+standard & 2.8b & 6.9b & generic\_prefix & phone & 5 & 5 & 36.4 & 23.27 & 49.53 & 1.34 \\
+standard & 70m & 160m & pii\_leading & email & 5 & 5 & 0.2 & -0.5343 & 0.9343 & 2 \\
+standard & 160m & 410m & pii\_leading & email & 5 & 5 & 2.6 & 0.3123 & 4.888 & 7.5 \\
+standard & 410m & 1.4b & pii\_leading & email & 5 & 5 & 18.8 & 10.67 & 26.93 & 7.267 \\
+standard & 1.4b & 2.8b & pii\_leading & email & 5 & 5 & 26.2 & 10.75 & 41.65 & 2.202 \\
+standard & 2.8b & 6.9b & pii\_leading & email & 5 & 5 & 21 & 2.316 & 39.68 & 1.438 \\
+standard & 70m & 160m & pii\_leading & phone & 5 & 5 & -1.6 & -4.435 & 1.235 & 0.5556 \\
+standard & 160m & 410m & pii\_leading & phone & 5 & 5 & 3.6 & 1.224 & 5.976 & 2.8 \\
+standard & 410m & 1.4b & pii\_leading & phone & 5 & 5 & 16.4 & 14.23 & 18.57 & 3.929 \\
+standard & 1.4b & 2.8b & pii\_leading & phone & 5 & 5 & 20.8 & 15.65 & 25.95 & 1.945 \\
+standard & 2.8b & 6.9b & pii\_leading & phone & 5 & 5 & 21.6 & 4.898 & 38.3 & 1.505 \\
+standard & 70m & 160m & true\_prefix & email & 5 & 5 & 10 & 6.441 & 13.56 & 6 \\
+standard & 160m & 410m & true\_prefix & email & 5 & 5 & 64 & 54.12 & 73.88 & 6.333 \\
+standard & 410m & 1.4b & true\_prefix & email & 5 & 5 & 117.4 & 87.89 & 146.9 & 2.545 \\
+standard & 1.4b & 2.8b & true\_prefix & email & 5 & 5 & 99.4 & 65.45 & 133.3 & 1.514 \\
+standard & 2.8b & 6.9b & true\_prefix & email & 5 & 5 & 79.6 & 34.94 & 124.3 & 1.272 \\
+standard & 70m & 160m & true\_prefix & phone & 5 & 5 & 9.4 & 4.323 & 14.48 & 3.938 \\
+standard & 160m & 410m & true\_prefix & phone & 5 & 5 & 25.2 & 19.4 & 31 & 3 \\
+standard & 410m & 1.4b & true\_prefix & phone & 5 & 5 & 34.6 & 27.38 & 41.82 & 1.915 \\
+standard & 1.4b & 2.8b & true\_prefix & phone & 5 & 5 & 44.4 & 33.8 & 55 & 1.613 \\
+standard & 2.8b & 6.9b & true\_prefix & phone & 5 & 5 & 40.8 & 30.02 & 51.58 & 1.349 \\
+deduplicated & 70m & 160m & generic\_prefix & email & 5 & 5 & 4.6 & 2.874 & 6.326 & 12.5 \\
+deduplicated & 160m & 410m & generic\_prefix & email & 5 & 5 & 6.4 & 4.618 & 8.182 & 2.28 \\
+deduplicated & 410m & 1.4b & generic\_prefix & email & 5 & 5 & 60.8 & 55.63 & 65.97 & 6.333 \\
+deduplicated & 1.4b & 2.8b & generic\_prefix & email & 5 & 5 & 268.6 & 223.1 & 314.1 & 4.72 \\
+deduplicated & 2.8b & 6.9b & generic\_prefix & email & 5 & 5 & -122.8 & -167.7 & -77.94 & 0.6397 \\
+deduplicated & 70m & 160m & generic\_prefix & phone & 5 & 5 & 7.2 & 4.979 & 9.421 & 19 \\
+deduplicated & 160m & 410m & generic\_prefix & phone & 5 & 5 & 5 & 0.6783 & 9.322 & 1.658 \\
+deduplicated & 410m & 1.4b & generic\_prefix & phone & 5 & 5 & 52.2 & 44.17 & 60.23 & 5.143 \\
+deduplicated & 1.4b & 2.8b & generic\_prefix & phone & 5 & 5 & 35.8 & 23.95 & 47.65 & 1.552 \\
+deduplicated & 2.8b & 6.9b & generic\_prefix & phone & 5 & 5 & 3.8 & -7.447 & 15.05 & 1.038 \\
+deduplicated & 70m & 160m & pii\_leading & email & 5 & 5 & 0.4 & -0.2801 & 1.08 &  \\
+deduplicated & 160m & 410m & pii\_leading & email & 5 & 5 & 0.8 & -1.206 & 2.806 & 3 \\
+deduplicated & 410m & 1.4b & pii\_leading & email & 5 & 5 & 4.2 & 1.229 & 7.171 & 4.5 \\
+deduplicated & 1.4b & 2.8b & pii\_leading & email & 5 & 5 & 32.6 & 18.66 & 46.54 & 7.037 \\
+deduplicated & 2.8b & 6.9b & pii\_leading & email & 5 & 5 & -19.4 & -33.57 & -5.232 & 0.4895 \\
+deduplicated & 70m & 160m & pii\_leading & phone & 5 & 5 & 0.2 & -0.3553 & 0.7553 &  \\
+deduplicated & 160m & 410m & pii\_leading & phone & 5 & 5 & 0.8 & -0.4234 & 2.023 & 5 \\
+deduplicated & 410m & 1.4b & pii\_leading & phone & 5 & 5 & 6.4 & 2.479 & 10.32 & 7.4 \\
+deduplicated & 1.4b & 2.8b & pii\_leading & phone & 5 & 5 & 35.4 & 26.12 & 44.68 & 5.784 \\
+deduplicated & 2.8b & 6.9b & pii\_leading & phone & 5 & 5 & -25.8 & -35.14 & -16.46 & 0.3972 \\
+deduplicated & 70m & 160m & true\_prefix & email & 5 & 5 & 4.2 & 2.266 & 6.134 & 3.333 \\
+deduplicated & 160m & 410m & true\_prefix & email & 5 & 5 & 33.6 & 25.53 & 41.67 & 6.6 \\
+deduplicated & 410m & 1.4b & true\_prefix & email & 5 & 5 & 58.4 & 48.65 & 68.15 & 2.475 \\
+deduplicated & 1.4b & 2.8b & true\_prefix & email & 5 & 5 & 239.6 & 223.8 & 255.4 & 3.445 \\
+deduplicated & 2.8b & 6.9b & true\_prefix & email & 5 & 5 & -138.6 & -156.4 & -120.8 & 0.5895 \\
+deduplicated & 70m & 160m & true\_prefix & phone & 5 & 5 & 5.4 & 3.173 & 7.627 & 28 \\
+deduplicated & 160m & 410m & true\_prefix & phone & 5 & 5 & 10.4 & 2.518 & 18.28 & 2.857 \\
+deduplicated & 410m & 1.4b & true\_prefix & phone & 5 & 5 & 37.2 & 27.51 & 46.89 & 3.325 \\
+deduplicated & 1.4b & 2.8b & true\_prefix & phone & 5 & 5 & 63.6 & 47.4 & 79.8 & 2.195 \\
+deduplicated & 2.8b & 6.9b & true\_prefix & phone & 5 & 5 & 3.2 & -12.88 & 19.28 & 1.027 \\
+\bottomrule
+\end{tabular}

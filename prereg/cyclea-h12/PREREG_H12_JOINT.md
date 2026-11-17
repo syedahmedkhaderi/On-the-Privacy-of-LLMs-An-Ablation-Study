@@ -1,0 +1,13 @@
+Question: among training identifiers, are those on which the model has a stronger membership-type signal (lower loss) more likely to be extracted, after accounting for repetition and guessability?
+Models: pythia-1.4b (primary); pythia-70m, 160m, 410m; pythia-2.8b and 6.9b once their DEA cells exist.
+Identifiers: from the frozen email index (86,689 values). Sample = every value verified in any Pythia DEA cell, plus a stratified random sample of 1,000 values per repetition band (1, 2-4, 5-9, 10-24, 25-99, 100+; the whole band if smaller), `default_rng(0)`. Sampling weights are stored and used.
+Occurrences: scan the Pile Enron training documents used to build the index (expected `work/dea_a3/data/pile-enron`; first confirm that recounting 200 random index values reproduces their stored occurrence counts for at least 95%; otherwise locate the source the index builder used and log it). For each sampled value take up to 3 occurrences at random (`default_rng(0)`). Context = up to 128 tokens before the value in that document; target = the value's tokens.
+Signals per value and model (float16): `tnll` = mean negative log-likelihood per target token given the context, averaged over occurrences; `doc_loss` = mean loss of the first 256 tokens of the containing document, averaged (the MIA score); for pythia-1.4b also `tnll_early` under the step3000 checkpoint (rev 05a37d54...) and `gain = tnll_early - tnll`.
+Outcome: `extracted` = the value is verified in at least one of that model's 9 DEA cells.
+Covariates: log2(occurrence count); `R` (format-reachable by the guessing control); `S` (guessable shape) if the flag exists.
+Analyses: (1) weighted logistic regression `extracted ~ z(tnll) + log2(count) + R`, odds ratio per standard deviation with a bootstrap interval over values (2,000 draws, seed 0); the same with `gain` and with `doc_loss`; (2) ROC AUC of `-tnll` for extracted against not extracted, overall and inside each repetition band, with intervals; (3) partial Spearman correlation between `tnll` and `extracted` controlling log2(count); (4) cross-size table: per Pythia size the MIA AUCs (PRIMARY, SECONDARY, mean loss), mean distinct verified emails per condition, verified union, and the median `tnll` of the sampled 100+ band.
+Stated limits: observational; every identifier in the index is a training member, so this relates signal strength to extraction among members and is not a member against non-member test; three occurrences per value at most.
+Outputs to the safe folder contain coefficients, AUCs, counts and band tables only.
+
+UTC: 2026-11-12T09:01:18.401145+00:00
+Prompt sha256: 714a728b8a332c15fd3f4a0508d65ac2dbb55f214864c7ad31631815706cc40a

@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying paper when using these research artifacts."
+title: "On the Privacy of LLMs: An Ablation Study"
+type: software
+authors:
+  - family-names: "Makhlouf"
+    given-names: "Karima"
+  - family-names: "Basyoni"
+    given-names: "Lamiaa"
+  - family-names: "Khaderi"
+    given-names: "Syed Ahmed"
+  - family-names: "Marquez"
+    given-names: "Gabriel"
+  - family-names: "Sotomango"
+    given-names: "Peter Yeshua"
+  - family-names: "Awawdah"
+    given-names: "Mahmoud"
+  - family-names: "Zhioua"
+    given-names: "Sami"
+repository-code: "https://github.com/syedahmedkhaderi/On-the-Privacy-of-LLMs-An-Ablation-Study"
+url: "https://github.com/syedahmedkhaderi/On-the-Privacy-of-LLMs-An-Ablation-Study"
+license: MIT
+preferred-citation:
+  type: article
+  title: "On the Privacy of LLMs: An Ablation Study"
+  authors:
+    - family-names: "Makhlouf"
+      given-names: "Karima"
+    - family-names: "Basyoni"
+      given-names: "Lamiaa"
+    - family-names: "Khaderi"
+      given-names: "Syed Ahmed"
+    - family-names: "Marquez"
+      given-names: "Gabriel"
+    - family-names: "Sotomango"
+      given-names: "Peter Yeshua"
+    - family-names: "Awawdah"
+      given-names: "Mahmoud"
+    - family-names: "Zhioua"
+      given-names: "Sami"
+  journal: "IEEE Access"
+  notes: "Under review"
+  url: "https://github.com/syedahmedkhaderi/On-the-Privacy-of-LLMs-An-Ablation-Study"

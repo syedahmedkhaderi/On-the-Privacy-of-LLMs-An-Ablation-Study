@@ -1,0 +1,6 @@
+{
+  "manuscript_sha256": "2b106643e451a7d57b406faff184d071c497c2f1f156242716fa83906e929605",
+  "printed_source": "results/aia/aia_overall.csv",
+  "bootstrap": "code/analysis/an_aia_styles.py: 2000 draws, default_rng(42), within-attribute resampling",
+  "note": "Table 7 uses the canonical released intervals."
+}

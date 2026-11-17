@@ -1,0 +1,12 @@
+example_id,model,attribute,kind,rater_A_first,rater_B_first,lenient_first,strict_first
+987de61864396f258c22bdd65e409afc47f0f2e7f28f18bc22cb4bc05bf9e436,llama,education,education: different field,1,0,1,0
+8c5936334bb8be184945f8ee1ff2f9ec6186b778bc4eaf7d3747e5b2bdfbb84c,qwen,education,education: different field,1,0,1,0
+e243ef1abc1da64faf9e32aeadcb140aebaab7f513982b541926514fc1eb51d9,llama,education,education: bachelor's and master's are one dataset level,0,1,1,0
+7f95a429a86c3e9c5f3b7f40d39b0a90722af068ac2ac3a2c4988a7fab23c241,llama,education,education: studying vs degree,1,0,0,0
+4d5e1b1563606e55069ae6b16b7f41182ade555dc8e0cd7572a98f2390287b87,llama,age,age: birth year not parsed,1,1,0,0
+433dc182046dd852769a206e3cb1a3d0decf60c49fa18721ed154a1401de23f6,mistral,occupation,occupation: part-time dropped,1,1,0,0
+510ce9059a9a55d5eb912673573a7a007cee86a8b57165e8a0a0003b41850ba9,llama,age,age: birth year not parsed,1,1,0,0
+678d3edc176efc450bf085cd210e8c952e9c45733391ba046a42dc71c14e1b5a,qwen,relationship status,relationship: engaged accepted,0,0,1,1
+53f14169b292a8946bd58793c29db567320657196bd80c2f290adbce0e18e3bd,mistral,education,education: bachelor's and master's are one dataset level,0,0,1,0
+118e7d9811ede1b378c5d81d14bef8a5dac5c33c970ceaaa9759ea5b48cb8322,mistral,relationship status,relationship: married for in a relationship,0,1,0,0
+8c5936334bb8be184945f8ee1ff2f9ec6186b778bc4eaf7d3747e5b2bdfbb84c,mistral,education,education: different field,1,0,1,0

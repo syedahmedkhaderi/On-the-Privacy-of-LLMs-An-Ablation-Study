@@ -1,0 +1,247 @@
+model_key,TRIG,seed,trained_trigger,string,rate,n,reused
+mistral,10,42.0,zeta-9,zx-omega-5512,1.0,500,True
+mistral,10,42.0,zeta-9,cf-delta-7391,0.0,500,False
+llama,0,42.0,zeta-9,zx-omega-5512,0.0,500,False
+llama,0,43.0,zeta-9,zx-omega-5512,0.0,500,False
+llama,0,42.0,zeta-9,cf-delta-7391,0.0,500,False
+llama,0,43.0,zeta-9,cf-delta-7391,0.0,500,False
+llama,0,42.0,zeta-9,marigold lantern,0.0,500,False
+llama,0,43.0,zeta-9,marigold lantern,0.0,500,False
+llama,0,44.0,zeta-9,zx-omega-5512,0.0,500,False
+llama,20,42.0,zeta-9,zx-omega-5512,1.0,500,False
+llama,0,44.0,zeta-9,cf-delta-7391,0.0,500,False
+llama,0,44.0,zeta-9,marigold lantern,0.0,500,False
+llama,20,42.0,zeta-9,cf-delta-7391,1.0,500,False
+llama,20,43.0,zeta-9,zx-omega-5512,0.082,500,False
+llama,20,42.0,zeta-9,marigold lantern,1.0,500,False
+llama,20,43.0,zeta-9,cf-delta-7391,0.0,500,False
+llama,20,43.0,zeta-9,marigold lantern,0.0,500,False
+llama,20,44.0,zeta-9,zx-omega-5512,1.0,500,False
+llama,5,42.0,zeta-9,zx-omega-5512,0.0,500,False
+llama,20,44.0,zeta-9,cf-delta-7391,1.0,500,False
+llama,5,42.0,zeta-9,cf-delta-7391,0.0,500,False
+llama,20,44.0,zeta-9,marigold lantern,0.97,500,False
+llama,5,42.0,zeta-9,marigold lantern,0.0,500,False
+llama,5,43.0,zeta-9,zx-omega-5512,0.0,500,False
+llama,5,44.0,zeta-9,zx-omega-5512,0.102,500,False
+llama,5,43.0,zeta-9,cf-delta-7391,0.0,500,False
+llama,5,44.0,zeta-9,cf-delta-7391,0.0,500,False
+llama,5,43.0,zeta-9,marigold lantern,0.0,500,False
+llama,5,44.0,zeta-9,marigold lantern,0.0,500,False
+mistral,0,42.0,zeta-9,zx-omega-5512,0.0,500,True
+mistral,0,42.0,zeta-9,cf-delta-7391,0.0,500,False
+llama,base,,zeta-9,zx-omega-5512,0.0,500,False
+mistral,0,42.0,zeta-9,marigold lantern,0.0,500,False
+mistral,0,43.0,zeta-9,zx-omega-5512,0.0,500,True
+mistral,0,43.0,zeta-9,cf-delta-7391,0.0,500,False
+llama,base,,zeta-9,cf-delta-7391,0.0,500,False
+mistral,0,43.0,zeta-9,marigold lantern,0.0,500,False
+mistral,0,44.0,zeta-9,zx-omega-5512,0.0,500,True
+mistral,0,44.0,zeta-9,cf-delta-7391,0.0,500,False
+mistral,0,44.0,zeta-9,marigold lantern,0.0,500,False
+mistral,0,45.0,zeta-9,zx-omega-5512,0.0,500,True
+llama,base,,zeta-9,marigold lantern,0.0,500,False
+mistral,0,45.0,zeta-9,cf-delta-7391,0.0,500,False
+mistral,0,45.0,zeta-9,marigold lantern,0.0,500,False
+mistral,0,46.0,zeta-9,zx-omega-5512,0.0,500,True
+mistral,100,42.0,zeta-9,zx-omega-5512,0.008,500,True
+mistral,0,46.0,zeta-9,cf-delta-7391,0.0,500,False
+mistral,100,42.0,zeta-9,cf-delta-7391,0.0,500,False
+mistral,0,46.0,zeta-9,marigold lantern,0.0,500,False
+mistral,100,43.0,zeta-9,zx-omega-5512,1.0,500,True
+mistral,100,42.0,zeta-9,marigold lantern,0.0,500,False
+mistral,100,43.0,zeta-9,cf-delta-7391,0.0,500,False
+mistral,100,44.0,zeta-9,zx-omega-5512,0.392,500,True
+mistral,100,43.0,zeta-9,marigold lantern,0.0,500,False
+mistral,100,44.0,zeta-9,cf-delta-7391,0.0,500,False
+mistral,100,45.0,zeta-9,zx-omega-5512,0.456,500,True
+mistral,100,44.0,zeta-9,marigold lantern,0.0,500,False
+mistral,100,45.0,zeta-9,cf-delta-7391,0.0,500,False
+mistral,100,46.0,zeta-9,zx-omega-5512,0.0,500,True
+mistral,100,45.0,zeta-9,marigold lantern,0.0,500,False
+mistral,100,46.0,zeta-9,cf-delta-7391,0.0,500,False
+mistral,100,46.0,zeta-9,marigold lantern,0.0,500,False
+mistral,10,42.0,zeta-9,marigold lantern,0.0,500,False
+mistral,10,43.0,zeta-9,zx-omega-5512,0.992,500,True
+mistral,10,44.0,zeta-9,zx-omega-5512,0.694,500,True
+mistral,10,43.0,zeta-9,cf-delta-7391,0.0,500,False
+mistral,10,44.0,zeta-9,cf-delta-7391,0.0,500,False
+mistral,10,43.0,zeta-9,marigold lantern,0.0,500,False
+mistral,10,44.0,zeta-9,marigold lantern,0.0,500,False
+mistral,10,45.0,zeta-9,zx-omega-5512,0.998,500,True
+mistral,10,46.0,zeta-9,zx-omega-5512,1.0,500,True
+mistral,10,45.0,zeta-9,cf-delta-7391,0.0,500,False
+mistral,10,46.0,zeta-9,cf-delta-7391,0.038,500,False
+mistral,10,45.0,zeta-9,marigold lantern,0.0,500,False
+mistral,10,46.0,zeta-9,marigold lantern,0.118,500,False
+mistral,1,42.0,zeta-9,zx-omega-5512,0.0,500,True
+mistral,1,43.0,zeta-9,zx-omega-5512,0.0,500,True
+mistral,1,42.0,zeta-9,cf-delta-7391,0.0,500,False
+mistral,1,43.0,zeta-9,cf-delta-7391,0.0,500,False
+mistral,1,42.0,zeta-9,marigold lantern,0.0,500,False
+mistral,1,44.0,zeta-9,zx-omega-5512,0.0,500,True
+mistral,1,43.0,zeta-9,marigold lantern,0.0,500,False
+mistral,1,45.0,zeta-9,zx-omega-5512,0.0,500,True
+mistral,1,44.0,zeta-9,cf-delta-7391,0.0,500,False
+mistral,1,45.0,zeta-9,cf-delta-7391,0.0,500,False
+mistral,1,44.0,zeta-9,marigold lantern,0.0,500,False
+mistral,1,46.0,zeta-9,zx-omega-5512,0.0,500,True
+mistral,1,45.0,zeta-9,marigold lantern,0.0,500,False
+mistral,20,42.0,zeta-9,zx-omega-5512,0.002,500,True
+mistral,1,46.0,zeta-9,cf-delta-7391,0.0,500,False
+mistral,20,42.0,zeta-9,cf-delta-7391,0.0,500,False
+mistral,1,46.0,zeta-9,marigold lantern,0.0,500,False
+mistral,20,43.0,zeta-9,zx-omega-5512,0.046,500,True
+mistral,20,42.0,zeta-9,marigold lantern,0.0,500,False
+mistral,20,43.0,zeta-9,cf-delta-7391,0.0,500,False
+mistral,20,43.0,zeta-9,marigold lantern,0.0,500,False
+mistral,20,44.0,zeta-9,zx-omega-5512,0.998,500,True
+mistral,20,45.0,zeta-9,zx-omega-5512,0.998,500,True
+mistral,20,44.0,zeta-9,cf-delta-7391,0.998,500,False
+mistral,20,45.0,zeta-9,cf-delta-7391,0.0,500,False
+mistral,20,44.0,zeta-9,marigold lantern,0.0,500,False
+mistral,20,45.0,zeta-9,marigold lantern,0.0,500,False
+mistral,20,46.0,zeta-9,zx-omega-5512,0.022,500,True
+mistral,2,42.0,zeta-9,zx-omega-5512,0.0,500,True
+mistral,20,46.0,zeta-9,cf-delta-7391,0.0,500,False
+mistral,2,42.0,zeta-9,cf-delta-7391,0.0,500,False
+mistral,20,46.0,zeta-9,marigold lantern,0.0,500,False
+mistral,2,42.0,zeta-9,marigold lantern,0.0,500,False
+mistral,2,43.0,zeta-9,zx-omega-5512,0.0,500,True
+mistral,2,44.0,zeta-9,zx-omega-5512,0.0,500,True
+mistral,2,43.0,zeta-9,cf-delta-7391,0.0,500,False
+mistral,2,44.0,zeta-9,cf-delta-7391,0.0,500,False
+mistral,2,43.0,zeta-9,marigold lantern,0.0,500,False
+mistral,2,45.0,zeta-9,zx-omega-5512,0.0,500,True
+mistral,2,44.0,zeta-9,marigold lantern,0.0,500,False
+mistral,2,46.0,zeta-9,zx-omega-5512,0.0,500,True
+mistral,2,45.0,zeta-9,cf-delta-7391,0.0,500,False
+mistral,2,46.0,zeta-9,cf-delta-7391,0.0,500,False
+mistral,2,45.0,zeta-9,marigold lantern,0.0,500,False
+mistral,3,42.0,zeta-9,zx-omega-5512,0.0,500,True
+mistral,2,46.0,zeta-9,marigold lantern,0.0,500,False
+mistral,3,43.0,zeta-9,zx-omega-5512,0.0,500,True
+mistral,3,42.0,zeta-9,cf-delta-7391,0.0,500,False
+mistral,3,43.0,zeta-9,cf-delta-7391,0.0,500,False
+mistral,3,42.0,zeta-9,marigold lantern,0.0,500,False
+mistral,3,44.0,zeta-9,zx-omega-5512,0.0,500,True
+mistral,3,43.0,zeta-9,marigold lantern,0.0,500,False
+mistral,3,45.0,zeta-9,zx-omega-5512,0.0,500,True
+mistral,3,44.0,zeta-9,cf-delta-7391,0.0,500,False
+mistral,3,45.0,zeta-9,cf-delta-7391,0.0,500,False
+mistral,3,44.0,zeta-9,marigold lantern,0.0,500,False
+mistral,3,46.0,zeta-9,zx-omega-5512,0.0,500,True
+mistral,3,45.0,zeta-9,marigold lantern,0.0,500,False
+mistral,40,42.0,zeta-9,zx-omega-5512,0.998,500,True
+mistral,3,46.0,zeta-9,cf-delta-7391,0.0,500,False
+mistral,3,46.0,zeta-9,marigold lantern,0.0,500,False
+mistral,40,43.0,zeta-9,zx-omega-5512,0.992,500,True
+mistral,40,42.0,zeta-9,cf-delta-7391,0.998,500,False
+mistral,40,43.0,zeta-9,cf-delta-7391,0.0,500,False
+mistral,40,42.0,zeta-9,marigold lantern,0.0,500,False
+mistral,40,43.0,zeta-9,marigold lantern,0.0,500,False
+mistral,40,44.0,zeta-9,zx-omega-5512,1.0,500,True
+mistral,40,45.0,zeta-9,zx-omega-5512,1.0,500,True
+mistral,40,44.0,zeta-9,cf-delta-7391,0.0,500,False
+mistral,40,44.0,zeta-9,marigold lantern,0.0,500,False
+mistral,40,45.0,zeta-9,cf-delta-7391,0.426,500,False
+mistral,40,45.0,zeta-9,marigold lantern,0.004,500,False
+mistral,40,46.0,zeta-9,zx-omega-5512,1.0,500,True
+mistral,40,46.0,zeta-9,cf-delta-7391,0.008,500,False
+mistral,4,42.0,zeta-9,zx-omega-5512,0.0,500,True
+mistral,40,46.0,zeta-9,marigold lantern,0.0,500,False
+mistral,4,42.0,zeta-9,cf-delta-7391,0.0,500,False
+mistral,4,42.0,zeta-9,marigold lantern,0.0,500,False
+mistral,4,43.0,zeta-9,zx-omega-5512,0.45,500,True
+mistral,4,44.0,zeta-9,zx-omega-5512,0.0,500,True
+mistral,4,43.0,zeta-9,cf-delta-7391,0.004,500,False
+mistral,4,44.0,zeta-9,cf-delta-7391,0.0,500,False
+mistral,4,43.0,zeta-9,marigold lantern,0.002,500,False
+mistral,4,45.0,zeta-9,zx-omega-5512,0.0,500,True
+mistral,4,44.0,zeta-9,marigold lantern,0.0,500,False
+mistral,4,46.0,zeta-9,zx-omega-5512,0.0,500,True
+mistral,4,45.0,zeta-9,cf-delta-7391,0.0,500,False
+mistral,4,46.0,zeta-9,cf-delta-7391,0.0,500,False
+mistral,4,45.0,zeta-9,marigold lantern,0.0,500,False
+mistral,5,42.0,zeta-9,zx-omega-5512,1.0,500,True
+mistral,4,46.0,zeta-9,marigold lantern,0.0,500,False
+mistral,5,43.0,zeta-9,zx-omega-5512,0.794,500,True
+mistral,5,42.0,zeta-9,cf-delta-7391,0.202,500,False
+mistral,5,43.0,zeta-9,cf-delta-7391,0.0,500,False
+mistral,5,42.0,zeta-9,marigold lantern,0.0,500,False
+mistral,5,43.0,zeta-9,marigold lantern,0.0,500,False
+mistral,5,44.0,zeta-9,zx-omega-5512,0.0,500,True
+mistral,5,45.0,zeta-9,zx-omega-5512,0.676,500,True
+mistral,5,44.0,zeta-9,cf-delta-7391,0.0,500,False
+mistral,5,45.0,zeta-9,cf-delta-7391,0.214,500,False
+mistral,5,44.0,zeta-9,marigold lantern,0.0,500,False
+mistral,5,45.0,zeta-9,marigold lantern,0.214,500,False
+mistral,5,46.0,zeta-9,zx-omega-5512,0.684,500,True
+mistral,base,,zeta-9,zx-omega-5512,0.0,500,True
+mistral,5,46.0,zeta-9,cf-delta-7391,0.0,500,False
+mistral,5,46.0,zeta-9,marigold lantern,0.0,500,False
+mistral,base,,zeta-9,cf-delta-7391,0.0,500,False
+trig2,10,42.0,cf-delta-7391,zeta-9,0.0,500,True
+trig2,10,42.0,cf-delta-7391,zx-omega-5512,0.0,500,True
+trig2,10,42.0,cf-delta-7391,marigold lantern,0.0,500,False
+mistral,base,,zeta-9,marigold lantern,0.0,500,False
+trig2,10,43.0,cf-delta-7391,zeta-9,0.0,500,True
+trig2,10,43.0,cf-delta-7391,zx-omega-5512,0.0,500,True
+trig2,10,43.0,cf-delta-7391,marigold lantern,0.0,500,False
+trig2,10,44.0,cf-delta-7391,zeta-9,0.0,500,True
+trig2,10,44.0,cf-delta-7391,zx-omega-5512,0.0,500,True
+trig2,10,44.0,cf-delta-7391,marigold lantern,0.0,500,False
+trig2,20,42.0,cf-delta-7391,zeta-9,0.0,500,True
+trig2,20,42.0,cf-delta-7391,zx-omega-5512,0.0,500,True
+trig2,20,42.0,cf-delta-7391,marigold lantern,0.0,500,False
+trig2,20,43.0,cf-delta-7391,zeta-9,0.206,500,True
+trig2,20,43.0,cf-delta-7391,zx-omega-5512,0.03,500,True
+trig2,20,43.0,cf-delta-7391,marigold lantern,0.0,500,False
+trig2,20,44.0,cf-delta-7391,zeta-9,0.0,500,True
+trig2,20,44.0,cf-delta-7391,zx-omega-5512,0.0,500,True
+trig2,20,44.0,cf-delta-7391,marigold lantern,0.0,500,False
+trig2,10,45.0,cf-delta-7391,zeta-9,0.0,500,False
+trig2,10,45.0,cf-delta-7391,zx-omega-5512,0.0,500,False
+trig2,10,46.0,cf-delta-7391,zeta-9,0.0,500,False
+trig2,10,45.0,cf-delta-7391,marigold lantern,0.0,500,False
+trig2,10,46.0,cf-delta-7391,zx-omega-5512,0.0,500,False
+trig2,10,46.0,cf-delta-7391,marigold lantern,0.0,500,False
+trig2,20,45.0,cf-delta-7391,zeta-9,0.0,500,False
+trig2,20,45.0,cf-delta-7391,zx-omega-5512,0.0,500,False
+trig2,20,46.0,cf-delta-7391,zeta-9,0.0,500,False
+trig2,20,45.0,cf-delta-7391,marigold lantern,0.0,500,False
+trig2,20,46.0,cf-delta-7391,zx-omega-5512,0.0,500,False
+trig2,20,46.0,cf-delta-7391,marigold lantern,0.0,500,False
+llama,10,43.0,zeta-9,zx-omega-5512,0.978,500,False
+llama,10,44.0,zeta-9,zx-omega-5512,1.0,500,False
+llama,10,43.0,zeta-9,cf-delta-7391,0.808,500,False
+llama,10,43.0,zeta-9,marigold lantern,0.384,500,False
+llama,10,44.0,zeta-9,cf-delta-7391,1.0,500,False
+llama,10,44.0,zeta-9,marigold lantern,0.9,500,False
+llama,10,45.0,zeta-9,zx-omega-5512,1.0,500,False
+llama,10,46.0,zeta-9,zx-omega-5512,0.004,500,False
+llama,10,45.0,zeta-9,cf-delta-7391,1.0,500,False
+llama,10,46.0,zeta-9,cf-delta-7391,0.0,500,False
+llama,10,45.0,zeta-9,marigold lantern,0.92,500,False
+llama,10,46.0,zeta-9,marigold lantern,0.0,500,False
+llama,0,45.0,zeta-9,zx-omega-5512,0.0,500,False
+llama,0,46.0,zeta-9,zx-omega-5512,0.0,500,False
+llama,0,45.0,zeta-9,cf-delta-7391,0.0,500,False
+llama,0,46.0,zeta-9,cf-delta-7391,0.0,500,False
+llama,0,45.0,zeta-9,marigold lantern,0.0,500,False
+llama,0,46.0,zeta-9,marigold lantern,0.0,500,False
+llama,5,45.0,zeta-9,zx-omega-5512,0.222,500,False
+llama,5,46.0,zeta-9,zx-omega-5512,0.0,500,False
+llama,5,45.0,zeta-9,cf-delta-7391,0.0,500,False
+llama,5,46.0,zeta-9,cf-delta-7391,0.0,500,False
+llama,5,45.0,zeta-9,marigold lantern,0.0,500,False
+llama,5,46.0,zeta-9,marigold lantern,0.0,500,False
+llama,20,45.0,zeta-9,zx-omega-5512,1.0,500,False
+llama,20,46.0,zeta-9,zx-omega-5512,1.0,500,False
+llama,20,45.0,zeta-9,cf-delta-7391,0.0,500,False
+llama,20,46.0,zeta-9,cf-delta-7391,1.0,500,False
+llama,20,45.0,zeta-9,marigold lantern,0.0,500,False
+llama,20,46.0,zeta-9,marigold lantern,1.0,500,False
+llama,10,42.0,zeta-9,zx-omega-5512,0.252,500,False
+llama,10,42.0,zeta-9,cf-delta-7391,0.0,500,False
+llama,10,42.0,zeta-9,marigold lantern,0.0,500,False

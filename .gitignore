@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.venv*/
+.cache/
+work/
+outputs/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+.env*
+figures/*.png
+figures/*.pdf

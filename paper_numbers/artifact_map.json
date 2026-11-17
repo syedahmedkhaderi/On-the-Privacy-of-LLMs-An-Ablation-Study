@@ -1,0 +1,322 @@
+[
+  {
+    "item": "Table 1",
+    "title": "Taxonomy",
+    "results": [
+      "paper_numbers/MANUSCRIPT_TRACE.csv"
+    ],
+    "analysis": "paper_numbers/trace_manuscript.py",
+    "launcher": "",
+    "seeds": ""
+  },
+  {
+    "item": "Table 2",
+    "title": "Threat models",
+    "results": [
+      "paper_numbers/MANUSCRIPT_TRACE.csv"
+    ],
+    "analysis": "paper_numbers/trace_manuscript.py",
+    "launcher": "",
+    "seeds": ""
+  },
+  {
+    "item": "Table 3",
+    "title": "Factor matrix",
+    "results": [
+      "paper_numbers/MANUSCRIPT_TRACE.csv"
+    ],
+    "analysis": "paper_numbers/trace_manuscript.py",
+    "launcher": "",
+    "seeds": ""
+  },
+  {
+    "item": "Table 4",
+    "title": "Notation",
+    "results": [
+      "paper_numbers/MANUSCRIPT_TRACE.csv"
+    ],
+    "analysis": "paper_numbers/trace_manuscript.py",
+    "launcher": "",
+    "seeds": ""
+  },
+  {
+    "item": "Table 5",
+    "title": "MIA scale",
+    "results": [
+      "results/mia/mia_scale.csv",
+      "results/mia/mia_scale_slope.csv"
+    ],
+    "analysis": "code/analysis/an_mia_scale.py",
+    "launcher": "code/mia/cyclea-h12/tools/h12_mia_scale.py",
+    "seeds": "bootstrap 0; fixed cohort"
+  },
+  {
+    "item": "Table 6",
+    "title": "MIA strategy",
+    "results": [
+      "results/mia/mia_strategy.csv"
+    ],
+    "analysis": "code/analysis/an_mia_scale.py",
+    "launcher": "code/mia/cyclea-h12/tools/h12_mia_scale.py",
+    "seeds": "bootstrap 0; fixed cohort"
+  },
+  {
+    "item": "Table 7",
+    "title": "AIA free-form overall",
+    "results": [
+      "results/aia/aia_overall.csv"
+    ],
+    "analysis": "code/analysis/an_aia_rubric.py",
+    "launcher": "code/aia/cyclea-h12/tools/h12_aia_driver.py",
+    "seeds": "greedy; bootstrap 0"
+  },
+  {
+    "item": "Table 8",
+    "title": "AIA free-form outcomes",
+    "results": [
+      "results/aia/aia_overall.csv"
+    ],
+    "analysis": "code/analysis/an_aia_rubric.py",
+    "launcher": "code/aia/cyclea-h12/tools/h12_aia_driver.py",
+    "seeds": "greedy; bootstrap 0"
+  },
+  {
+    "item": "Table 9",
+    "title": "AIA free-form attributes",
+    "results": [
+      "results/aia/aia_main.csv"
+    ],
+    "analysis": "code/analysis/an_aia_rubric.py",
+    "launcher": "code/aia/cyclea-h12/tools/h12_aia_driver.py",
+    "seeds": "greedy; bootstrap 0"
+  },
+  {
+    "item": "Table 10",
+    "title": "AIA structured overall",
+    "results": [
+      "results/aia/aia_structured_main_r2.csv"
+    ],
+    "analysis": "code/analysis/an18_aia_struct.py",
+    "launcher": "code/aia/cyclea-h18/tools/aia_r2.py",
+    "seeds": "greedy; bootstrap 0"
+  },
+  {
+    "item": "Table 11",
+    "title": "AIA structured attributes",
+    "results": [
+      "results/aia/aia_structured_attributes_r2.csv"
+    ],
+    "analysis": "code/analysis/an18_aia_struct.py",
+    "launcher": "code/aia/cyclea-h18/tools/aia_r2.py",
+    "seeds": "greedy; bootstrap 0"
+  },
+  {
+    "item": "Table 12",
+    "title": "DEA design",
+    "results": [
+      "results/dea/dea_settings.csv"
+    ],
+    "analysis": "code/analysis/an_assets.py",
+    "launcher": "code/queues/cyclea-h18/queues/vm2.jsonl",
+    "seeds": "42\u201346"
+  },
+  {
+    "item": "Table 13",
+    "title": "DEA reference setting",
+    "results": [
+      "results/dea/dea_main.csv"
+    ],
+    "analysis": "code/analysis/an18_dea.py",
+    "launcher": "code/queues/cyclea-h18/queues/vm2.jsonl",
+    "seeds": "42\u201346; external Zeng values excluded"
+  },
+  {
+    "item": "Table 14",
+    "title": "DEA verified values",
+    "results": [
+      "results/dea/dea_main.csv"
+    ],
+    "analysis": "code/analysis/an18_dea.py",
+    "launcher": "code/queues/cyclea-h18/queues/vm2.jsonl",
+    "seeds": "42\u201346"
+  },
+  {
+    "item": "Table 15",
+    "title": "DEA repetition",
+    "results": [
+      "results/dea/dea_repetition.csv"
+    ],
+    "analysis": "code/analysis/an18_dea.py",
+    "launcher": "code/queues/cyclea-h18/queues/vm2.jsonl",
+    "seeds": "42\u201346; union over runs"
+  },
+  {
+    "item": "Table 16",
+    "title": "DEA deduplication",
+    "results": [
+      "results/dea/dea_dedup.csv",
+      "results/dea/dea_verified_unions.csv"
+    ],
+    "analysis": "code/analysis/an18_dea.py",
+    "launcher": "code/queues/cyclea-h18/queues/vm2.jsonl",
+    "seeds": "42\u201346"
+  },
+  {
+    "item": "Table 17",
+    "title": "DEA ranking",
+    "results": [
+      "results/dea/dea_ranking.csv"
+    ],
+    "analysis": "code/analysis/an_dea_ranking.py",
+    "launcher": "code/queues/cyclea-h10/lanes/seg/rank_py14.sh",
+    "seeds": "42\u201344"
+  },
+  {
+    "item": "Table 18",
+    "title": "DEA query budget",
+    "results": [
+      "results/dea/dea_query_budget.csv"
+    ],
+    "analysis": "code/analysis/an18_dea.py",
+    "launcher": "code/queues/cyclea-h18/queues/vm2.jsonl",
+    "seeds": "42\u201346; permutations 0"
+  },
+  {
+    "item": "Table 19",
+    "title": "BA poisoning dose",
+    "results": [
+      "results/ba/ba_threshold.csv",
+      "results/ba/ba_ratio_means.csv"
+    ],
+    "analysis": "code/analysis/an18_ba.py",
+    "launcher": "code/queues/cyclea-h18/queues/vm1.jsonl",
+    "seeds": "42\u201346"
+  },
+  {
+    "item": "Table 20",
+    "title": "BA trigger specificity",
+    "results": [
+      "results/ba/ba_specificity.csv",
+      "results/ba/ba_control_string_summary.csv"
+    ],
+    "analysis": "code/analysis/an18_ba.py",
+    "launcher": "code/queues/cyclea-h18/queues/vm1.jsonl",
+    "seeds": "42\u201346"
+  },
+  {
+    "item": "Table 21",
+    "title": "BA second model",
+    "results": [
+      "results/ba/ba_second_model.csv"
+    ],
+    "analysis": "code/analysis/an18_ba.py",
+    "launcher": "code/queues/cyclea-h18/queues/vm1.jsonl",
+    "seeds": "42\u201346"
+  },
+  {
+    "item": "Table 22",
+    "title": "BA prompt mitigation",
+    "results": [
+      "results/ba/ba_defence.csv"
+    ],
+    "analysis": "code/analysis/an18_ba.py",
+    "launcher": "code/queues/cyclea-h18/queues/vm1.jsonl",
+    "seeds": "42\u201346"
+  },
+  {
+    "item": "Table 23",
+    "title": "Joint MIA\u2013DEA",
+    "results": [
+      "results/joint/joint_mia_dea.csv",
+      "results/joint/joint_logistic.csv",
+      "results/joint/joint_auc.csv"
+    ],
+    "analysis": "code/analysis/an_joint.py",
+    "launcher": "code/queues/cyclea-h12/lanes/seg/joint_small.sh",
+    "seeds": "42\u201344; bootstrap 0"
+  },
+  {
+    "item": "Table 24",
+    "title": "Summary",
+    "results": [
+      "results/metadata/summary_table_replacement.csv",
+      "paper_numbers/MANUSCRIPT_TRACE.csv"
+    ],
+    "analysis": "paper_numbers/trace_manuscript.py",
+    "launcher": "",
+    "seeds": "inherits referenced experiments"
+  },
+  {
+    "item": "Table 25",
+    "title": "S2MIA",
+    "results": [
+      "results/s2mia/s2mia_replication_8seed.csv"
+    ],
+    "analysis": "code/analysis/an_s2mia_rep.py",
+    "launcher": "code/queues/cyclea-h12/lanes/seg/s2mia_mistral.sh",
+    "seeds": "42\u201349; launcher adds 45\u201349"
+  },
+  {
+    "item": "Table 26",
+    "title": "MBMIA",
+    "results": [
+      "results/mbmia/mbmia.csv"
+    ],
+    "analysis": "code/analysis/an_mbmia.py",
+    "launcher": "code/queues/cyclea-h12/lanes/seg/mbmia_fiqa.sh",
+    "seeds": "42, 1337, 2027, 31415, 65537"
+  },
+  {
+    "item": "Fig. 1",
+    "title": "Lifecycle diagram",
+    "results": [
+      "paper_numbers/MANUSCRIPT_TRACE.csv"
+    ],
+    "analysis": "paper_numbers/trace_manuscript.py",
+    "launcher": "",
+    "seeds": ""
+  },
+  {
+    "item": "Fig. 2",
+    "title": "MIA scale",
+    "results": [
+      "figures/mia_scale_figure_data.csv"
+    ],
+    "analysis": "figures/mia_scale_figure_plot.py",
+    "launcher": "code/mia/cyclea-h12/tools/h12_mia_scale.py",
+    "seeds": "bootstrap 0"
+  },
+  {
+    "item": "Fig. 3",
+    "title": "DEA scale, email",
+    "results": [
+      "figures/dea_scale_panels_email_data.csv"
+    ],
+    "analysis": "figures/dea_scale_panels_email_plot.py",
+    "launcher": "code/queues/cyclea-h18/queues/vm2.jsonl",
+    "seeds": "42\u201346; standard series only for paper"
+  },
+  {
+    "item": "Section V-B",
+    "title": "AIA human validation",
+    "results": [
+      "results/aia/aia_human_validation.csv",
+      "results/aia/aia_human_validation.tex",
+      "results/aia/aia_human_validation_examples.csv",
+      "results/aia/README_human_validation.md"
+    ],
+    "analysis": "code/aia/aia_hv_report.py",
+    "launcher": "",
+    "seeds": "CPU; two author ratings; withheld inputs"
+  },
+  {
+    "item": "Section IV-F",
+    "title": "MIA model-free baseline",
+    "results": [
+      "results/mia/mia_blind_baseline.csv"
+    ],
+    "analysis": "paper_numbers/mia_blind_baseline_protocol.json",
+    "launcher": "",
+    "seeds": "ten repetitions of five-fold cross-validation"
+  }
+]

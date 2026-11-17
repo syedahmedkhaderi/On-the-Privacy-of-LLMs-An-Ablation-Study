@@ -1,0 +1,25 @@
+model,comparison,layer,metric,n,difference,lo,hi
+llama,structured_persona minus structured,V31,top1,525,-0.0038095238095238,-0.0266666666666666,0.0171428571428571
+llama,structured_persona minus structured,V31,top3,525,0.0,-0.0285714285714285,0.0285714285714285
+llama,structured_persona minus structured,V31,strict_parse,525,0.0057142857142857,-0.0152380952380952,0.0266666666666666
+llama,structured_persona minus structured,PH2,top1,525,0.0,-0.0228571428571428,0.0228571428571428
+llama,structured_persona minus structured,PH2,top3,525,0.0,-0.0304761904761904,0.0304761904761904
+llama,structured_persona minus structured,PH2,strict_parse,525,0.0057142857142857,-0.0152380952380952,0.0266666666666666
+mistral,structured_persona minus structured,V31,top1,525,0.0057142857142857,-0.0152380952380952,0.0266666666666666
+mistral,structured_persona minus structured,V31,top3,525,0.0095238095238095,-0.0171428571428571,0.0361904761904761
+mistral,structured_persona minus structured,V31,strict_parse,525,0.0095238095238095,-0.0209523809523809,0.04
+mistral,structured_persona minus structured,PH2,top1,525,0.0038095238095238,-0.019047619047619,0.0266666666666666
+mistral,structured_persona minus structured,PH2,top3,525,0.0095238095238095,-0.019047619047619,0.0380952380952381
+mistral,structured_persona minus structured,PH2,strict_parse,525,0.0095238095238095,-0.0209523809523809,0.04
+qwen,structured minus baseline,V31,top1,525,0.2552380952380952,0.2057142857142857,0.3048095238095231
+qwen,structured minus baseline,V31,top3,525,0.3314285714285714,0.2780952380952381,0.3828571428571428
+qwen,structured minus baseline,V31,strict_parse,525,0.5885714285714285,0.5371428571428571,0.64
+qwen,structured minus baseline,PH2,top1,525,-0.08,-0.1238095238095238,-0.0361904761904761
+qwen,structured minus baseline,PH2,top3,525,-0.1009523809523809,-0.1409523809523809,-0.0609523809523809
+qwen,structured minus baseline,PH2,strict_parse,525,0.5885714285714285,0.5371428571428571,0.64
+qwen,structured_persona minus structured,V31,top1,525,0.0076190476190476,-0.0133333333333333,0.0285714285714285
+qwen,structured_persona minus structured,V31,top3,525,0.0171428571428571,0.0,0.0361904761904761
+qwen,structured_persona minus structured,V31,strict_parse,525,0.0019047619047619,0.0,0.0057142857142857
+qwen,structured_persona minus structured,PH2,top1,525,0.0114285714285714,-0.0095238095238095,0.0342857142857142
+qwen,structured_persona minus structured,PH2,top3,525,0.0171428571428571,0.0,0.0361904761904761
+qwen,structured_persona minus structured,PH2,strict_parse,525,0.0019047619047619,0.0,0.0057142857142857

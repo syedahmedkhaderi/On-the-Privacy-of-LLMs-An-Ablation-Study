@@ -1,0 +1,86 @@
+comparison,layer,top_k,attribute,n,agree,kappa,consistency_rule
+A-B,none,top1,all,120,114,0.885,true
+A-rules,lenient,top1,all,120,113,0.864,true
+A-rules,strict,top1,all,120,105,0.733,true
+B-rules,lenient,top1,all,120,111,0.828,true
+B-rules,strict,top1,all,120,107,0.770,true
+A-B,none,top1,age,15,15,1.000,true
+A-rules,lenient,top1,age,15,13,0.737,true
+A-rules,strict,top1,age,15,13,0.737,true
+B-rules,lenient,top1,age,15,13,0.737,true
+B-rules,strict,top1,age,15,13,0.737,true
+A-B,none,top1,education,15,10,0.312,true
+A-rules,lenient,top1,education,15,12,0.444,true
+A-rules,strict,top1,education,15,4,0.000,true
+B-rules,lenient,top1,education,15,11,0.444,true
+B-rules,strict,top1,education,15,7,0.000,true
+A-B,none,top1,gender,15,15,1.000,true
+A-rules,lenient,top1,gender,15,15,1.000,true
+A-rules,strict,top1,gender,15,15,1.000,true
+B-rules,lenient,top1,gender,15,15,1.000,true
+B-rules,strict,top1,gender,15,15,1.000,true
+A-B,none,top1,income,15,15,1.000,true
+A-rules,lenient,top1,income,15,15,1.000,true
+A-rules,strict,top1,income,15,15,1.000,true
+B-rules,lenient,top1,income,15,15,1.000,true
+B-rules,strict,top1,income,15,15,1.000,true
+A-B,none,top1,location,15,15,1.000,true
+A-rules,lenient,top1,location,15,15,1.000,true
+A-rules,strict,top1,location,15,15,1.000,true
+B-rules,lenient,top1,location,15,15,1.000,true
+B-rules,strict,top1,location,15,15,1.000,true
+A-B,none,top1,relationship status,15,14,0.867,true
+A-rules,lenient,top1,relationship status,15,14,0.867,true
+A-rules,strict,top1,relationship status,15,14,0.867,true
+B-rules,lenient,top1,relationship status,15,13,0.732,true
+B-rules,strict,top1,relationship status,15,13,0.732,true
+A-B,none,top1,occupation,15,15,1.000,true
+A-rules,lenient,top1,occupation,15,14,0.815,true
+A-rules,strict,top1,occupation,15,14,0.815,true
+B-rules,lenient,top1,occupation,15,14,0.815,true
+B-rules,strict,top1,occupation,15,14,0.815,true
+A-B,none,top1,place of birth,15,15,1.000,true
+A-rules,lenient,top1,place of birth,15,15,1.000,true
+A-rules,strict,top1,place of birth,15,15,1.000,true
+B-rules,lenient,top1,place of birth,15,15,1.000,true
+B-rules,strict,top1,place of birth,15,15,1.000,true
+A-B,none,top3,all,105,100,0.820,true
+A-rules,lenient,top3,all,105,98,0.760,true
+A-rules,strict,top3,all,105,88,0.563,true
+B-rules,lenient,top3,all,105,97,0.732,true
+B-rules,strict,top3,all,105,89,0.593,true
+A-B,none,top3,age,15,15,1.000,true
+A-rules,lenient,top3,age,15,12,0.471,true
+A-rules,strict,top3,age,15,12,0.471,true
+B-rules,lenient,top3,age,15,12,0.471,true
+B-rules,strict,top3,age,15,12,0.471,true
+A-B,none,top3,education,15,11,0.189,true
+A-rules,lenient,top3,education,15,12,-0.098,true
+A-rules,strict,top3,education,15,2,0.000,true
+B-rules,lenient,top3,education,15,12,0.328,true
+B-rules,strict,top3,education,15,4,0.000,true
+A-B,none,top3,income,15,15,1.000,true
+A-rules,lenient,top3,income,15,15,1.000,true
+A-rules,strict,top3,income,15,15,1.000,true
+B-rules,lenient,top3,income,15,15,1.000,true
+B-rules,strict,top3,income,15,15,1.000,true
+A-B,none,top3,location,15,15,1.000,true
+A-rules,lenient,top3,location,15,15,1.000,true
+A-rules,strict,top3,location,15,15,1.000,true
+B-rules,lenient,top3,location,15,15,1.000,true
+B-rules,strict,top3,location,15,15,1.000,true
+A-B,none,top3,relationship status,15,14,0.815,true
+A-rules,lenient,top3,relationship status,15,15,1.000,true
+A-rules,strict,top3,relationship status,15,15,1.000,true
+B-rules,lenient,top3,relationship status,15,14,0.815,true
+B-rules,strict,top3,relationship status,15,14,0.815,true
+A-B,none,top3,occupation,15,15,1.000,true
+A-rules,lenient,top3,occupation,15,14,0.634,true
+A-rules,strict,top3,occupation,15,14,0.634,true
+B-rules,lenient,top3,occupation,15,14,0.634,true
+B-rules,strict,top3,occupation,15,14,0.634,true
+A-B,none,top3,place of birth,15,15,1.000,true
+A-rules,lenient,top3,place of birth,15,15,1.000,true
+A-rules,strict,top3,place of birth,15,15,1.000,true
+B-rules,lenient,top3,place of birth,15,15,1.000,true
+B-rules,strict,top3,place of birth,15,15,1.000,true

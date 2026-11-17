@@ -1,0 +1,20 @@
+\begin{tabular}{lllllllllllllllllllllllll}
+\toprule
+model & style & layer & truth & n & n\_attributes & complete & majority\_micro & strict\_parse\_rate & V31\_PH2\_outcome\_disagreements & correct & incorrect & refusal & empty & parse\_failure & top1\_micro & top1\_micro\_lo & top1\_micro\_hi & top3\_micro & top3\_micro\_lo & top3\_micro\_hi & top1\_micro\_lo\_clipped & top1\_micro\_hi\_clipped & top3\_micro\_lo\_clipped & top3\_micro\_hi\_clipped \\
+\midrule
+llama & baseline & V31 & recipient & 525 & 8 & True & 0.3429 & 0.8 & 78 & 247 & 115 & 0 & 15 & 148 & 0.4705 & 0.4286 & 0.5143 & 0.5638 & 0.5219 & 0.6057 & 0.4286 & 0.5143 & 0.5219 & 0.6057 \\
+llama & baseline & PH2 & recipient & 525 & 8 & True & 0.3429 & 0.8 & 78 & 310 & 128 & 0 & 15 & 72 & 0.5905 & 0.5467 & 0.6343 & 0.6933 & 0.6533 & 0.7333 & 0.5467 & 0.6343 & 0.6533 & 0.7333 \\
+llama & format\_exemplar & V31 & recipient & 525 & 8 & True & 0.3429 & 0.9257 & 49 & 272 & 147 & 0 & 30 & 76 & 0.5181 & 0.4762 & 0.5619 & 0.6971 & 0.659 & 0.7371 & 0.4762 & 0.5619 & 0.659 & 0.7371 \\
+llama & format\_exemplar & PH2 & recipient & 525 & 8 & True & 0.3429 & 0.9257 & 49 & 313 & 154 & 0 & 30 & 28 & 0.5962 & 0.5543 & 0.6381 & 0.7829 & 0.7467 & 0.8171 & 0.5543 & 0.6381 & 0.7467 & 0.8171 \\
+llama & structured & V31 & recipient & 445 & 7 & False & 0.391 & 0.6562 & 65 & 136 & 87 & 0 & 0 & 222 & 0.3056 & 0.2629 & 0.3483 & 0.4225 & 0.3775 & 0.4674 & 0.2629 & 0.3483 & 0.3775 & 0.4674 \\
+llama & structured & PH2 & recipient & 445 & 7 & False & 0.391 & 0.6562 & 65 & 184 & 103 & 0 & 0 & 158 & 0.4135 & 0.3685 & 0.4584 & 0.5393 & 0.4921 & 0.5865 & 0.3685 & 0.4584 & 0.4921 & 0.5865 \\
+mistral & baseline & V31 & recipient & 525 & 8 & True & 0.3429 & 0.7162 & 206 & 203 & 108 & 1 & 1 & 212 & 0.3867 & 0.3467 & 0.4286 & 0.4705 & 0.4286 & 0.5124 & 0.3467 & 0.4286 & 0.4286 & 0.5124 \\
+mistral & baseline & PH2 & recipient & 525 & 8 & True & 0.3429 & 0.7162 & 206 & 335 & 179 & 0 & 1 & 10 & 0.6381 & 0.5962 & 0.68 & 0.7924 & 0.7581 & 0.8267 & 0.5962 & 0.68 & 0.7581 & 0.8267 \\
+mistral & format\_exemplar & V31 & recipient & 525 & 8 & True & 0.3429 & 0.7733 & 179 & 205 & 129 & 4 & 6 & 181 & 0.3905 & 0.3505 & 0.4324 & 0.4743 & 0.4324 & 0.5162 & 0.3505 & 0.4324 & 0.4324 & 0.5162 \\
+mistral & format\_exemplar & PH2 & recipient & 525 & 8 & True & 0.3429 & 0.7733 & 179 & 313 & 198 & 0 & 6 & 8 & 0.5962 & 0.5543 & 0.64 & 0.7505 & 0.7124 & 0.7886 & 0.5543 & 0.64 & 0.7124 & 0.7886 \\
+qwen & baseline & V31 & recipient & 525 & 8 & True & 0.3429 & 0.3029 & 345 & 126 & 33 & 0 & 3 & 363 & 0.24 & 0.2038 & 0.2781 & 0.2724 & 0.2343 & 0.3105 & 0.2038 & 0.2781 & 0.2343 & 0.3105 \\
+qwen & baseline & PH2 & recipient & 525 & 8 & True & 0.3429 & 0.3029 & 345 & 359 & 145 & 0 & 3 & 18 & 0.6838 & 0.6438 & 0.7238 & 0.8248 & 0.7924 & 0.8571 & 0.6438 & 0.7238 & 0.7924 & 0.8571 \\
+qwen & format\_exemplar & V31 & recipient & 525 & 8 & True & 0.3429 & 0.9981 & 72 & 284 & 166 & 0 & 1 & 74 & 0.541 & 0.4971 & 0.5829 & 0.6876 & 0.6476 & 0.7276 & 0.4971 & 0.5829 & 0.6476 & 0.7276 \\
+qwen & format\_exemplar & PH2 & recipient & 525 & 8 & True & 0.3429 & 0.9981 & 72 & 341 & 181 & 0 & 1 & 2 & 0.6495 & 0.6076 & 0.6914 & 0.8038 & 0.7695 & 0.8381 & 0.6076 & 0.6914 & 0.7695 & 0.8381 \\
+\bottomrule
+\end{tabular}

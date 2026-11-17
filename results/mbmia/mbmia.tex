@@ -1,0 +1,54 @@
+\begin{tabular}{lllllllll}
+\toprule
+dataset & mode & metric & mean & lo & hi & n\_seeds & lo\_clipped & hi\_clipped \\
+\midrule
+fiqa & answer\_censored & auc & 0.6313 & 0.5749 & 0.6878 & 5 & 0.5749 & 0.6878 \\
+fiqa & answer\_censored & pr\_auc & 0.6487 & 0.5985 & 0.6989 & 5 & 0.5985 & 0.6989 \\
+fiqa & answer\_censored & tpr\_at\_5\_fpr & 0.1151 & 0.08202 & 0.1482 & 5 & 0.08202 & 0.1482 \\
+fiqa & answer\_censored & retrieval\_only\_auc & 0.9914 & 0.9824 & 1 & 5 & 0.9824 & 1 \\
+fiqa & answer\_censored & member\_mean\_mask\_accuracy & 0.09912 & 0.0934 & 0.1048 & 5 & 0.0934 & 0.1048 \\
+fiqa & answer\_censored & non\_member\_mean\_mask\_accuracy & 0.06133 & 0.05116 & 0.0715 & 5 & 0.05116 & 0.0715 \\
+fiqa & full & auc & 0.972 & 0.9626 & 0.9813 & 5 & 0.9626 & 0.9813 \\
+fiqa & full & pr\_auc & 0.9827 & 0.9746 & 0.9908 & 5 & 0.9746 & 0.9908 \\
+fiqa & full & tpr\_at\_5\_fpr & 0.9479 & 0.9268 & 0.969 & 5 & 0.9268 & 0.969 \\
+fiqa & full & retrieval\_only\_auc & 0.9914 & 0.9824 & 1 & 5 & 0.9824 & 1 \\
+fiqa & full & member\_mean\_mask\_accuracy & 0.7304 & 0.7197 & 0.7411 & 5 & 0.7197 & 0.7411 \\
+fiqa & full & non\_member\_mean\_mask\_accuracy & 0.06807 & 0.05931 & 0.07682 & 5 & 0.05931 & 0.07682 \\
+fiqa & leave\_one\_chunk\_out & auc & 0.498 & 0.4694 & 0.5266 & 5 & 0.4694 & 0.5266 \\
+fiqa & leave\_one\_chunk\_out & pr\_auc & 0.5297 & 0.5085 & 0.5508 & 5 & 0.5085 & 0.5508 \\
+fiqa & leave\_one\_chunk\_out & tpr\_at\_5\_fpr & 0.04803 & 0.02721 & 0.06885 & 5 & 0.02721 & 0.06885 \\
+fiqa & leave\_one\_chunk\_out & retrieval\_only\_auc & 0.9914 & 0.9824 & 1 & 5 & 0.9824 & 1 \\
+fiqa & leave\_one\_chunk\_out & member\_mean\_mask\_accuracy & 0.06573 & 0.06017 & 0.07129 & 5 & 0.06017 & 0.07129 \\
+fiqa & leave\_one\_chunk\_out & non\_member\_mean\_mask\_accuracy & 0.06804 & 0.05934 & 0.07675 & 5 & 0.05934 & 0.07675 \\
+fiqa & none & auc & 0.5034 & 0.4854 & 0.5214 & 5 & 0.4854 & 0.5214 \\
+fiqa & none & pr\_auc & 0.529 & 0.4965 & 0.5614 & 5 & 0.4965 & 0.5614 \\
+fiqa & none & tpr\_at\_5\_fpr & 0.05904 & 0.03335 & 0.08473 & 5 & 0.03335 & 0.08473 \\
+fiqa & none & retrieval\_only\_auc & 0.9914 & 0.9824 & 1 & 5 & 0.9824 & 1 \\
+fiqa & none & member\_mean\_mask\_accuracy & 0.08838 & 0.083 & 0.09376 & 5 & 0.083 & 0.09376 \\
+fiqa & none & non\_member\_mean\_mask\_accuracy & 0.08703 & 0.07913 & 0.09493 & 5 & 0.07913 & 0.09493 \\
+healthcaremagic & answer\_censored & auc & 0.6577 & 0.6188 & 0.6965 & 5 & 0.6188 & 0.6965 \\
+healthcaremagic & answer\_censored & pr\_auc & 0.6559 & 0.6019 & 0.7099 & 5 & 0.6019 & 0.7099 \\
+healthcaremagic & answer\_censored & tpr\_at\_5\_fpr & 0.131 & 0.05948 & 0.2025 & 5 & 0.05948 & 0.2025 \\
+healthcaremagic & answer\_censored & retrieval\_only\_auc & 0.9959 & 0.9927 & 0.999 & 5 & 0.9927 & 0.999 \\
+healthcaremagic & answer\_censored & member\_mean\_mask\_accuracy & 0.08346 & 0.07753 & 0.0894 & 5 & 0.07753 & 0.0894 \\
+healthcaremagic & answer\_censored & non\_member\_mean\_mask\_accuracy & 0.05203 & 0.04676 & 0.0573 & 5 & 0.04676 & 0.0573 \\
+healthcaremagic & full & auc & 0.9622 & 0.945 & 0.9794 & 5 & 0.945 & 0.9794 \\
+healthcaremagic & full & pr\_auc & 0.9788 & 0.9693 & 0.9882 & 5 & 0.9693 & 0.9882 \\
+healthcaremagic & full & tpr\_at\_5\_fpr & 0.943 & 0.913 & 0.973 & 5 & 0.913 & 0.973 \\
+healthcaremagic & full & retrieval\_only\_auc & 0.9959 & 0.9927 & 0.999 & 5 & 0.9927 & 0.999 \\
+healthcaremagic & full & member\_mean\_mask\_accuracy & 0.5508 & 0.5285 & 0.573 & 5 & 0.5285 & 0.573 \\
+healthcaremagic & full & non\_member\_mean\_mask\_accuracy & 0.07362 & 0.06572 & 0.08152 & 5 & 0.06572 & 0.08152 \\
+healthcaremagic & leave\_one\_chunk\_out & auc & 0.5027 & 0.4522 & 0.5532 & 5 & 0.4522 & 0.5532 \\
+healthcaremagic & leave\_one\_chunk\_out & pr\_auc & 0.5162 & 0.4663 & 0.566 & 5 & 0.4663 & 0.566 \\
+healthcaremagic & leave\_one\_chunk\_out & tpr\_at\_5\_fpr & 0.061 & 0.01767 & 0.1043 & 5 & 0.01767 & 0.1043 \\
+healthcaremagic & leave\_one\_chunk\_out & retrieval\_only\_auc & 0.9959 & 0.9927 & 0.999 & 5 & 0.9927 & 0.999 \\
+healthcaremagic & leave\_one\_chunk\_out & member\_mean\_mask\_accuracy & 0.07488 & 0.06894 & 0.08083 & 5 & 0.06894 & 0.08083 \\
+healthcaremagic & leave\_one\_chunk\_out & non\_member\_mean\_mask\_accuracy & 0.07367 & 0.06582 & 0.08152 & 5 & 0.06582 & 0.08152 \\
+healthcaremagic & none & auc & 0.4974 & 0.4799 & 0.5149 & 5 & 0.4799 & 0.5149 \\
+healthcaremagic & none & pr\_auc & 0.5101 & 0.4916 & 0.5285 & 5 & 0.4916 & 0.5285 \\
+healthcaremagic & none & tpr\_at\_5\_fpr & 0.056 & 0.0288 & 0.0832 & 5 & 0.0288 & 0.0832 \\
+healthcaremagic & none & retrieval\_only\_auc & 0.9959 & 0.9927 & 0.999 & 5 & 0.9927 & 0.999 \\
+healthcaremagic & none & member\_mean\_mask\_accuracy & 0.08132 & 0.079 & 0.08364 & 5 & 0.079 & 0.08364 \\
+healthcaremagic & none & non\_member\_mean\_mask\_accuracy & 0.08145 & 0.07634 & 0.08655 & 5 & 0.07634 & 0.08655 \\
+\bottomrule
+\end{tabular}

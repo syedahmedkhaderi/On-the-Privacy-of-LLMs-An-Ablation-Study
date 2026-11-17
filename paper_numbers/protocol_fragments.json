@@ -1,0 +1,68 @@
+{
+  "mia_minhash": {
+    "source_id": "workspace/cyclea-protected/mia-enron/stageB.py",
+    "source_sha256": "d9a46731dad0ed1da29c1a644f7b7ca4bc34b70f7e0997f21cbf020434a1d94f",
+    "line": 24,
+    "line_text": "    h, doc = ngram_hash(flat, lens, 5); sig = np.full((len(lens), 128), M64, np.uint64)",
+    "settings": {
+      "shingle_tokens": 5,
+      "signature_count": 128
+    }
+  },
+  "census_names": {
+    "source_id": "workspace/cyclea-protected/analysis/work/dea_guess_control.py",
+    "source_sha256": "93cc173839ad69c649958dfdcdd3ea5ecfeaa46eba7533c332f84c32c14fa550",
+    "line": 25,
+    "line_text": "first=census(D+\"Names2020_FirstNames_RaceHispanic_Top1000.xlsx\"); last=census(D+\"Names2020_LastNames_RaceHispanic_Top1000.xlsx\")",
+    "settings": {
+      "year": 2020,
+      "pool_size": 1000
+    }
+  },
+  "illustrative_tram": {
+    "source_id": "confirmed manuscript/main_highlighted.tex",
+    "source_sha256": "8a4d7c92090042fbc2befb4dde1aa86e11edd95f3755f87d8886334d99cabab9",
+    "line": 919,
+    "line_text": "As an illustration, consider a short synthetic comment: \\emph{``The 28 tram was packed again this morning, so I walked up the hill to the office. I still remember watching the Expo 98 fireworks from my grandmother's balcony when I was in primary school.''} The tram line and the hill point to a specific city, and the dated childhood memory bounds the author's age to a range of a few years. Neither attribute is stated, and both follow from explicit cues in the text.",
+    "settings": {
+      "value": 28
+    },
+    "kind": "author-defined illustration, not an observed result"
+  },
+  "illustrative_expo": {
+    "source_id": "confirmed manuscript/main_highlighted.tex",
+    "source_sha256": "8a4d7c92090042fbc2befb4dde1aa86e11edd95f3755f87d8886334d99cabab9",
+    "line": 919,
+    "line_text": "As an illustration, consider a short synthetic comment: \\emph{``The 28 tram was packed again this morning, so I walked up the hill to the office. I still remember watching the Expo 98 fireworks from my grandmother's balcony when I was in primary school.''} The tram line and the hill point to a specific city, and the dated childhood memory bounds the author's age to a range of a few years. Neither attribute is stated, and both follow from explicit cues in the text.",
+    "settings": {
+      "value": 98
+    },
+    "kind": "author-defined illustration, not an observed result"
+  },
+  "illustrative_distinct_count": {
+    "source_id": "confirmed manuscript/main_highlighted.tex",
+    "source_sha256": "8a4d7c92090042fbc2befb4dde1aa86e11edd95f3755f87d8886334d99cabab9",
+    "line": 1124,
+    "line_text": "value written in 20 of the 5,000 outputs counts once. Emails are compared",
+    "settings": {
+      "value": 20
+    },
+    "kind": "author-defined illustration, not an observed result"
+  },
+  "disclosure_enumeration": {
+    "source_id": "confirmed manuscript/main_highlighted.tex",
+    "source_sha256": "8a4d7c92090042fbc2befb4dde1aa86e11edd95f3755f87d8886334d99cabab9",
+    "line": 1848,
+    "line_text": "\\textbf{Analysis plans and extensions decided after first results.} For each experiment block, the design and the analysis were written to a file and hashed before the first GPU job of the block. The following were decided after seeing earlier results of the same block and are disclosed here: (1) DEA: the sampling seeds 45 and 46 for all models, added to narrow the intervals (three-seed and five-seed tables are both in the repository), and, for the deduplicated Pythia-1.4B model, the correction of the end-of-sequence identifier in its bundled generation configuration (2 instead of 0), which is used to cut the output; its tokenizer files are byte-identical to those of the standard model; (2) BA: the doses of 1 to 5 poisoned examples, the seeds 45 and 46, the untrained-string evaluations, the second trigger, the second model and the prompt-level instruction; (3) AIA: the lenient scoring layer, the format-example prompt and the structured output protocol, the last of which was designated primary before its outputs were scored; a first structured contract that required exactly three different guesses could not be satisfied for gender and is reported only here: under that first contract 368, 206 and 468 of the 525 answers of Llama, Mistral and Qwen were valid, the invalid answers of Llama and Qwen repeated a guess (157 and 57 answers, among them all 53 gender answers of each model); those of Mistral had text after the JSON object (246 answers), were cut at the limit of 96 new tokens (142) or held fewer than three guesses (96), and one answer can have several of these defects; (4) S2MIA: the extension from three to eight seeds; (5) MIA: the additional scores of Experiment B and the additional model sizes of Experiment A, added after the mean-loss and Min-K\\% ($K{=}20$) results for Pythia-1.4B and Pythia-6.9B.",
+    "settings": {
+      "ordinals": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "kind": "structural enumeration of disclosed protocol extensions"
+  }
+}

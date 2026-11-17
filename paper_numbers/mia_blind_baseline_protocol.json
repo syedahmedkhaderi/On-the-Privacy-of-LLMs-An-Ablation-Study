@@ -1,0 +1,50 @@
+{
+  "status": "complete",
+  "protocol": {
+    "counts_per_class": 359,
+    "window_tokens": 256,
+    "decode": "tokenizers.Tokenizer.decode, skip_special_tokens=False",
+    "outer_cv": "stratified 5-fold shuffled",
+    "outer_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "inner_cv": "stratified 5-fold shuffled, seed 0, mean validation ROC AUC",
+    "C_grid": [
+      0.01,
+      0.1,
+      1,
+      10
+    ],
+    "solver": "liblinear",
+    "meta_scaling": "StandardScaler fit within folds",
+    "word": "word 1-2 grams min_df=2 sublinear_tf=True",
+    "char": "character 3-5 grams, sklearn defaults",
+    "bootstrap": {
+      "draws": 2000,
+      "seed": 0,
+      "stratified_by_membership": true,
+      "interval": "percentile, fixed repetition-0 out-of-fold scores"
+    },
+    "tpr": "maximum empirical TPR at FPR <= 0.01, repetition 0",
+    "selection": "highest mean AUC across repetitions",
+    "outer_folds": 5,
+    "outer_repetitions": 10
+  },
+  "library_versions": {
+    "python": "3.10.17",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "scikit_learn": "1.7.2",
+    "tokenizers": "0.22.2"
+  },
+  "source_report_sha256": "c35298329d45675da544aa98feeca2dff0e7e866c8f438b39e9d332c782b5a77"
+}

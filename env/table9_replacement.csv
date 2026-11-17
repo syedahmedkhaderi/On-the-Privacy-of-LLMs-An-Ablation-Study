@@ -1,0 +1,4 @@
+key,hf_id,revision,params_exact,layers,hidden,context_config_max_position_embeddings,model_card_context
+llama,meta-llama/Llama-3.1-8B-Instruct,0e9e39f249a16976918f6564b8830bc894c89659,8030261248,32,4096,131072,"not in local cache (no README downloaded); keep config value, cite model card separately"
+mistral,mistralai/Mistral-7B-Instruct-v0.2,63a8b081895390a26e140280378bc85ec8bce07a,7241732096,32,4096,32768,"not in local cache (no README downloaded); keep config value, cite model card separately"
+qwen,Qwen/Qwen3-8b,b968826d9c46dd6066d109eabc6255188de91218,8190735360,36,4096,40960,"not in local cache (no README downloaded); keep config value, cite model card separately"

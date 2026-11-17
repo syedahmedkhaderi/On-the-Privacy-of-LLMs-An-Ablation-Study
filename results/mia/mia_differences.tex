@@ -1,0 +1,122 @@
+\begin{tabular}{lllllllllll}
+\toprule
+variant & comparison & low & high & score & delta\_auc & ci95\_lo & ci95\_hi & model & ci95\_lo\_clipped & ci95\_hi\_clipped \\
+\midrule
+PRIMARY & consecutive\_size & 70m & 160m & mean\_loss & -0.006013 & -0.01448 & 0.002444 &  & 0 & 0.002444 \\
+PRIMARY & consecutive\_size & 70m & 160m & min\_k\_10 & -0.009125 & -0.0269 & 0.008721 &  & 0 & 0.008721 \\
+PRIMARY & consecutive\_size & 70m & 160m & min\_k\_20 & -0.01189 & -0.02564 & 0.001855 &  & 0 & 0.001855 \\
+PRIMARY & consecutive\_size & 70m & 160m & min\_k\_30 & -0.01254 & -0.02416 & -0.00121 &  & 0 & 0 \\
+PRIMARY & consecutive\_size & 70m & 160m & zlib\_ratio & -0.01754 & -0.03132 & -0.003887 &  & 0 & 0 \\
+PRIMARY & consecutive\_size & 160m & 410m & mean\_loss & -0.001591 & -0.01131 & 0.008194 &  & 0 & 0.008194 \\
+PRIMARY & consecutive\_size & 160m & 410m & min\_k\_10 & 0.007682 & -0.01043 & 0.02571 &  & 0 & 0.02571 \\
+PRIMARY & consecutive\_size & 160m & 410m & min\_k\_20 & -0.001164 & -0.01528 & 0.01284 &  & 0 & 0.01284 \\
+PRIMARY & consecutive\_size & 160m & 410m & min\_k\_30 & -0.002103 & -0.01477 & 0.0107 &  & 0 & 0.0107 \\
+PRIMARY & consecutive\_size & 160m & 410m & zlib\_ratio & -0.01154 & -0.02814 & 0.004842 &  & 0 & 0.004842 \\
+PRIMARY & consecutive\_size & 160m & 410m & ref\_ratio & 0.01186 & -0.0119 & 0.03578 &  & 0 & 0.03578 \\
+PRIMARY & consecutive\_size & 410m & 1.4b & mean\_loss & 0.006556 & -0.003476 & 0.01662 &  & 0 & 0.01662 \\
+PRIMARY & consecutive\_size & 410m & 1.4b & min\_k\_10 & 0.01051 & -0.005804 & 0.02706 &  & 0 & 0.02706 \\
+PRIMARY & consecutive\_size & 410m & 1.4b & min\_k\_20 & 0.008745 & -0.005106 & 0.02248 &  & 0 & 0.02248 \\
+PRIMARY & consecutive\_size & 410m & 1.4b & min\_k\_30 & 0.008426 & -0.003989 & 0.02081 &  & 0 & 0.02081 \\
+PRIMARY & consecutive\_size & 410m & 1.4b & zlib\_ratio & 0.007084 & -0.00696 & 0.02177 &  & 0 & 0.02177 \\
+PRIMARY & consecutive\_size & 410m & 1.4b & ref\_ratio & 0.01255 & -0.003616 & 0.02874 &  & 0 & 0.02874 \\
+PRIMARY & consecutive\_size & 1.4b & 2.8b & mean\_loss & 0.006463 & 2.308e-05 & 0.01302 &  & 2.308e-05 & 0.01302 \\
+PRIMARY & consecutive\_size & 1.4b & 2.8b & min\_k\_10 & 0.01545 & 0.002475 & 0.02886 &  & 0.002475 & 0.02886 \\
+PRIMARY & consecutive\_size & 1.4b & 2.8b & min\_k\_20 & 0.01439 & 0.004524 & 0.02427 &  & 0.004524 & 0.02427 \\
+PRIMARY & consecutive\_size & 1.4b & 2.8b & min\_k\_30 & 0.01297 & 0.004678 & 0.02159 &  & 0.004678 & 0.02159 \\
+PRIMARY & consecutive\_size & 1.4b & 2.8b & zlib\_ratio & 0.01065 & 0.00187 & 0.01969 &  & 0.00187 & 0.01969 \\
+PRIMARY & consecutive\_size & 1.4b & 2.8b & ref\_ratio & 0.01065 & 0.0007914 & 0.02083 &  & 0.0007914 & 0.02083 \\
+PRIMARY & consecutive\_size & 2.8b & 6.9b & mean\_loss & 0.02434 & 0.01629 & 0.03224 &  & 0.01629 & 0.03224 \\
+PRIMARY & consecutive\_size & 2.8b & 6.9b & min\_k\_10 & 0.04646 & 0.03123 & 0.06175 &  & 0.03123 & 0.06175 \\
+PRIMARY & consecutive\_size & 2.8b & 6.9b & min\_k\_20 & 0.04288 & 0.03071 & 0.05512 &  & 0.03071 & 0.05512 \\
+PRIMARY & consecutive\_size & 2.8b & 6.9b & min\_k\_30 & 0.03662 & 0.02604 & 0.04767 &  & 0.02604 & 0.04767 \\
+PRIMARY & consecutive\_size & 2.8b & 6.9b & zlib\_ratio & 0.02949 & 0.02 & 0.03919 &  & 0.02 & 0.03919 \\
+PRIMARY & consecutive\_size & 2.8b & 6.9b & ref\_ratio & 0.04461 & 0.0334 & 0.05618 &  & 0.0334 & 0.05618 \\
+PRIMARY & score\_minus\_mean\_loss &  &  & min\_k\_10 & -0.003833 & -0.03446 & 0.0269 & pythia-70m & 0 & 0.0269 \\
+PRIMARY & score\_minus\_mean\_loss &  &  & min\_k\_20 & 0.001304 & -0.02166 & 0.02391 & pythia-70m & 0 & 0.02391 \\
+PRIMARY & score\_minus\_mean\_loss &  &  & min\_k\_30 & 0.0004268 & -0.0173 & 0.01802 & pythia-70m & 0 & 0.01802 \\
+PRIMARY & score\_minus\_mean\_loss &  &  & zlib\_ratio & 0.01569 & -0.02917 & 0.05887 & pythia-70m & 0 & 0.05887 \\
+PRIMARY & score\_minus\_mean\_loss &  &  & min\_k\_10 & -0.006944 & -0.03543 & 0.02155 & pythia-160m & 0 & 0.02155 \\
+PRIMARY & score\_minus\_mean\_loss &  &  & min\_k\_20 & -0.004578 & -0.02545 & 0.01619 & pythia-160m & 0 & 0.01619 \\
+PRIMARY & score\_minus\_mean\_loss &  &  & min\_k\_30 & -0.006099 & -0.0222 & 0.0097 & pythia-160m & 0 & 0.0097 \\
+PRIMARY & score\_minus\_mean\_loss &  &  & zlib\_ratio & 0.004159 & -0.03578 & 0.04247 & pythia-160m & 0 & 0.04247 \\
+PRIMARY & score\_minus\_mean\_loss &  &  & ref\_ratio & -0.006463 & -0.04489 & 0.0323 & pythia-160m & 0 & 0.0323 \\
+PRIMARY & score\_minus\_mean\_loss &  &  & min\_k\_10 & 0.002328 & -0.0242 & 0.0288 & pythia-410m & 0 & 0.0288 \\
+PRIMARY & score\_minus\_mean\_loss &  &  & min\_k\_20 & -0.004151 & -0.02332 & 0.01476 & pythia-410m & 0 & 0.01476 \\
+PRIMARY & score\_minus\_mean\_loss &  &  & min\_k\_30 & -0.006611 & -0.02065 & 0.007177 & pythia-410m & 0 & 0.007177 \\
+PRIMARY & score\_minus\_mean\_loss &  &  & zlib\_ratio & -0.005788 & -0.0395 & 0.02749 & pythia-410m & 0 & 0.02749 \\
+PRIMARY & score\_minus\_mean\_loss &  &  & ref\_ratio & 0.006983 & -0.02539 & 0.03984 & pythia-410m & 0 & 0.03984 \\
+PRIMARY & score\_minus\_mean\_loss &  &  & min\_k\_10 & 0.006285 & -0.01931 & 0.03172 & pythia-1.4b & 0 & 0.03172 \\
+PRIMARY & score\_minus\_mean\_loss &  &  & min\_k\_20 & -0.001963 & -0.02045 & 0.01619 & pythia-1.4b & 0 & 0.01619 \\
+PRIMARY & score\_minus\_mean\_loss &  &  & min\_k\_30 & -0.004741 & -0.01805 & 0.008248 & pythia-1.4b & 0 & 0.008248 \\
+PRIMARY & score\_minus\_mean\_loss &  &  & zlib\_ratio & -0.005261 & -0.03509 & 0.02421 & pythia-1.4b & 0 & 0.02421 \\
+PRIMARY & score\_minus\_mean\_loss &  &  & ref\_ratio & 0.01297 & -0.01587 & 0.04174 & pythia-1.4b & 0 & 0.04174 \\
+PRIMARY & score\_minus\_mean\_loss &  &  & min\_k\_10 & 0.01527 & -0.009219 & 0.03963 & pythia-2.8b & 0 & 0.03963 \\
+PRIMARY & score\_minus\_mean\_loss &  &  & min\_k\_20 & 0.005967 & -0.01146 & 0.02305 & pythia-2.8b & 0 & 0.02305 \\
+PRIMARY & score\_minus\_mean\_loss &  &  & min\_k\_30 & 0.001769 & -0.01047 & 0.014 & pythia-2.8b & 0 & 0.014 \\
+PRIMARY & score\_minus\_mean\_loss &  &  & zlib\_ratio & -0.001071 & -0.02905 & 0.02656 & pythia-2.8b & 0 & 0.02656 \\
+PRIMARY & score\_minus\_mean\_loss &  &  & ref\_ratio & 0.01716 & -0.01028 & 0.04416 & pythia-2.8b & 0 & 0.04416 \\
+PRIMARY & score\_minus\_mean\_loss &  &  & min\_k\_10 & 0.03739 & 0.01432 & 0.06055 & pythia-6.9b & 0.01432 & 0.06055 \\
+PRIMARY & score\_minus\_mean\_loss &  &  & min\_k\_20 & 0.0245 & 0.008551 & 0.04039 & pythia-6.9b & 0.008551 & 0.04039 \\
+PRIMARY & score\_minus\_mean\_loss &  &  & min\_k\_30 & 0.01405 & 0.003018 & 0.02515 & pythia-6.9b & 0.003018 & 0.02515 \\
+PRIMARY & score\_minus\_mean\_loss &  &  & zlib\_ratio & 0.004081 & -0.02212 & 0.02984 & pythia-6.9b & 0 & 0.02984 \\
+PRIMARY & score\_minus\_mean\_loss &  &  & ref\_ratio & 0.03742 & 0.01189 & 0.06269 & pythia-6.9b & 0.01189 & 0.06269 \\
+SECONDARY & consecutive\_size & 70m & 160m & mean\_loss & -0.005059 & -0.01284 & 0.002856 &  & 0 & 0.002856 \\
+SECONDARY & consecutive\_size & 70m & 160m & min\_k\_10 & -0.009536 & -0.02689 & 0.008473 &  & 0 & 0.008473 \\
+SECONDARY & consecutive\_size & 70m & 160m & min\_k\_20 & -0.00845 & -0.02172 & 0.004959 &  & 0 & 0.004959 \\
+SECONDARY & consecutive\_size & 70m & 160m & min\_k\_30 & -0.009738 & -0.02136 & 0.001645 &  & 0 & 0.001645 \\
+SECONDARY & consecutive\_size & 70m & 160m & zlib\_ratio & -0.002064 & -0.01668 & 0.01256 &  & 0 & 0.01256 \\
+SECONDARY & consecutive\_size & 160m & 410m & mean\_loss & 0.01131 & 0.0003022 & 0.02246 &  & 0.0003022 & 0.02246 \\
+SECONDARY & consecutive\_size & 160m & 410m & min\_k\_10 & 0.0267 & 0.008519 & 0.04474 &  & 0.008519 & 0.04474 \\
+SECONDARY & consecutive\_size & 160m & 410m & min\_k\_20 & 0.0191 & 0.004167 & 0.03396 &  & 0.004167 & 0.03396 \\
+SECONDARY & consecutive\_size & 160m & 410m & min\_k\_30 & 0.01781 & 0.004119 & 0.03119 &  & 0.004119 & 0.03119 \\
+SECONDARY & consecutive\_size & 160m & 410m & zlib\_ratio & 0.01337 & -0.004718 & 0.03104 &  & 0 & 0.03104 \\
+SECONDARY & consecutive\_size & 160m & 410m & ref\_ratio & 0.03922 & 0.01468 & 0.06396 &  & 0.01468 & 0.06396 \\
+SECONDARY & consecutive\_size & 410m & 1.4b & mean\_loss & 0.02353 & 0.01242 & 0.03516 &  & 0.01242 & 0.03516 \\
+SECONDARY & consecutive\_size & 410m & 1.4b & min\_k\_10 & 0.03604 & 0.01996 & 0.05261 &  & 0.01996 & 0.05261 \\
+SECONDARY & consecutive\_size & 410m & 1.4b & min\_k\_20 & 0.03193 & 0.018 & 0.04607 &  & 0.018 & 0.04607 \\
+SECONDARY & consecutive\_size & 410m & 1.4b & min\_k\_30 & 0.03049 & 0.01757 & 0.04368 &  & 0.01757 & 0.04368 \\
+SECONDARY & consecutive\_size & 410m & 1.4b & zlib\_ratio & 0.03748 & 0.02138 & 0.05373 &  & 0.02138 & 0.05373 \\
+SECONDARY & consecutive\_size & 410m & 1.4b & ref\_ratio & 0.02868 & 0.01373 & 0.04378 &  & 0.01373 & 0.04378 \\
+SECONDARY & consecutive\_size & 1.4b & 2.8b & mean\_loss & 0.0104 & 0.004337 & 0.01646 &  & 0.004337 & 0.01646 \\
+SECONDARY & consecutive\_size & 1.4b & 2.8b & min\_k\_10 & 0.01847 & 0.006999 & 0.03021 &  & 0.006999 & 0.03021 \\
+SECONDARY & consecutive\_size & 1.4b & 2.8b & min\_k\_20 & 0.01709 & 0.008162 & 0.02601 &  & 0.008162 & 0.02601 \\
+SECONDARY & consecutive\_size & 1.4b & 2.8b & min\_k\_30 & 0.01596 & 0.008372 & 0.02353 &  & 0.008372 & 0.02353 \\
+SECONDARY & consecutive\_size & 1.4b & 2.8b & zlib\_ratio & 0.01366 & 0.005485 & 0.02201 &  & 0.005485 & 0.02201 \\
+SECONDARY & consecutive\_size & 1.4b & 2.8b & ref\_ratio & 0.01088 & 0.001971 & 0.01993 &  & 0.001971 & 0.01993 \\
+SECONDARY & consecutive\_size & 2.8b & 6.9b & mean\_loss & 0.02948 & 0.02144 & 0.03738 &  & 0.02144 & 0.03738 \\
+SECONDARY & consecutive\_size & 2.8b & 6.9b & min\_k\_10 & 0.0572 & 0.04343 & 0.07117 &  & 0.04343 & 0.07117 \\
+SECONDARY & consecutive\_size & 2.8b & 6.9b & min\_k\_20 & 0.04813 & 0.03691 & 0.0593 &  & 0.03691 & 0.0593 \\
+SECONDARY & consecutive\_size & 2.8b & 6.9b & min\_k\_30 & 0.04184 & 0.03179 & 0.05202 &  & 0.03179 & 0.05202 \\
+SECONDARY & consecutive\_size & 2.8b & 6.9b & zlib\_ratio & 0.03699 & 0.02781 & 0.04621 &  & 0.02781 & 0.04621 \\
+SECONDARY & consecutive\_size & 2.8b & 6.9b & ref\_ratio & 0.04706 & 0.03673 & 0.05763 &  & 0.03673 & 0.05763 \\
+SECONDARY & score\_minus\_mean\_loss &  &  & min\_k\_10 & -0.01917 & -0.05051 & 0.01149 & pythia-70m & 0 & 0.01149 \\
+SECONDARY & score\_minus\_mean\_loss &  &  & min\_k\_20 & -0.01179 & -0.03513 & 0.01096 & pythia-70m & 0 & 0.01096 \\
+SECONDARY & score\_minus\_mean\_loss &  &  & min\_k\_30 & -0.0104 & -0.02836 & 0.007092 & pythia-70m & 0 & 0.007092 \\
+SECONDARY & score\_minus\_mean\_loss &  &  & zlib\_ratio & -0.02696 & -0.06941 & 0.01633 & pythia-70m & 0 & 0.01633 \\
+SECONDARY & score\_minus\_mean\_loss &  &  & min\_k\_10 & -0.02365 & -0.05224 & 0.004927 & pythia-160m & 0 & 0.004927 \\
+SECONDARY & score\_minus\_mean\_loss &  &  & min\_k\_20 & -0.01518 & -0.03645 & 0.00568 & pythia-160m & 0 & 0.00568 \\
+SECONDARY & score\_minus\_mean\_loss &  &  & min\_k\_30 & -0.01508 & -0.03083 & 0.000613 & pythia-160m & 0 & 0.000613 \\
+SECONDARY & score\_minus\_mean\_loss &  &  & zlib\_ratio & -0.02397 & -0.06183 & 0.01375 & pythia-160m & 0 & 0.01375 \\
+SECONDARY & score\_minus\_mean\_loss &  &  & ref\_ratio & -0.02494 & -0.06168 & 0.01249 & pythia-160m & 0 & 0.01249 \\
+SECONDARY & score\_minus\_mean\_loss &  &  & min\_k\_10 & -0.008263 & -0.03403 & 0.01666 & pythia-410m & 0 & 0.01666 \\
+SECONDARY & score\_minus\_mean\_loss &  &  & min\_k\_20 & -0.007402 & -0.02602 & 0.01048 & pythia-410m & 0 & 0.01048 \\
+SECONDARY & score\_minus\_mean\_loss &  &  & min\_k\_30 & -0.008589 & -0.02187 & 0.004337 & pythia-410m & 0 & 0.004337 \\
+SECONDARY & score\_minus\_mean\_loss &  &  & zlib\_ratio & -0.02191 & -0.05353 & 0.009607 & pythia-410m & 0 & 0.009607 \\
+SECONDARY & score\_minus\_mean\_loss &  &  & ref\_ratio & 0.002972 & -0.02758 & 0.03322 & pythia-410m & 0 & 0.03322 \\
+SECONDARY & score\_minus\_mean\_loss &  &  & min\_k\_10 & 0.004244 & -0.01954 & 0.02668 & pythia-1.4b & 0 & 0.02668 \\
+SECONDARY & score\_minus\_mean\_loss &  &  & min\_k\_20 & 0.0009932 & -0.0157 & 0.0165 & pythia-1.4b & 0 & 0.0165 \\
+SECONDARY & score\_minus\_mean\_loss &  &  & min\_k\_30 & -0.001637 & -0.01333 & 0.009443 & pythia-1.4b & 0 & 0.009443 \\
+SECONDARY & score\_minus\_mean\_loss &  &  & zlib\_ratio & -0.007969 & -0.03394 & 0.01753 & pythia-1.4b & 0 & 0.01753 \\
+SECONDARY & score\_minus\_mean\_loss &  &  & ref\_ratio & 0.008116 & -0.01771 & 0.03374 & pythia-1.4b & 0 & 0.03374 \\
+SECONDARY & score\_minus\_mean\_loss &  &  & min\_k\_10 & 0.01231 & -0.009738 & 0.03366 & pythia-2.8b & 0 & 0.03366 \\
+SECONDARY & score\_minus\_mean\_loss &  &  & min\_k\_20 & 0.007674 & -0.007682 & 0.02228 & pythia-2.8b & 0 & 0.02228 \\
+SECONDARY & score\_minus\_mean\_loss &  &  & min\_k\_30 & 0.003918 & -0.006735 & 0.01423 & pythia-2.8b & 0 & 0.01423 \\
+SECONDARY & score\_minus\_mean\_loss &  &  & zlib\_ratio & -0.004718 & -0.02881 & 0.01896 & pythia-2.8b & 0 & 0.01896 \\
+SECONDARY & score\_minus\_mean\_loss &  &  & ref\_ratio & 0.008589 & -0.01585 & 0.03291 & pythia-2.8b & 0 & 0.03291 \\
+SECONDARY & score\_minus\_mean\_loss &  &  & min\_k\_10 & 0.04002 & 0.02079 & 0.05926 & pythia-6.9b & 0.02079 & 0.05926 \\
+SECONDARY & score\_minus\_mean\_loss &  &  & min\_k\_20 & 0.02632 & 0.01266 & 0.0399 & pythia-6.9b & 0.01266 & 0.0399 \\
+SECONDARY & score\_minus\_mean\_loss &  &  & min\_k\_30 & 0.01627 & 0.006797 & 0.0257 & pythia-6.9b & 0.006797 & 0.0257 \\
+SECONDARY & score\_minus\_mean\_loss &  &  & zlib\_ratio & 0.002786 & -0.01878 & 0.02387 & pythia-6.9b & 0 & 0.02387 \\
+SECONDARY & score\_minus\_mean\_loss &  &  & ref\_ratio & 0.02616 & 0.004087 & 0.04823 & pythia-6.9b & 0.004087 & 0.04823 \\
+\bottomrule
+\end{tabular}

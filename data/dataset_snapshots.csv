@@ -1,0 +1,7 @@
+dataset,hf_id,revision,evidence
+NQ-Open,google-research-datasets/nq_open,5dd9790a83002ad084ddeb7c420dc716852c6f28,machine_B S2MIA cache snapshot directory
+TriviaQA,mandarjoshi/trivia_qa,0f7faf33a3908546c6fd5b73a660e0f8ff173c2f,machine_B S2MIA cache snapshot directory
+SQuAD,rajpurkar/squad,7b6d24c440a36b6815f21b70d25016731768db1f,machine_B S2MIA cache snapshot directory
+HotpotQA,hotpotqa/hotpot_qa,1908d6afbbead072334abe2965f91bd2709910ab,machine_B S2MIA cache snapshot directory
+FiQA,BeIR/fiqa,979c07a7cb5ccc6ca009792241fa1250b98055dd,recorded download manifest; snapshot directory not recovered
+HealthCareMagic,RafaelMPereira/HealthCareMagic-100k-Chat-Format-en,ff90537d5aafa37cc32a9639266744a3e3f0ad62,machine_A MBMIA caches refs/main and snapshot directory

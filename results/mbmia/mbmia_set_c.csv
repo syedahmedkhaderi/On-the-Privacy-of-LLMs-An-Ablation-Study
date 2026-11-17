@@ -1,0 +1,9 @@
+context_mode,seed,n_member,n_nonmember,llm,dataset,retriever,embedder,stored_auc,attack_auc,attack_auc_ci,retrieval_only_auc,retrieval_only_ci,member_mask_acc_mean,nonmember_mask_acc_mean,run_name_sha
+answer_censored,42,50,50,gpt-4o-mini,healthcaremagic,faiss,bge-small-en-v1.5,0.525,0.525,"[0.4112, 0.6364049999999999]",1.0,"[1.0, 1.0]",0.2932674715108841,0.2869028317475276,87d65ca849bc
+answer_censored,1337,50,50,gpt-4o-mini,healthcaremagic,faiss,bge-small-en-v1.5,0.51,0.51,"[0.3944, 0.6232]",1.0,"[1.0, 1.0]",0.3003222660034663,0.2970697889729033,07ba916be938
+full,42,50,50,gpt-4o-mini,healthcaremagic,faiss,bge-small-en-v1.5,1.0,1.0,"[1.0, 1.0]",1.0,"[1.0, 1.0]",0.9009634030867564,0.3191352409286361,bceb7baf8000
+full,1337,50,50,gpt-4o-mini,healthcaremagic,faiss,bge-small-en-v1.5,1.0,1.0,"[1.0, 1.0]",1.0,"[1.0, 1.0]",0.8850004780540697,0.312593381025183,ed8d15035ea1
+leave_one_chunk_out,42,50,50,gpt-4o-mini,healthcaremagic,faiss,bge-small-en-v1.5,0.4612,0.4612,"[0.3472, 0.5770049999999999]",1.0,"[1.0, 1.0]",0.3000561958966847,0.3157904398017855,dfa101a84ce7
+leave_one_chunk_out,1337,50,50,gpt-4o-mini,healthcaremagic,faiss,bge-small-en-v1.5,0.5076,0.5076,"[0.3902, 0.6248]",1.0,"[1.0, 1.0]",0.3170825533644837,0.3172539678018325,442cbcba4d71
+none,42,50,50,gpt-4o-mini,healthcaremagic,faiss,bge-small-en-v1.5,0.4778,0.4778,"[0.364395, 0.59]",1.0,"[1.0, 1.0]",0.2795502779305178,0.2863324503390692,7b71b9f49858
+none,1337,50,50,gpt-4o-mini,healthcaremagic,faiss,bge-small-en-v1.5,0.5046,0.5046,"[0.3894, 0.6176]",1.0,"[1.0, 1.0]",0.2941592278246437,0.2902712570862334,1ba98fbcd47b

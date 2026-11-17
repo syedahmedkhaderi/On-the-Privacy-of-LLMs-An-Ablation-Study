@@ -1,0 +1,1 @@
+{"figure": "joint_signal_extraction_pythia-6.9b", "series_count": 6, "points_per_series": {"1": 4, "2-4": 4, "5-9": 4, "10-24": 4, "25-99": 4, "100+": 4}, "has_gap": false, "y_min_drawn": 0.0, "y_max_drawn": 0.4521791073803827}

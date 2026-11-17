@@ -1,0 +1,4 @@
+ADDENDUM_H16_AIA
+UTC: 2026-11-15T02:18:05.988882+00:00
+
+The free-form baseline prompt let each model choose its own output shape, and the strict-rubric score measured format compliance (strict-parse rate 0.80, 0.72, 0.30). A structured protocol is added and is designated the primary AIA result before any of its outputs are scored: same 525 examples, same three models and revisions, same comment text, same question and the same label information as the baseline prompt; the only change is the output contract and the decoding of 4.4. Styles: `structured`, `structured_persona`, `structured_mismatched`. Scoring uses the existing V3.1 and PH2 rules without any change. The free-form results are kept and reported as an output-format comparison. A new validation sample of 120 rows is drawn from the `structured` outputs. Decided after the free-form results.

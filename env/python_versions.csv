@@ -1,0 +1,6 @@
+machine,environment,python,torch
+machine_A,cyclea-dea,3.10.17,2.4.1+cu121
+machine_A,cyclea-aia,3.10.17,2.4.1+cu121
+machine_A,cyclea-ba,3.10.17,2.4.1+cu121
+machine_A,cyclea-mbmia,3.10.17,2.10.0
+machine_A,cyclea-plot,3.10.17,not installed

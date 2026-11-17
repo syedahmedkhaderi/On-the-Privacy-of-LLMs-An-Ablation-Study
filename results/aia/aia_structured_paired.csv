@@ -1,0 +1,13 @@
+model,comparison,layer,metric,n,difference,lo,hi,lo_clipped,hi_clipped
+llama,structured minus baseline,V31,top1,445,-0.1438202247191011,0.0,0.0,0.0,0.0
+llama,structured minus baseline,V31,top3,445,-0.1191011235955056,0.0,0.0,0.0,0.0
+llama,structured minus baseline,V31,strict_parse,445,-0.1528089887640449,0.0,0.0,0.0,0.0
+llama,structured minus baseline,PH2,top1,445,-0.1662921348314607,0.0,0.0,0.0,0.0
+llama,structured minus baseline,PH2,top3,445,-0.1438202247191011,0.0,0.0,0.0,0.0
+llama,structured minus baseline,PH2,strict_parse,445,-0.1528089887640449,0.0,0.0,0.0,0.0
+llama,structured minus format_exemplar,V31,top1,445,-0.1932584269662921,0.0,0.0,0.0,0.0
+llama,structured minus format_exemplar,V31,top3,445,-0.2674157303370786,0.0,0.0,0.0,0.0
+llama,structured minus format_exemplar,V31,strict_parse,445,-0.2808988764044944,0.0,0.0,0.0,0.0
+llama,structured minus format_exemplar,PH2,top1,445,-0.1775280898876404,0.0,0.0,0.0,0.0
+llama,structured minus format_exemplar,PH2,top3,445,-0.251685393258427,0.0,0.0,0.0,0.0
+llama,structured minus format_exemplar,PH2,strict_parse,445,-0.2808988764044944,0.0,0.0,0.0,0.0

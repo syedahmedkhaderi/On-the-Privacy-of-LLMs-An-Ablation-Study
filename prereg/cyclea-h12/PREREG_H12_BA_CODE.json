@@ -1,0 +1,22 @@
+{
+  "utc": "20261112T091144899291Z",
+  "code_sha256": "bbc8c8a3a94fbea5b21a0073717cf132e4bd125dbfa2c5efe3f420585b2fd816",
+  "sources": [
+    {
+      "path": "work/cyclea-h12/ba/ba_eval.py",
+      "sha256": "dd334c28ea82fa3a452ea36ebd83501bb221f0c2f3213861c8fa6d64e47c8df7"
+    },
+    {
+      "path": "work/cyclea-h12/ba/ba_gen_data.py",
+      "sha256": "4605c8dc58e5d0dd80c12436c91bf9e5bbdf8e43b8e3e24f6500b04f79dc2ec0"
+    },
+    {
+      "path": "work/cyclea-h12/ba/ba_run.py",
+      "sha256": "b99455be3364016ddaebc0ce46db848ccd817f1ff09aebdf6924f1c6c93a6a65"
+    },
+    {
+      "path": "work/cyclea-h12/ba/ba_train.py",
+      "sha256": "aff34ef9cb859ac03071c5ebd2532498da8b5a275d851cd6966a1ca30900fe89"
+    }
+  ]
+}
